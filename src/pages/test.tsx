@@ -1,4 +1,3 @@
-import Title from 'components/Global/Title'
 import Head from 'next/head'
 import Image from 'next/image'
 
