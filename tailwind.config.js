@@ -38,6 +38,9 @@ module.exports = {
         rubikmedium: ["Rubik-Medium", "sans-serif"],
         rubiklight: ["Rubik-Light", "sans-serif"],
       },
+      animation:{
+        'spinRight': 'spin 5s linear infinite'
+      }
     },
   },
 }
