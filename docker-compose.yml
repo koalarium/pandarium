@@ -1,0 +1,23 @@
+version: "3.8"
+
+services:
+  app:
+    image: pandarium-app
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/pandarium-app/src
+      - ./components:/pandarium-app/components
+      - ./public:/pandarium-app/public
+    environment:
+      DB_URL: mongodb://db/pandarium
+  db:
+    image: mongo:6.0.4-jammy
+    ports:
+      - 27017:27017
+    volumes:
+      - pandarium:/data/db
+
+volumes:
+  pandarium: 
