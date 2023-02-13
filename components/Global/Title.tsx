@@ -5,9 +5,10 @@ type Props = {
     bg?: string,
     primary: string,
     secondary: string,
+    className: string,
 }
 
-const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
+const Title = ({className, primary, secondary, color, position, variant, bg}: Props) => {
 
     let secondaryColor = "";
     let primaryColor = "";
@@ -63,7 +64,7 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
             
             { (position=="center" && variant =="1") ? 
 
-                <div className="w-fit mx-auto">
+                <div className={`${className} w-fit mx-auto`}>
                     <div className="text-center w-full ">
                         <div className="flex md:mb-1 lg:mb-2">  {/* //mb-2 przy wiekszych ekranacha */}
                             <h5 className={`text-left font-rubikbold text-lg md:text-2xl lg:text-3xl 2xl:text-5xl uppercase flex-none ${ secondaryColor }`}>{ secondary }</h5>
@@ -77,7 +78,7 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
 
             { (position=="center" && variant =="0") ? 
 
-                <div className=" mx-auto w-3/4">
+                <div className={`${className} mx-auto w-3/4`}>
                     <div className={`text-center flex flex-col items-center w-full ${background} rounded-2xl p-2 md:p-4 lg:p-6 2xl:p-8`}>
                         <div className="flex justify-center">
                             <h5 className={`font-rubikbold text-xs md:text-lg lg:text-xl 2xl:text-3xl uppercase flex-none mb-1 lg:mb-2 2xl:mb-4 ${ secondaryColor }`}>{ secondary }</h5>                            
@@ -95,7 +96,7 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
             { (position=="left" || position=="right")  ? 
             
                 <div className={`${(position=="left" ? "grid justify-items-start h-content w-full" : "grid justify-items-end h-content w-full" )} `}>
-                    <div className="h-full flex ">
+                    <div className={`${className} h-full flex `}>
                         <div className={`${(position=="left" ? "order-first" : "order-last")} h-content w-2 2xl:w-3 ${lineColor} rounded-sm`}></div>
                         <div className={`${(position=="right" ? "text-right" : null)} flex flex-col ml-2 mr-2`}>
                             <h5 className={`uppercase font-rubikbold mt-2 lg:mt-3 lg:mb-1 2xl:mt-4 2xl:mb-2 text-xs md:text-lg lg:text-xl 2xl:text-3xl ${secondaryColor}`}>{ secondary }</h5>
