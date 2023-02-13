@@ -5,7 +5,7 @@ type Props = {
     bg?: string,
     primary: string,
     secondary: string,
-    className: string,
+    className?: string,
 }
 
 const Title = ({className, primary, secondary, color, position, variant, bg}: Props) => {
