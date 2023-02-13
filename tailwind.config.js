@@ -52,6 +52,12 @@ module.exports = {
         moveRight: 'moveRight 14s linear infinite',
         moveLeft: 'moveLeft 14s linear infinite'
       },
+      dropShadow: {
+        'overline':[
+          '-5px 0 0 rgba(255,255,255,1)',
+          '0 -5px 0 rgba(255,255,255,1)',
+        ]
+      },
     },
   },
 }
