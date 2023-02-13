@@ -17,10 +17,12 @@ const Hero = () => {
                 <div className="hidden md:flex flex-col w-1/2 h-60 justify-center items-center md:my-auto">
                 </div>
 
-                <div className="w-[150px] md:w-[350px] aspect-square absolute animate-moveLeft -top-20 -left-10 bg-purple-300 rounded-full blur-[150px]"></div>
-                <div className="w-[250px] md:w-[450px] aspect-square absolute animate-moveLeft -top-20 right-96 bg-purple-300 rounded-full blur-[150px]"></div>
-                <div className="w-[500px] md:w-[700px] aspect-square absolute animate-moveRight -bottom-80 left-20 bg-purple-300 rounded-full blur-[150px]"></div>
-                <div className="w-[300px] md:w-[500px] aspect-square absolute animate-moveRight -bottom-40 -right-2 bg-purple-300 rounded-full blur-[150px]"></div>
+                <div className="w-[150px] md:w-[450px] delay-200 aspect-square absolute animate-moveLeft -top-20 -left-10 bg-purple-300 rounded-full blur-[150px]"></div>
+                <div className="w-[250px] md:w-[550px] delay-50 aspect-square absolute animate-moveLeft -top-20 right-96 bg-purple-300 rounded-full blur-[150px]"></div>
+                <div className="w-[500px] md:w-[800px] delay-0 aspect-square absolute animate-moveRight -bottom-80 left-20 bg-purple-300 rounded-full blur-[150px]"></div>
+                <div className="w-[300px] md:w-[600px] delay-300 aspect-square absolute animate-moveRight -bottom-40 -right-2 bg-purple-300 rounded-full blur-[150px]"></div>
+
+            {/* <div className="w-40 h-40 bg-black"></div> */}
             </div>
             <div className="bottom-0 w-full h-28 bg-white absolute rounded-t-3xl md:rounded-t-[60px] lg:rounded-t-[70px]">
                 
