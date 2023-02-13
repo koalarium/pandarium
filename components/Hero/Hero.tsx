@@ -6,15 +6,19 @@ const Hero = () => {
     
         <div className='h-screen w-screen text-white bg-purple-900 m-0 p-0 relative overflow-hidden'>
             <div className="text-center w-full flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative">
-                <div className="z-10 w-full flex flex-col justify-center items-center md:items-left md:text-left md:w-56 lg:w-64">
-                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-rubikbold md:mr-auto">Pandarium</h1>
-                    <p className="mt-2 font-rubik text-sm md:text-md lg:text-lg px-2 opacity-60 md:mr-auto md:px-0 max-w-[20ch]">Minigierki od graczy stworzone dla graczy</p>
-                    <div className="md:mr-auto">
+                <div className="z-10 w-full flex flex-col justify-center items-center md:items-center md:text-left md:w-1/2">
+                    <h1 className="text-2xl md:text-3xl lg:text-4xl font-rubikbold">Pandarium</h1>
+                    <p className="mt-2 font-rubik text-sm md:text-md lg:text-lg px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-full">Minigierki od graczy stworzone dla graczy</p>
+                    <div className="">
                         <Button variant="0" content="zobacz gry"/>
                     </div>
                 </div>
                 
                 <div className="hidden md:flex flex-col w-1/2 h-60 justify-center items-center md:my-auto">
+                    {/* <img className="z-10 w-[220px] lg:w-[300px] -rotate-[20deg] drop-shadow-[5px_5px_0_rgb(255,255,255)] hover:scale-[1.1] transition-transform duration-300 -translate-y-5" src="images\pandas\lion\lion-500px.png" alt="Panda dressed in lion costume" /> */}
+                    <img className="z-10 w-[220px] stroke-white-500" src="images\svgs\PANDA-square.svg" alt="Panda dressed in lion costume" />
+                    
+                    {/* <img className="z-10 absolute w-[220px] lg:w-[300px] -rotate-[20deg] hover:scale-[1.1] transition-transform duration-300 -translate-y-5" src="images\pandas\lion\lion-500px.png" alt="Image of panda dressed in lion costume" /> */}
                 </div>
 
                 <div className="w-[150px] md:w-[450px] delay-200 aspect-square absolute animate-moveLeft -top-20 -left-10 bg-purple-300 rounded-full blur-[150px]"></div>
