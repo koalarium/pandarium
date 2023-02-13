@@ -38,9 +38,20 @@ module.exports = {
         rubikmedium: ["Rubik-Medium", "sans-serif"],
         rubiklight: ["Rubik-Light", "sans-serif"],
       },
-      animation:{
-        'spinRight': 'spin 5s linear infinite'
-      }
+      keyframes: {
+        moveRight: {
+          '0%, 100%': { transform: 'rotate(0deg) translateX(100px) rotate(0deg) scale(1)', opacity: 1 },
+          '50%': { transform: 'rotate(360deg) translateX(100px) rotate(-360deg) scale(1.2)', opacity: 0.4 }
+        },
+        moveLeft: {
+          '0%, 100%': { transform: 'rotate(0deg) translateX(-100px) rotate(0deg) scale(1)', opacity: 1 },
+          '50%': { transform: 'rotate(360deg) translateX(-100px) rotate(-360deg) scale(1.2)', opacity: 0.4 }
+        }
+      },
+      animation: {
+        moveRight: 'moveRight 14s linear infinite',
+        moveLeft: 'moveLeft 14s linear infinite'
+      },
     },
   },
 }
