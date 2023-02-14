@@ -1,26 +1,20 @@
-type Props = {
-    main: string,
-    secondary?: string,
-}
-
-const Us = ({main, secondary}: Props) => {
+import Title from "components/Global/Title";
+const Us = () => {
     return (
-        
-        <div className="h-80 w-screen bg-green-900 px-14 py-10">
-            <div className="grid grid-cols-4 gaps-4 justify-items-center">
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-            </div>    
-            <div className="grid grid-cols-5 gaps-4 justify-items-center">
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-                <div className="aspect-square   bg-green-500 rounded-full w-full lg:w-[150px] "></div>
-            </div>
-        </div>
+    <div className=" bg-green-900 pb-10 rounded-3xl w-full">
+        <Title color="white" position="left" primary="Poznaj nasz zespół" secondary="Nasza pandowa rodzina"/>
+        <div className="flex justify-center flex-wrap pt-36">
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>        
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>
+            <div className="aspect-square bg-green-500 rounded-full basis-1/2 md:basis-1/4 border-8 border-green-900" ></div>           
+        </div>   
+    </div>
+    
     );
 }
 
