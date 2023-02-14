@@ -5,9 +5,10 @@ type Props = {
     bg?: string,
     primary: string,
     secondary: string,
+    className?: string,
 }
 
-const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
+const Title = ({className, primary, secondary, color, position, variant, bg}: Props) => {
 
     let secondaryColor = "";
     let primaryColor = "";
@@ -21,7 +22,7 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
         case "green":
             secondaryColor = "text-green-300/[.5]";
             primaryColor = "text-green-900";
-            lineColor = "bg-green-100";
+            lineColor = "bg-green-500";
             break;
         case "blue":
             secondaryColor = "text-blue-300/[.5]";
@@ -44,20 +45,32 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
             lineColor = "bg-white/[.5]";
             break;
     }
+    let background ="";
+    switch(bg) {
+        case "purple":
+            background = "bg-purple-500";
+            break;
+        case "green":
+            background = "bg-green-500";
+            break;
+        default:
+            background = "";
+            break;
+    }
     return (
         <>
 
             {/* WERSJA ŚRODEK */}
-
+            
             { (position=="center" && variant =="1") ? 
 
-                <div className="w-fit mx-auto">
-                    <div className="text-center w-full">
-                        <div className="flex mb-2">
-                            <h5 className={`text-left font-rubikbold text-3xl uppercase flex-none ${ secondaryColor }`}>{ secondary }</h5>
-                            <div className={`h-4 w-full my-auto ml-2 ${lineColor} grow rounded`}></div>
+                <div className={`${className} w-fit mx-auto`}>
+                    <div className="text-center w-full ">
+                        <div className="flex md:mb-1 lg:mb-2">  {/* //mb-2 przy wiekszych ekranacha */}
+                            <h5 className={`text-left font-rubikbold text-lg md:text-2xl lg:text-3xl 2xl:text-5xl uppercase flex-none ${ secondaryColor }`}>{ secondary }</h5>
+                            <div className={`h-2 lg:h-3 w-full my-auto ml-2 ${lineColor} grow rounded-sm`}></div>
                         </div>
-                        <h4 className={`uppercase font-rubikbold text-2xl ${primaryColor} `}>{ primary }</h4>
+                        <h4 className={`uppercase font-rubikbold text-md md:text-xl lg:text-2xl 2xl:text-4xl ${primaryColor} `}>{ primary }</h4>
                     </div>
                 </div>
 
@@ -65,13 +78,13 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
 
             { (position=="center" && variant =="0") ? 
 
-                <div className="w-1/2 mx-auto">
-                    <div className={`text-center flex flex-col items-center w-full bg-${bg}-500 rounded-2xl p-6`}>
+                <div className={`${className} mx-auto w-3/4`}>
+                    <div className={`text-center flex flex-col items-center w-full ${background} rounded-2xl p-2 md:p-4 lg:p-6 2xl:p-8`}>
                         <div className="flex justify-center">
-                            <h5 className={`font-rubikbold text-xl uppercase flex-none mb-2 ${ secondaryColor }`}>{ secondary }</h5>                            
+                            <h5 className={`font-rubikbold text-xs md:text-lg lg:text-xl 2xl:text-3xl uppercase flex-none mb-1 lg:mb-2 2xl:mb-4 ${ secondaryColor }`}>{ secondary }</h5>                            
                         </div>
-                        <div className={`h-2 w-1/2 my-auto ${lineColor} grow rounded`}></div>
-                        <h4 className={`uppercase font-rubikbold text-3xl mt-2 ${primaryColor} `}>{ primary }</h4>
+                        <div className={`h-1 lg:h-1.5 2xl:h-2 w-1/3 my-auto ${lineColor} grow rounded-sm`}></div>
+                        <h4 className={`uppercase font-rubikbold text-sm md:text-xl lg:text-2xl 2xl:text-4xl mt-1 lg:mt-2 2xl:mt-4 2xl:mb-4 lg:mb-2 md:mb-1 ${primaryColor} `}>{ primary }</h4>       {/* mt-2 */}
                     </div>
                 </div>
             
@@ -81,9 +94,17 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
             {/* WERSJA PRAWO I LEWO */}
 
             { (position=="left" || position=="right")  ? 
-                <div>
-                    <div className={`h-4 w-full my-auto ml-2 bg-purple-300/[.5] grow rounded`}></div>
+            
+                <div className={`${(position=="left" ? "grid justify-items-start h-content w-full" : "grid justify-items-end h-content w-full" )} `}>
+                    <div className={`${className} h-full flex `}>
+                        <div className={`${(position=="left" ? "order-first" : "order-last")} h-content w-2 2xl:w-3 ${lineColor} rounded-sm`}></div>
+                        <div className={`${(position=="right" ? "text-right" : null)} flex flex-col ml-2 mr-2`}>
+                            <h5 className={`uppercase font-rubikbold mt-2 lg:mt-3 lg:mb-1 2xl:mt-4 2xl:mb-2 text-xs md:text-lg lg:text-xl 2xl:text-3xl ${secondaryColor}`}>{ secondary }</h5>
+                            <h4 className={`uppercase font-rubikbold text-sm md:text-xl lg:text-2xl 2xl:text-4xl ${primaryColor}`}>{ primary }</h4>
+                        </div>
+                    </div>
                 </div>
+
             : null }
 
         </>
@@ -92,87 +113,3 @@ const Title = ({primary, secondary, color, position, variant, bg}: Props) => {
 
 export default Title;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-<div className={`
-            ${bg =="purple" ? "bg-purple-100" : null}
-            ${bg =="green" ? "bg-green-500" : null}
-            ${bg =="blue" ? "bg-blue-500" : null}
-            ${bg =="orange" ? "bg-orange-500" : null}
-            ${bg =="black" ? "bg-black-500" : null}
-            w-screen rounded`}>
-                <div className={`
-                ${variant == 1 ? "w-3 h-20 float-left mr-2 rounded" :null}
-                ${color =="white" ? "bg-white opacity-40" : null}
-                ${color =="purple" ? "bg-purple-100" : null}
-                ${color =="green" ? "bg-green-500" : null}
-                ${color =="blue" ? "bg-blue-500" : null}
-                ${color =="orange" ? "bg-orange-500" : null}
-                ${color =="black" ? "bg-black-500" : null}
-                `}></div>
-
-            <div className="flex flex-nowrap items-center uppercase">
-                <h5 className={`
-                    ${(position=="center" ? "text-center" : null)}
-                    ${position=="right" ? "text-right" : null}
-                    ${position=="left" ? "text-left" : null}
-                    ${color =="white" ? "text-white opacity-40" : null}
-                    ${color =="purple" ? "text-purple-100" : null}
-                    ${color =="green" ? "text-green-500" : null}
-                    ${color =="blue" ? "text-blue-500" : null}
-                    ${color =="orange" ? "text-orange-500" : null}
-                    ${color =="black" ? "text-black-500" : null}
-                        font-rubikbold`}>{ secondary }</h5>
-
-                    <div className={`
-                    ${variant == 0 ? "w-16 h-3 items-center rounded ml-2" :null}
-                    ${color =="white" ? "bg-white opacity-40" : null}
-                    ${color =="purple" ? "bg-purple-100" : null}
-                    ${color =="green" ? "bg-green-500" : null}
-                    ${color =="blue" ? "bg-blue-500" : null}
-                    ${color =="orange" ? "bg-orange-500" : null}
-                    ${color =="black" ? "bg-black-500" : null}
-                    `}></div>
-
-            </div>
-                <h4 className={`
-                    ${(position=="center" ? "text-center" : null)}
-                    ${position=="right" ? "text-right" : null}
-                    ${position=="left" ? "text-left" : null}
-                    ${color=="white" ? "text-white" : null}
-                    ${color=="purple" ? "text-purple-900" : null}
-                    ${color=="green" ? "text-green-900" : null}
-                    ${color=="blue" ? "text-blue-900" : null}
-                    ${color =="orange" ? "text-orange-900" : null}
-                    ${color =="black" ? "text-black-900" : null}
-                    font-rubikbold text-2xl uppercase`}>{ primary }</h4>
-            </div>
-            */
