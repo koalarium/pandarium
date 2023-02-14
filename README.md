@@ -1,38 +1,63 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# PANDARIUM
 
-## Getting Started
+## WSTĘP
 
-First, run the development server:
+Witam wszystkich! W tym miejscu znajduje się cała baza wiedzy, która jest 
+Tobie potrzebna do skorzystania z naszego repozytorium.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## DEPENDENCIES
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+1. Tailwindcss
+2. Docker
+3. MongoDB
+4. *Mongoose ?*
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## COMMITY
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Jak wysyłać zmiany (commit'y)?
 
-## Learn More
+1. Zaznacz (stage) twoje wszystkie zmiany, które chcesz wysłać.
+2. Wpisz **odpowiednią** nazwę twojego commit'a:
+    - **[NEW]** Krótki opis co zostało dodane
+    - **[UPDATE]** Krótki opis co zostało zmienione
+    - **[BUGFIX]** Krótki opis co zostało naprawione (tylko jeśli błąd został naprawiony!)
+    - **[INIT]** Co zostało zainicjowane (np. nowe bilioteki, lub podstawa brancha)
+    - **[README]** Co zostało zmienione w README (ZMIANY DOTYCZĄCE TYLKO README!)
+3. Zatwierdzamy zmiany (CTRL + ENTER w polu nazwy) lub za pomocą przycisku Commit.
+4. Synchronizujemy zmiany za pomocą dwóch "goniących się" strzałeczek. (po prostu wysyłamy zmiany)
 
-To learn more about Next.js, take a look at the following resources:
+### FAQ
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+> Pojawił się błąd Marge Stages, co robić?
+Jeśli pojawił się taki błąd to oznacza, że ktoś wcześniej wysłał zmiany, które modyfikowały plik, który ty też właśnie chcesz wysłać. W takim wypadku najlepiej jest się skontaktować z osobą, która wysłała poprzednią zmianę i razem zdecydować, które zmiany zostają a które można podmienić na twoje. **UWAGA!** *taki błąd jest dość poważny i należy bardzo ostrożnie modyfikować takie pliki! W najgorszym scenariuszu cała struktura strony i pliki mogą się wysypać!*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+> Czym jest incoming change / current change?
+**Incoming change** są to zmiany, które "przychodzą" od kogoś innego do naszych plików. 
+Analogicznie **Current change** są to te zmiany, które aktualnie masz w swoim kodzie (to na czym pracowałeś/aś).
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## BAZA DANYCH
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+### Jak pracujemy z bazą danych?
+
+Pracujemy obecnie na MongoDB, aby je poprawnie skonfigurować sprawdź kategorię niżej w celu instalacji.
+Wymagany będzie do tego Docker oraz około 10 GB wolnego miejsca, aby maszyna miała "miejsce".
+
+Obsługujemy bazę danych za pomocą wszystkich podstron _/api/*_.
+
+
+### Jak zainstalować bazę danych?
+
+1. Zainstaluj Dockera:
+    - w tym miejscu może okazać się potrzebny podsystem (najlepiej Ubuntu)
+    - w Internecie jest milion poradników, poradzisz sobie [How to install Docker on Windows 11/10 ?]
+2. Włącz Dockera (wielorybek musi być zielony).
+3. Otwórz klasycznie całe nasze repozytorium Pandarium.
+4. Zakomentuj odpowiednie linie w pliku *next.config.js*.
+5. Odkomentuj odpowiednie linie w pliku *next.config.js*.
+6. W CMD wpisz odpowiednią komendę:
+    - ```docker-compose up --build --force-recreate-```
+7. Strona gotowa do pracy dostępna klasycznie pod adresem ```localhost:3000```.
+
