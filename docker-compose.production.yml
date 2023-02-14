@@ -9,12 +9,18 @@ services:
       - 3000:3000
     environment:
       DB_URL: mongodb://db/pandarium
+      MONGODB_URI: mongodb://db:27017
+      DB_USER: root
+      DB_PASS: toor
+      DB_NAME: pandarium
   db:
     image: mongo:6.0.4-jammy
+    environment:
+      MONGO_INITDB_DATABASE: pandarium
     ports:
       - 27017:27017
     volumes:
-      - pandarium:/data/db
+      - "$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/"
 
 volumes:
-  pandarium: 
+  app: 
