@@ -46,11 +46,16 @@ module.exports = {
         moveLeft: {
           '0%, 100%': { transform: 'rotate(0deg) translateX(-100px) rotate(0deg) scale(1)', opacity: 0.8 },
           '50%': { transform: 'rotate(360deg) translateX(-100px) rotate(-360deg) scale(1.2)', opacity: 0.4 }
+        },
+        pandaHero: {
+          '0%, 100%': { transform: ' translateY(0) rotate(-20deg) '},
+          '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
         }
       },
       animation: {
         moveRight: 'moveRight 14s linear infinite',
-        moveLeft: 'moveLeft 14s linear infinite'
+        moveLeft: 'moveLeft 14s linear infinite',
+        pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite'
       },
       dropShadow: {
         'overline':[
