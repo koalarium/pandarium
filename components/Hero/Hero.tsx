@@ -15,7 +15,7 @@ const Hero = () => {
                 </div>
                 
                 <div className="hidden md:flex flex-col w-1/2 h-60 justify-center items-center md:my-auto">
-                    <img className="z-10 w-[220px] lg:w-[300px] -rotate-[20deg] drop-shadow-[5px_5px_0_rgb(255,255,255)] hover:scale-[1.1] transition-transform duration-300 -translate-y-5" src="images\pandas\lion\lion-500px.png" alt="Panda dressed in lion costume"/>
+                    <img className="z-10 w-[220px] lg:w-[300px] -rotate-[20deg] -translate-y-5 animate-pandaHero" src="images\pandas\lion\lion-500px-outline.png" alt="Panda dressed in lion costume"/>
                 </div>
 
                 <div className="w-[150px] md:w-[450px] delay-200 aspect-square absolute animate-moveLeft -top-20 -left-10 bg-purple-300 rounded-full blur-[150px]"></div>
