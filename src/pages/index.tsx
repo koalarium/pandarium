@@ -1,7 +1,42 @@
 import Head from 'next/head'
-import Image from 'next/image'
+import { useEffect, useState } from 'react'
+import { io } from "socket.io-client"
 
 export default function LandingPage() {
+
+  let socket = io();
+
+  const [input, setInput] = useState('');
+
+  const socketInitializer = async () => {
+
+    await fetch('/api/socket');
+
+    socket.on('connect', () => {
+      console.log('connected');
+    })
+
+    socket.on('update-input', msg => {
+      setInput(msg);
+    })
+
+    return null
+
+  }
+
+  const onChangeHandler = (e: any) => {
+
+    setInput(e.target.value);
+    socket.emit('input-change', e.target.value);
+
+  }
+
+  useEffect(() => {
+
+    socketInitializer();
+
+  }, [])
+  
   return (	
 		<>
 			<Head>
@@ -10,7 +45,7 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-      <h1 className="text-4xl font-rubikbold uppercase">Graj z dowolnego urządzenia</h1>
+      <input name="name" value={ input } onChange={ onChangeHandler } type="text" />
 		</>
 	)
 }

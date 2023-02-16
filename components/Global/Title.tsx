@@ -13,6 +13,7 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
     let secondaryColor = "";
     let primaryColor = "";
     let lineColor ="";
+    
     switch (color) {
         case "purple":
             secondaryColor = "text-purple-300/[.5]";
@@ -57,6 +58,7 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
             background = "";
             break;
     }
+
     return (
         <>
             <div className={`py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28 ${className}`}>

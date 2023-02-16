@@ -17,8 +17,13 @@ export default function LandingPage() {
 			</Head>
       <Hero />
       {/* <GamesCarousel /> */}
-      <SmContainer>
+      <LgContainer>
         <Title position="center" variant="0" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
+      </LgContainer>
+
+      <GamesCarousel />
+
+      <SmContainer>
         <CTA />
       </SmContainer>
 		</>
