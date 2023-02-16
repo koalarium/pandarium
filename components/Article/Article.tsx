@@ -3,20 +3,23 @@ import { LgContainer } from "components/Global/Containers"
 const Article = () => {
     return (
         <LgContainer >
-            <div className="w-full flex flex-col bg-white mx-auto font-rubikbold">
-                <h2 className="uppercase text-center text-purple-300/[0.6] ">Co w bambusie piszczy</h2>
-                <h1 className="uppercase text-center text-3xl text-purple-900 mb-10">Tytuł Jakiegoś tam artykułu</h1>
-                <div className="bg-purple-50 w-full aspect-[5/2] rounded-2xl mb-3 "></div>
-                <div className="flex mb-8 text-xs sm:text-sm flex-col sm:flex-row">
-                    <div className="rounded-md bg-purple-900 text-white px-2 mr-2 text-center my-auto py-3">25 lis 2023</div>
-                    <div className="flex gap-y-1 text-purple-900 my-auto py-2">
-                        <div className="bg-purple-50 rounded-md pl-1 py-2">#buffmastera</div>
-                        <div className="bg-purple-50 rounded-md pl-1 py-2">#scaminternetowy</div>
-                        <div className="bg-purple-50 rounded-md pl-1 py-2">#pandonowości</div>
-                        <div className="bg-purple-50 rounded-md pl-1 py-2">#kabaczekgigant</div>
+            <div className="w-full mx-auto">
+
+                <h2 className="uppercase text-center text-purple-300/[0.6] font-rubikbold ">Co w bambusie piszczy</h2>
+                <h1 className="uppercase text-center text-3xl text-purple-900 mb-10 font-rubikbold">Tytuł Jakiegoś tam artykułu</h1>
+
+                <div className="bg-purple-50 w-full aspect-[5/2] rounded-2xl mb-3"></div>
+
+                <div className="flex mb-8 flex-col h-fit sm:flex-row">
+                    <div className="my-auto flex align-middle rounded-md bg-purple-900 text-white px-2 mr-2 text-xs sm:text-sm text-center py-3"><p className="my-auto w-full h-full text-center font-rubikbold">25 lis 2023</p></div>
+                    <div className="flex flex-row h-fit flex-wrap text-purple-900 my-auto gap-2 font-rubikbold">
+                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#buffmastera</p></div>
+                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#scaminternetowy</p></div>
+                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#pandonowości</p></div>
+                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#kabaczekgigant</p></div>                    
                     </div>
                 </div>
-                <div className="font-rubik text-xl flex flex-col gap-y-10">
+                <div className="font-rubik text-md flex flex-col gap-y-10">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit purus, posuere
                     bibendum maximus a, sollicitudin sed eros. Donec id iaculis ex. Aliquam ac rutrum
                     magna. Quisque mattis tincidunt interdum. Sed ut elementum libero. Morbi non nisl
