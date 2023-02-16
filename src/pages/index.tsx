@@ -45,7 +45,9 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-      <input name="name" value={ input } onChange={ onChangeHandler } type="text" />
+      <div className="flex w-full h-full">
+        <input className="mx-auto my-24 text-2xl text-center rounded-xl border-green-900 border-[5px]" placeholder="Tu pisz..." name="name" value={ input } onChange={ onChangeHandler } type="text" />
+      </div>
 		</>
 	)
 }
