@@ -3,6 +3,7 @@ import { LgContainer, MdContainer, SmContainer } from 'components/Global/Contain
 import GamesCarousel from 'components/Global/GameCarousel'
 import Title from 'components/Global/Title'
 import Hero from 'components/Hero/Hero'
+import Us from 'components/Us/Us'
 import Head from 'next/head'
 import Image from 'next/image'
 
@@ -25,6 +26,7 @@ export default function LandingPage() {
 
       <SmContainer>
         <CTA />
+        <Us/>
       </SmContainer>
 		</>
 	)
