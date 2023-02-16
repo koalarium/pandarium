@@ -22,11 +22,13 @@ module.exports = {
         500: '#83B42A',
         900: '#72A11D',
       },
-      'purple': {
+      'purple': {        
         900: '#461056',
         500: '#7D3F9E',
         300: '#D861FA',
         100: '#F3D0FE',
+        50: '#EEE9EF',
+        10: '#F2F2F2',
       },
       'orange': '#FAAF6E',
       'blue': '#93E8FA',
