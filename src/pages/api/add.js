@@ -7,7 +7,8 @@ export default async (req, res) => {
 
         var data = { 
             name: "Matthew Krysiak", 
-            address: "Highway to Hell 69"
+            address: "Highway to Hell 69",
+            pseudo: "zielonyczarunych69"
         };
 
         db.collection("users").insertOne(data);

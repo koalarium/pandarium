@@ -9,6 +9,9 @@ export default async (req, res) => {
         db
             .collection("users")
             .deleteOne( { "_id": new ObjectId("63eba69701a14e6fb8e0d3d5") } );
+
+        db.dropDatabase();
+        
         res.json("usunięto!");
 
     } catch (e) {

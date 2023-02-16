@@ -47,6 +47,14 @@ module.exports = {
           '0%, 100%': { transform: 'rotate(0deg) translateX(-100px) rotate(0deg) scale(1)', opacity: 0.8 },
           '50%': { transform: 'rotate(360deg) translateX(-100px) rotate(-360deg) scale(1.2)', opacity: 0.4 }
         },
+        slideLeft: {
+          '0%, 100%': { transform: 'translateX(0%)'},
+          '50%': { transform: 'translateX(-25%)'},
+        },
+        slideRight: {
+          '0%, 100%': { transform: 'translateX(-25%)'},
+          '50%': { transform: 'translateX(0%)'},
+        },
         pandaHero: {
           '0%, 100%': { transform: ' translateY(0) rotate(-20deg) '},
           '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
@@ -55,6 +63,8 @@ module.exports = {
       animation: {
         moveRight: 'moveRight 14s linear infinite',
         moveLeft: 'moveLeft 14s linear infinite',
+        slideLeft: 'slideLeft 20s cubic-bezier(.06,.03,.93,.98) infinite',
+        slideRight: 'slideRight 20s cubic-bezier(.06,.03,.93,.98) infinite',
         pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite'
       },
       dropShadow: {

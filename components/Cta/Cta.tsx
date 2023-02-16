@@ -1,6 +1,6 @@
 import Button from "components/Global/Button";
 
-const Cta = () => {
+const CTA = () => {
     return (
         <div className="h-full w-full flex flex-col sm:flex-row bg-purple-100 rounded-3xl uppercase py-6">              
             <div className="bg-purple-900 mx-auto h-3 w-1/3 sm:h-20 sm:w-3 rounded-sm opacity-50 my-auto sm:mx-3 sm:ml-8 "></div>
@@ -14,4 +14,4 @@ const Cta = () => {
     );
 }
 
-export default Cta;
+export default CTA;
