@@ -2,7 +2,7 @@ import GameTile from "./GameTile";
 const GamesCarousel = () => {
     return (
         <>
-            <div className="overflow-x-hidden w-screen">
+            <div className="overflow-x-hidden w-full">
                 <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideLeft">
                     <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
                     <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>

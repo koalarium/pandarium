@@ -3,9 +3,9 @@ import Button from "components/Global/Button";
 const Hero = () => {
     return (
         <>
-            <div className='h-screen w-screen text-white bg-purple-900 m-0 p-0 relative overflow-hidden'>
-                <div className="text-center w-full flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative">
-                    <div className="z-10 w-full flex flex-col justify-center items-center md:items-center md:text-left md:w-1/2">
+            <div className='h-screen text-white bg-purple-900 m-0 p-0 overflow-hidden'>
+                <div className="text-center w-screen flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative">
+                    <div className="z-10 w-full flex flex-col justify-center items-center md:text-left md:w-1/2">
                         <div>
                             <h1 className="text-2xl sm:text-3xl lg:text-4xl font-rubikbold">Pandarium</h1>
                             <p className="mt-2 font-rubik text-sm sm:text-base lg:text-lg xl:text-xl px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-[18ch] xl:max-w-[20ch]">Minigierki od graczy stworzone dla graczy</p>
