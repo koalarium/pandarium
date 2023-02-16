@@ -59,13 +59,13 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
     }
     return (
         <>
-            <div className="py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28">
+            <div className={`py-12 md:py-16 lg:py-20 xl:py-24 2xl:py-28 ${className}`}>
 
                 {/* WERSJA ŚRODEK */}
                 
                 { (position=="center" && variant =="1") ? 
 
-                    <div className={`${className} w-fit mx-auto`}>
+                    <div className="w-fit mx-auto">
                         <div className="text-center w-full ">
                             <div className="flex md:mb-1 lg:mb-2">  {/* //mb-2 przy wiekszych ekranacha */}
                                 <h5 className={`text-left font-rubikbold text-xl sm:text-3xl md:text-4xl xl:text-5xl uppercase flex-none ${ secondaryColor }`}>{ secondary }</h5>
@@ -79,13 +79,13 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
 
                 { (position=="center" && variant =="0") ? 
 
-                    <div className={`${className} mx-auto w-3/4`}>
+                    <div className="mx-auto w-3/4">
                         <div className={`text-center flex flex-col items-center w-full ${background} rounded-2xl p-2 md:p-4 lg:p-6 2xl:p-8`}>
                             <div className="flex justify-center">
-                                <h5 className={`font-rubikbold text-xs md:text-lg lg:text-xl 2xl:text-3xl uppercase flex-none mb-1 lg:mb-2 2xl:mb-4 ${ secondaryColor }`}>{ secondary }</h5>                            
+                                <h5 className={`font-rubikbold text-lg sm:text-2xl md:text-3xl xl:text-4xl uppercase flex-none mb-1 lg:mb-2 2xl:mb-4 ${ secondaryColor }`}>{ secondary }</h5>                            
                             </div>
                             <div className={`h-1 lg:h-1.5 2xl:h-2 w-1/3 my-auto ${lineColor} grow rounded-sm`}></div>
-                            <h4 className={`uppercase font-rubikbold text-sm md:text-xl lg:text-2xl 2xl:text-4xl mt-1 lg:mt-2 2xl:mt-4 2xl:mb-4 lg:mb-2 md:mb-1 ${primaryColor} `}>{ primary }</h4>       {/* mt-2 */}
+                            <h4 className={`uppercase font-rubikbold mt-1 text-xl sm:text-3xl md:text-4xl xl:text-5xl lg:mt-2 2xl:mt-4 2xl:mb-4 lg:mb-2 md:mb-1 ${primaryColor} `}>{ primary }</h4>       {/* mt-2 */}
                         </div>
                     </div>
                 
@@ -100,8 +100,8 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
                         <div className={`${className} h-full flex `}>
                             <div className={`${(position=="left" ? "order-first" : "order-last")} h-content w-2 2xl:w-3 ${lineColor} rounded-sm`}></div>
                             <div className={`${(position=="right" ? "text-right" : null)} flex flex-col ml-2 mr-2`}>
-                                <h5 className={`uppercase font-rubikbold mt-2 lg:mt-3 lg:mb-1 2xl:mt-4 2xl:mb-2 text-xs md:text-lg lg:text-xl 2xl:text-3xl ${secondaryColor}`}>{ secondary }</h5>
-                                <h4 className={`uppercase font-rubikbold text-sm md:text-xl lg:text-2xl 2xl:text-4xl ${primaryColor}`}>{ primary }</h4>
+                                <h5 className={`uppercase font-rubikbold mt-2 lg:mt-3 lg:mb-1 2xl:mt-4 2xl:mb-2 text-lg sm:text-2xl md:text-3xl xl:text-4xl ${secondaryColor}`}>{ secondary }</h5>
+                                <h4 className={`uppercase font-rubikbold text-xl sm:text-3xl md:text-4xl xl:text-5xl ${primaryColor}`}>{ primary }</h4>
                             </div>
                         </div>
                     </div>
