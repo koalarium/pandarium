@@ -79,6 +79,10 @@ module.exports = {
           '7px 7px 0 rgba(255,255,255,1)',
         ]
       },
+      backgroundImage: {
+        'hearts-pattern': "url('/images/patterns/hearts-pattern.svg')",
+        'big-hearts-pattern': "url('/images/patterns/big-hearts-pattern.svg')",
+      },
     },
   },
 }
