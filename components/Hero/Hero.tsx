@@ -1,22 +1,25 @@
 import Button from "components/Global/Button";
+import Image from "next/image";
 
 const Hero = () => {
     return (
         <>
             <div className='h-screen text-white bg-purple-900 m-0 p-0 overflow-hidden'>
-                <div className="text-center w-screen flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative">
+                <div className="text-center w-screen flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative 2xl:px-48">
                     <div className="z-10 w-full flex flex-col justify-center items-center md:text-left md:w-1/2">
                         <div>
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-rubikbold">Pandarium</h1>
                             <p className="mt-2 font-rubik text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-[22ch]">Minigierki od graczy stworzone dla graczy</p>
                             <div className="">
-                                <Button className="md:mr-auto" variant="0" content="zobacz gry" />
+                                <Button className="md:mr-auto mt-8" variant="0" content="zobacz gry" />
                             </div>
                         </div>
                     </div>
                     
-                    <div className="hidden md:flex flex-col w-1/2 h-60 justify-center items-center md:my-auto">
-                        <img className="z-10 w-[220px] lg:w-[300px] xl:w-[340px] -rotate-[20deg] -translate-y-5 animate-pandaHero" src="images\pandas\lion\lion-500px-outline.png" alt="Panda dressed in lion costume"/>
+                    <div className="hidden md:flex flex-col w-1/2 h-full justify-center items-center md:my-auto">
+                        <div className="h-full w-full md:w-[300px] lg:w-[450px] xl:w-[550px] relative">
+                            <Image fill className="object-contain z-10 -rotate-[20deg] -translate-y-5 animate-pandaHero absolute" src="/images/pandas/lion/lion-500px-outline.png" alt="Panda dressed in lion costume"/>
+                        </div>
                     </div>
 
                     <div className="w-[1npm50px] md:w-[450px] delay-200 aspect-square absolute animate-moveLeft -top-20 -left-10 bg-purple-300 rounded-full blur-[150px]"></div>

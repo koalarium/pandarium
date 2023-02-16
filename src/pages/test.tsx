@@ -1,3 +1,5 @@
+import CTA from 'components/CTA/CTA'
+import { LgContainer, MdContainer, SmContainer } from 'components/Global/Containers'
 import GamesCarousel from 'components/Global/GameCarousel'
 import Title from 'components/Global/Title'
 import Hero from 'components/Hero/Hero'
@@ -14,8 +16,11 @@ export default function LandingPage() {
         <link rel="icon" href="/favicon.ico" />
 			</Head>
       <Hero />
-      <Title position="center" variant="1" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
-      <GamesCarousel />
+      {/* <GamesCarousel /> */}
+      <SmContainer>
+        <Title position="center" variant="0" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
+        <CTA />
+      </SmContainer>
 		</>
 	)
 }
