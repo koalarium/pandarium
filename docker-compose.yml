@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  app:
+    image: pandarium-app
+    build: .
+    ports:
+      - 3000:3000
+    volumes:
+      - ./src:/pandarium-app/src
+      - ./components:/pandarium-app/components
+      - ./public:/pandarium-app/public
+      - ./models:/pandarium-app/models
+      - ./lib:/pandarium-app/lib
+    environment:
+      DB_URL: mongodb://db/pandarium
+      MONGODB_URI: mongodb://db:27017
+      DB_USER: root
+      DB_PASS: toor
+      DB_NAME: pandarium
+  db:
+    image: mongo:6.0.4-jammy
+    restart: always
+    environment:
+      MONGO_INITDB_DATABASE: pandarium
+      # MONGO_INITDB_ROOT_USERNAME: root
+      # MONGO_INITDB_ROOT_PASSWORD: toor
+    ports:
+      - 27017:27017
+    volumes:
+      - "$PWD/mongo-entrypoint/:/docker-entrypoint-initdb.d/"
+
+volumes:
+  app: 
