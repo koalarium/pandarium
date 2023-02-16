@@ -21,7 +21,7 @@ const Button = ({className, content,variant}: Props) => {
     }
 
     return (
-        <button className={`bg-purple-300 text-white text-md md:text-md mt-8 z-50 lg:text-xl lg:py-4 lg:px-20 uppercase font-rubikbold px-12 py-4 rounded-2xl hover:bg-[#c153e0] transition-all duration-300 ${btnBoxShadow}  ${btnActiveShadow} ${btnActiveTransform} ${className}`}>{content}</button>
+        <button className={`bg-purple-300 text-white text-md md:text-md z-50 lg:text-xl lg:py-4 lg:px-20 uppercase font-rubikbold px-12 py-4 rounded-2xl hover:bg-[#c153e0] transition-all duration-300 ${btnBoxShadow}  ${btnActiveShadow} ${btnActiveTransform} ${className}`}>{content}</button>
     );
 }
 
