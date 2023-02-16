@@ -14,8 +14,11 @@ export default function LandingPage() {
         <link rel="icon" href="/favicon.ico" />
 			</Head>
       <Hero />
-      <Title position="center" variant="1" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
-      <GamesCarousel />
+      {/* <Title position="center" variant="1" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
+      <GamesCarousel /> */}
+      <div className="p-24 m-0 w-screen">
+        COKOLWIEK
+      </div>
 		</>
 	)
 }
