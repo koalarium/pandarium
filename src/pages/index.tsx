@@ -8,6 +8,7 @@ export default function LandingPage() {
   let socket = io();
 
   const [input, setInput] = useState('');
+  const [input2, setInput2] = useState('');
   const [mess, setMess] = useState<string[]>([]);
 
   const socketInitializer = async () => {
@@ -38,11 +39,18 @@ export default function LandingPage() {
     // socket.emit('input-change', e.target.value);
 
   }
+  
+  const onChangeHandler2 = (e: any) => {
+
+    setInput2(e.target.value);
+    // socket.emit('input-change', e.target.value);
+
+  }
 
   const btnHandler = () => {
 
     var today = new Date();
-    let toPut = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+": "+input;
+    let toPut = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds()+" "+input2+" -> "+input;
     setMess(
       [
         ...mess,
@@ -56,7 +64,7 @@ export default function LandingPage() {
 
   const clearHandler = () => {
 
-    // setMess([]);
+    setMess([]);
 
     socket.emit('sended', mess);
 
@@ -89,6 +97,7 @@ export default function LandingPage() {
 					</div>
 
 					<input className="text-2xl px-4 py-3 text-left text-white placeholder:text-white rounded-xl from-purple-300 to-purple-300/[0.9] bg-gradient-to-tl" placeholder="Tu pisz..." name="name" value={ input } onChange={ onChangeHandler } type="text" />
+					<input className="text-2xl px-4 py-3 text-left text-white placeholder:text-white rounded-xl from-purple-300 to-purple-300/[0.9] bg-gradient-to-tl" placeholder="Twoje imie..." name="asd" value={ input2 } onChange={ onChangeHandler2 } type="text" />
 					<button onClick={ btnHandler } className="bg-purple-300 text-white font-rubikbold px-5 py-4 rounded-xl ml-5">Wyślij</button>
 					<button onClick={ clearHandler } className="bg-purple-300 text-white font-rubikbold px-5 py-4 rounded-xl ml-5">Clear</button>
 				</div>
