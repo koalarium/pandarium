@@ -11,8 +11,8 @@ const CTA = () => {
                     <div className="bg-purple-500 w-1/2 mx-auto my-2 lg:my-0 lg:w-[20px] h-[15px] sm:h-[20px] lg:h-24 rounded-lg lg:mr-8"></div>
                     <h4 className="text-purple-900 uppercase font-rubikbold text-lg sm:text-2xl md:text-3xl xl:text-4xl lg:w-[15ch] my-auto text-center lg:text-left">Bądź zawsze na bieżąco</h4>
                 </div>
-                <div className="mt-8 lg:my-auto mx-auto lg:ml-auto lg:mr-0 z-10">
-                    <Button content="Zobacz aktualności" variant="0" className="mt-0"/>                          
+                <div className="mt-4 lg:my-auto mx-auto lg:ml-auto lg:mr-0 z-10">
+                    <Button content="Zobacz" variant="0" className="mt-0"/>                          
                 </div>
             </div>
         </div>         
