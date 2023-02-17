@@ -101,7 +101,7 @@ const Title = ({className, primary, secondary, color, position, variant, bg}: Pr
                     <div className={`${(position=="left" ? "grid justify-items-start h-content w-full" : "grid justify-items-end h-content w-full" )} `}>
                         <div className={`${className} h-full flex `}>
                             <div className={`${(position=="left" ? "order-first" : "order-last")} h-content w-2 2xl:w-3 ${lineColor} rounded-sm`}></div>
-                            <div className={`${(position=="right" ? "text-right" : null)} flex flex-col ml-2 mr-2`}>
+                            <div className={`${(position=="right" ? "text-right" : null)} flex flex-col ml-7 mr-2`}>
                                 <h5 className={`uppercase font-rubikbold mt-2 lg:mt-3 lg:mb-1 2xl:mt-4 2xl:mb-2 text-lg sm:text-2xl md:text-3xl xl:text-4xl ${secondaryColor}`}>{ secondary }</h5>
                                 <h4 className={`uppercase font-rubikbold text-xl sm:text-3xl md:text-4xl xl:text-5xl ${primaryColor}`}>{ primary }</h4>
                             </div>

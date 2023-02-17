@@ -15,6 +15,11 @@ const SocketHandler = (req, res) => {
             socket.on('input-change', msg => {
                 socket.broadcast.emit('update-input', msg )
             })
+
+            socket.on('sended', msg => {
+                socket.broadcast.emit('update-mess', msg )
+                console.log('update-mess', msg)
+            })
         })
 
     }

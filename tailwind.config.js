@@ -23,6 +23,7 @@ module.exports = {
         900: '#72A11D',
       },
       'purple': {        
+        950: '#22082B',
         900: '#461056',
         500: '#7D3F9E',
         300: '#D861FA',
@@ -32,6 +33,9 @@ module.exports = {
       },
       'orange': '#FAAF6E',
       'blue': '#93E8FA',
+      'facebook': '#3B5998',
+      'instagram': '#E1306C',
+      'discord': '#7289DA'
     },
     extend: {
       fontFamily: {
