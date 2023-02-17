@@ -91,7 +91,7 @@ export default function LandingPage() {
 					<div id="history" className="mb-24 w-full">
 
 						{ mess.map(e => (
-							<pre>{e}</pre>
+							<pre key={e}>{e}</pre>
 						)) }
 
 					</div>
