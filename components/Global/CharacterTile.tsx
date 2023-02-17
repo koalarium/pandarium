@@ -93,11 +93,11 @@ const CharacterTile = ({variant, panda, selected} : Props) => {
 export default CharacterTile;
 
 
-<div id="boxpomarancz bialy aspectratio square ustawic szerokosc">
+{/* <div id="boxpomarancz bialy aspectratio square ustawic szerokosc">
         <div id="wfull aspectratio square z10">
             <Image></Image>
         </div>
         <div id="wfull aspectratio square pasteltlo z0">
 
         </div>
-</div>
+</div> */}
