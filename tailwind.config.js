@@ -64,6 +64,14 @@ module.exports = {
         pandaHero: {
           '0%, 100%': { transform: ' translateY(0) rotate(-20deg) '},
           '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
+        },
+        moveAround: {
+          '0%': { transform: 'rotate(-45deg)'},
+          '100%': { transform: 'rotate(315deg)'},
+        },
+        rotatePictures: {
+          '0%': { transform: 'rotate(45deg)'},
+          '100%': { transform: 'rotate(405deg)'},
         }
       },
       animation: {
@@ -71,7 +79,14 @@ module.exports = {
         moveLeft: 'moveLeft 14s linear infinite',
         slideLeft: 'slideLeft 20s cubic-bezier(.06,.03,.93,.98) infinite',
         slideRight: 'slideRight 20s cubic-bezier(.06,.03,.93,.98) infinite',
-        pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite'
+        pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite',
+        moveAround: 'moveAround 12s linear 0s infinite',
+        moveAround1: 'moveAround 12s linear 2s infinite',
+        moveAround2: 'moveAround 12s linear 4s infinite',
+        moveAround3: 'moveAround 12s linear 6s infinite',
+        moveAround4: 'moveAround 12s linear 8s infinite',
+        moveAround5: 'moveAround 12s linear 10s infinite',
+        rotatePictures: 'rotatePictures 12s linear 0s infinite reverse',
       },
       dropShadow: {
         'overline':[

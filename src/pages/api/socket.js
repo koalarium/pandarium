@@ -12,6 +12,7 @@ const SocketHandler = (req, res) => {
 
               
         io.on('connection', socket => {
+            
             socket.on('input-change', msg => {
                 socket.broadcast.emit('update-input', msg )
             })
