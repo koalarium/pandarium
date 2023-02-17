@@ -11,7 +11,7 @@ const Article = () => {
                 <div className="bg-purple-50 w-full aspect-[5/2] rounded-2xl mb-3"></div>
 
                 <div className="flex mb-8 flex-col h-fit sm:flex-row">
-                    <div className="my-auto flex align-middle rounded-md bg-purple-900 text-white px-2 mr-2 text-xs sm:text-sm text-center py-3"><p className="my-auto w-full h-full text-center font-rubikbold">25 lis 2023</p></div>
+                    <div className="my-auto flex align-middle rounded-md bg-purple-900 text-white px-2 mr-2 text-xs sm:text-sm text-center py-3 font-rubikbold">25 lis 2023</div>
                     <div className="flex flex-row h-fit flex-wrap text-purple-900 my-auto gap-2 font-rubikbold">
                             <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#buffmastera</p></div>
                             <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#scaminternetowy</p></div>
