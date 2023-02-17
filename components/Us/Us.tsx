@@ -63,10 +63,10 @@ const Us = () => {
             <div className="h-[600px] bg-green-900 w-full mb-[50vh] px-6 md:px-20 py-12 relative rounded-[60px] overflow-hidden">
                 <div className="border-green-500 border-[5px] rounded-full w-[40%] sm:w-[29%] aspect-square sm:-translate-x-[15%] -translate-x-[-70%] translate-y-[23%] absolute bottom-0 left-0 z-20">
                     <div className="w-full h-full overflow-hidden rounded-full z-10 absolute">
-                        <img className="" src={currentPerson.photo}></img>
+                        <Image className="object-cover" fill src={`/`+currentPerson.photo} alt={currentPerson.photo}/>
                     </div>
                     { people.map((p, index) => (
-                        <div className="absolute w-[35%] aspect-[38/100] left-1/2 bottom-1/2 -translate-x-1/2 group z-10">
+                        <div key={index} className="absolute w-[35%] aspect-[38/100] left-1/2 bottom-1/2 -translate-x-1/2 group z-10">
                             <div className={"absolute h-full w-full origin-[50%_100%] -rotate-[115deg] lg:-rotate-45 "+(index == 0 ? `animate-[moveAround_12s_linear_0s_infinite]` : `animate-[moveAround_12s_linear_${index*2+"s_"}infinite]`) } >
                                 <div className={`relative rounded-full overflow-hidden aspect-square border-[5px] border-transparent group-hover:border-green-300 duration-300 -translate-x-1/2 w-full `+(index == 0 ? "animate-rotatePictures" : `animate-[rotatePictures_12s_linear_${index*2+"s_"}infinite_reverse]`)}>
                                     <Image alt={p.name} fill className={`object-cover duration-300 group-hover:scale-[1.2] hover:border-green-300 cursor-pointer inset-0 border-[5px] border-green-500 w-full aspect-square rounded-full `} src={"/"+p.photo} onMouseEnter={ hoverHandler }/>
@@ -89,10 +89,10 @@ const Us = () => {
                 
                 <div className="w-full h-full flex flex-col justify-end items-center absolute z-10 inset-x-0 lg:right-24 lg:-left-24 top-24 lg:top-36">  
                     <h5 id="name" className="text-green-500 mt-14 lg:mt-28 lg:ml-auto font-rubikbold text-lg sm:text-xl md:text-2xl xl:text-3xl bg-white/[0.9] w-fit px-5 py-2 rounded-xl ">{currentPerson.name}</h5>
-                    <p className="text-center lg:text-right w-[30ch] lg:w-[40ch] lg:ml-auto text-white text-md md:text-xl xl:text-2xl italic my-5">"{currentPerson.quote}"</p>
+                    <p className="text-center lg:text-right w-[30ch] lg:w-[40ch] lg:ml-auto text-white text-md md:text-xl xl:text-2xl italic my-5">{`"`+currentPerson.quote+`"`}</p>
                     <div className="mx-auto lg:mr-0 lg:ml-auto text-center lg:text-right mt-3 mb-auto gap-4 w-[30ch] lg:w-[50ch] flex flex-wrap flex-row-reverse justify-center lg:justify-start">
-                        { currentPerson.roles.map((cp: any) => (
-                            <span className="text-sm lg:text-xl text-white bg-white/[.2] rounded-xl px-5 py-2">{cp}</span>
+                        { currentPerson.roles.map((cp: any, index) => (
+                            <span key={index} className="text-sm lg:text-xl text-white bg-white/[.2] rounded-xl px-5 py-2">{cp}</span>
                         ))}
                     </div>
                 </div>
