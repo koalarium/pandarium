@@ -11,6 +11,7 @@ const GameTile = ({name, image, background, className}: Props) => {
 
 
     return (
+
         <>
             <div className={`group cursor-pointer relative overflow-hidden w-[250px] sm:w-[300px] md:w-[350px] lg:w-[450px] 2xl:w-[600px] h-24 sm:h-32 md:h-38 lg:h-44 2xl:h-52 rounded-3xl my-auto bg-purple-500 ${ className }`}>
                 <Image alt="image" fill className="object-cover z-0 opacity-30 group-hover:opacity-80 group-hover:scale-[1.2] duration-300 blur-[2px]" src={ background } />
@@ -20,6 +21,7 @@ const GameTile = ({name, image, background, className}: Props) => {
                 </div>
             </div>
         </>
+        
     );
 }
  

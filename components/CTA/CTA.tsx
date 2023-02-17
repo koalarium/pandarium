@@ -4,6 +4,7 @@ import Image from "next/image";
 
 const CTA = () => {
     return (
+
         <div className="py-20 md:py-24 lg:py-28 xl:py-36 2xl:py-48">
             <div className="h-content lg:h-56 w-full flex flex-col lg:flex-row bg-purple-100 rounded-[50px] py-4 pb-6 md:pb-6 md:py-4 relative px-12 lg:px-24 overflow-hidden">
                 <Image alt="images" fill src="/images/patterns/big-hearts-pattern.svg" className="object-cover absolute w-full h-full z-0 inset-0 opacity-[0.35] mix-blend-overlay"/>
@@ -15,7 +16,8 @@ const CTA = () => {
                     <Button content="Zobacz" variant="0" className="mt-0"/>                          
                 </div>
             </div>
-        </div>         
+        </div>      
+           
     );
 }
 
