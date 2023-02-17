@@ -1,33 +1,40 @@
 import { LgContainer } from "components/Global/Containers";
 import Title from "components/Global/Title";
+import Image from "next/image";
 
 const Info = () => {
     return (
         <LgContainer>
-            <div className="flex gap-20 text-xl flex-col mx-20">
-                <div className="flex gap-10">
-                    <div className="bg-purple-50 h-fit w-1/2 flex flex-col grow rounded-3xl p-10">
-                        <p className="leading-relaxed pt-5 ">Znajdziesz tutaj wszystkie popularne gry
+            <Title primary="Czym jest pandarium" secondary="Poznaj nas lepiej" position="left" color="purple" />
+            <div className="flex w-full h-full gap-4 flex-col">
+                <div className="md:flex md:flex-row gap-4">
+                    <div className="bg-purple-50 rounded-3xl p-4 flex flex-col justify-evenly">
+                        <p className="leading-relaxed ">
+                        Znajdziesz tutaj wszystkie popularne gry
                         umiejscowione na jednej platformie do
-                        wspólnej gry z Twoimi znajomymi.</p>
-                        <p className="leading-relaxed pb-5 mt-10">
+                        wspólnej gry z Twoimi znajomymi.
+                        </p>
+                        <p className="leading-relaxed">
                         Wszystko zostało stworzone z myślą o
                         ludziach, którzy uwielbiają minigierki lub
-                        chcą po prostu zagrać w planszówki online.  
+                        chcą po prostu zagrać w planszówki online.
                         </p>
                     </div>
-                    <div className="rounded-3xl w-1/2 bg-black"></div>
-                </div> 
-                <div className="flex gap-10">
-                    <div className="rounded-3xl bg-black w-2/3"></div>
-                    <div className="bg-purple-50 h-fit w-1/3 flex flex-col rounded-3xl p-10">
-                        <p className="leading-relaxed pt-5 ">Znajdziesz tutaj wszystkie popularne gry
+                    <div className="w-full h-60 mt-4 md:mt-0 rounded-3xl relative"><Image fill className="absolute" src="/images/pandas/panda/panda_inzynier.png" alt="panda-inzynier" /></div>                
+                </div>
+                <div className="flex-col-reverse flex md:flex md:flex-row gap-4 absolute-cover">
+                    <div className="w-full md:h-60 rounded-3xl relative"><Image fill className="" src="/images/pandas/panda/panda_inzynier.png" alt="panda-inzynier" /></div>
+                    <div className="bg-purple-50 rounded-3xl p-4 flex justify-evenly flex-col">
+                        <p className="leading-relaxed mb-2">
+                        Znajdziesz tutaj wszystkie popularne gry
                         umiejscowione na jednej platformie do
-                        wspólnej gry z Twoimi znajomymi.</p>
-                        <p className="leading-relaxed pb-5 mt-10">
+                        wspólnej gry z Twoimi znajomymi.
+                        </p>
+                        <p className="leading-relaxed">
                         Wszystko zostało stworzone z myślą o
                         ludziach, którzy uwielbiają minigierki lub
-                        chcą po prostu zagrać w planszówki online.</p>
+                        chcą po prostu zagrać w planszówki online.
+                        </p>
                     </div>
                 </div>
             </div>
