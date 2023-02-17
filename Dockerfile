@@ -12,6 +12,5 @@ COPY components ./components
 COPY tailwind.config.js ./tailwind.config.js
 COPY postcss.config.js ./postcss.config.js
 COPY lib ./lib
-COPY models ./models
 
 CMD ["npm", "run", "dev"]
