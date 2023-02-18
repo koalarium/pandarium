@@ -18,7 +18,7 @@ const Us = () => {
             roles: ['Frontend Developer', 'Graphic Designer'],
         },
         {
-            name: 'Michał Świerszcz',
+            name: 'Michał Świercz',
             quote: 'Od zawsze chciałem stworzyć miejsce w Internecie, które naprawdę będzie jednym z lepszych!',
             photo: 'michal.jpg',
             roles: ['Frontend Developer', 'Graphic Designer'],
