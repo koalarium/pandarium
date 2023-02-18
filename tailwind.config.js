@@ -66,8 +66,8 @@ module.exports = {
           '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
         },
         pandaHeroCow: {
-          '0%, 100%': { transform: ' translateY(0) rotate(40deg) '},
-          '50%': { transform: 'translateY(-10px) rotate(35deg) '}
+          '0%, 100%': { transform: ' translateY(0) rotate(150deg) '},
+          '50%': { transform: 'translateY(-12px) rotate(160deg) '}
         },
         moveAround: {
           '0%': { transform: 'rotate(-115deg)'},
