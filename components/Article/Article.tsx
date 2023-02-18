@@ -11,7 +11,7 @@ const Article = () => {
                 <div className="bg-purple-50 w-full aspect-[16/9] rounded-2xl md:rounded-[35px] mb-3"></div>
 
                 <div className="flex mb-8 flex-col h-fit sm:flex-row my-8">
-                    <div className="my-auto flex-none align-middle rounded-xl bg-purple-900 text-white px-6 mr-0 sm:mr-2 mb-4 sm:mb-0 text-xl text-center py-6 font-rubikbold">25 lis 2023</div>
+                    <div className="my-auto flex-none align-middle rounded-xl bg-purple-900 text-white px-6 mr-0 sm:mr-2 mb-4 sm:mb-0 text-xl text-center py-3 sm:py-6 font-rubikbold">25 lis 2023</div>
                     <div className="flex flex-row flex-wrap justify-evenly sm:justify-start text-purple-900 gap-2 font-rubikbold">
                         <div className="bg-purple-50 rounded-lg h-fit">
                             <p className="px-2 py-1">#buffmastera</p>
