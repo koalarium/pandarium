@@ -31,9 +31,13 @@ Tobie potrzebna do skorzystania z naszego repozytorium.
 ### FAQ
 
 > Pojawił się błąd Marge Stages, co robić?
-Jeśli pojawił się taki błąd to oznacza, że ktoś wcześniej wysłał zmiany, które modyfikowały plik, który ty też właśnie chcesz wysłać. W takim wypadku najlepiej jest się skontaktować z osobą, która wysłała poprzednią zmianę i razem zdecydować, które zmiany zostają a które można podmienić na twoje. **UWAGA!** *taki błąd jest dość poważny i należy bardzo ostrożnie modyfikować takie pliki! W najgorszym scenariuszu cała struktura strony i pliki mogą się wysypać!*
+
+Jeśli pojawił się taki błąd to oznacza, że ktoś wcześniej wysłał zmiany, które modyfikowały plik, który ty też właśnie chcesz wysłać. W takim wypadku najlepiej jest się skontaktować z osobą, która wysłała poprzednią zmianę i razem zdecydować, które zmiany zostają a które można podmienić na twoje.
+
+**UWAGA!** *taki błąd jest dość poważny i należy bardzo ostrożnie modyfikować takie pliki! W najgorszym scenariuszu cała struktura strony i pliki mogą się wysypać!*
 
 > Czym jest incoming change / current change?
+
 **Incoming change** są to zmiany, które "przychodzą" od kogoś innego do naszych plików. 
 Analogicznie **Current change** są to te zmiany, które aktualnie masz w swoim kodzie (to na czym pracowałeś/aś).
 
