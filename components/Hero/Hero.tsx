@@ -4,9 +4,9 @@ import Image from "next/image";
 const Hero = () => {
     return (
         <>
-            <div className='h-[100vh] text-white bg-purple-900 m-0 p-0 overflow-hidden relative'>
+            <div className='h-[100vh] text-white bg-purple-900 m-0 p-0 overflow-hidden relative select-none'>
                 <div className="text-center w-screen flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative 2xl:px-48">
-                    <div className="z-10 w-full flex flex-col justify-center items-center md:text-left md:w-1/2">
+                    <div className="z-20 w-full flex flex-col justify-center items-center md:text-left md:w-1/2">
                         <div>
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-rubikbold">Pandarium</h1>
                             <p className="mt-2 font-rubik text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-[22ch]">Minigierki od graczy stworzone dla graczy</p>
@@ -22,9 +22,9 @@ const Hero = () => {
                         </div>
                     </div>
 
-                    <div className="absolute -top-8 z-10 -left-28 min-[600px]:h-64 min-[600px]: h-52 w-80 md:hidden">
+                    <div className="absolute -top-8 z-10 -left-24 min-[600px]:h-64 min-[600px]: h-52 w-80 md:hidden">
                         <div className="h-full w-full relative">
-                            <Image fill className="object-contain z-10 rotate-[40deg] animate-pandaHeroCow absolute" src="/images/pandas/cow/cow-outline.png" alt="Cute panda dressed in cow costume"/>
+                            <Image fill className="object-contain z-10 rotate-[150deg] animate-pandaHeroCow absolute" src="/images/pandas/cow/cow-outline.png" alt="Cute panda dressed in cow costume"/>
                         </div>
                     </div>
 
