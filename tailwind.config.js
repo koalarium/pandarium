@@ -65,6 +65,10 @@ module.exports = {
           '0%, 100%': { transform: ' translateY(0) rotate(-20deg) '},
           '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
         },
+        pandaHeroCow: {
+          '0%, 100%': { transform: ' translateY(0) rotate(40deg) '},
+          '50%': { transform: 'translateY(-10px) rotate(35deg) '}
+        },
         moveAround: {
           '0%': { transform: 'rotate(-115deg)'},
           '100%': { transform: 'rotate(245deg)'},
@@ -80,6 +84,7 @@ module.exports = {
         slideLeft: 'slideLeft 20s cubic-bezier(.06,.03,.93,.98) infinite',
         slideRight: 'slideRight 20s cubic-bezier(.06,.03,.93,.98) infinite',
         pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite',
+        pandaHeroCow: 'pandaHeroCow 8s cubic-bezier(0.2, 0, 0.6, 1) infinite',
         moveAround: 'moveAround 12s linear 0s infinite',
         rotatePictures: 'rotatePictures 12s linear 0s infinite reverse',
       },

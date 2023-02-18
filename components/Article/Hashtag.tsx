@@ -4,8 +4,12 @@ type Props={
 }
 
 const Hashtag = ({className, content}: Props) => {
-    return (        
-           <div className={`bg-purple-50 rounded-md font-rubikbold text-xs sm:text-sm px-2 py-1 w-fit ${className}`}>{content}</div>        
+    return (      
+        <>
+            <div className={`bg-purple-50 rounded-lg h-fit ${className}`}>
+                <p className={`px-2 py-1`}>{content}</p>
+            </div>
+        </>           
     );
 }
 
