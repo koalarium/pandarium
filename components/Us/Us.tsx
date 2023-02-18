@@ -67,7 +67,7 @@ const Us = () => {
             <div className="h-[600px] bg-green-900 w-full mb-[50vh] px-6 md:px-20 py-12 relative rounded-[60px] overflow-hidden">
                 <div className="border-green-500 border-[5px] rounded-full w-[40%] sm:w-[29%] aspect-square sm:-translate-x-[15%] -translate-x-[-70%] translate-y-[23%] absolute bottom-0 left-0 z-20">
                     <div className="w-full h-full overflow-hidden rounded-full z-10 absolute">
-                        <Image className="object-cover" fill src={`/`+currentPerson.photo} alt={currentPerson.photo}/>
+                        <Image className="object-cover" fill src={ `/`+currentPerson.photo } alt={ currentPerson.photo }/>
                     </div>
                     { people.map((p, index) => (
                         <div key={index} className="absolute w-[35%] aspect-[38/100] left-1/2 bottom-1/2 -translate-x-1/2 group z-10">
