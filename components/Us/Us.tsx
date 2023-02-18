@@ -31,7 +31,7 @@ const Us = () => {
         },
         {
             name: 'Jakub Grabowski',
-            quote: 'Od zawsze chciałem stworzyć miejsce w Internecie, które naprawdę będzie jednym z lepszych!',
+            quote: 'Nie bój się śmierci, lękaj się nieprzżytego życia',
             photo: 'kuba.jpg',
             roles: ['Frontend Developer'],
         },
@@ -49,6 +49,10 @@ const Us = () => {
 
         let person: any = people.find(p => p.name == e.target.alt);
         setCurrentPerson(person);
+
+    }
+
+    const nullHandler = () => {
 
     }
     
@@ -69,7 +73,7 @@ const Us = () => {
                         <div key={index} className="absolute w-[35%] aspect-[38/100] left-1/2 bottom-1/2 -translate-x-1/2 group z-10">
                             <div className={"absolute h-full w-full origin-[50%_100%] -rotate-[115deg] lg:-rotate-45 "+(index == 0 ? `animate-[moveAround_12s_linear_0s_infinite]` : `animate-[moveAround_12s_linear_${index*2+"s_"}infinite]`) } >
                                 <div className={`relative rounded-full overflow-hidden aspect-square border-[5px] border-transparent group-hover:border-green-300 duration-300 -translate-x-1/2 w-full `+(index == 0 ? "animate-rotatePictures" : `animate-[rotatePictures_12s_linear_${index*2+"s_"}infinite_reverse]`)}>
-                                    <Image alt={p.name} fill className={`object-cover duration-300 group-hover:scale-[1.2] hover:border-green-300 cursor-pointer inset-0 border-[5px] border-green-500 w-full aspect-square rounded-full `} src={"/"+p.photo} onMouseEnter={ hoverHandler }/>
+                                    <Image alt={p.name} fill className={`object-cover duration-300 group-hover:scale-[1.2] hover:border-green-300 cursor-pointer inset-0 border-[5px] border-green-500 w-full aspect-square rounded-full `} src={"/"+p.photo}   onMouseEnter={ currentPerson.name !== p.name ? hoverHandler : nullHandler } />
                                 </div>
                             </div>
                         </div>
