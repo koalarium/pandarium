@@ -2,24 +2,38 @@ import { LgContainer } from "components/Global/Containers"
 
 const Article = () => {
     return (
-        <LgContainer >
-            <div className="w-full mx-auto">
+        <div className="mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-56 2xl:px-64">
+            <div className="w-full mx-auto mt-12">
 
-                <h2 className="uppercase text-center text-purple-300/[0.6] font-rubikbold ">Co w bambusie piszczy</h2>
-                <h1 className="uppercase text-center text-3xl text-purple-900 mb-10 font-rubikbold">Tytuł Jakiegoś tam artykułu</h1>
+                <h2 className="uppercase text-center text-purple-300/[0.6] text-lg sm:text-2xl md:text-3xl xl:text-4xl font-rubikbold ">Co w bambusie piszczy</h2>
+                <h1 className="uppercase text-center text-xl sm:text-3xl md:text-4xl xl:text-5xl text-purple-900 mb-10 font-rubikbold">Tytuł Jakiegoś tam artykułu</h1>
 
-                <div className="bg-purple-50 w-full aspect-[5/2] rounded-2xl mb-3"></div>
+                <div className="bg-purple-50 w-full aspect-[16/9] rounded-2xl md:rounded-[35px] mb-3"></div>
 
-                <div className="flex mb-8 flex-col h-fit sm:flex-row">
-                    <div className="my-auto flex align-middle rounded-md bg-purple-900 text-white px-2 mr-2 text-xs sm:text-sm text-center py-3 font-rubikbold">25 lis 2023</div>
-                    <div className="flex flex-row h-fit flex-wrap text-purple-900 my-auto gap-2 font-rubikbold">
-                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#buffmastera</p></div>
-                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#scaminternetowy</p></div>
-                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#pandonowości</p></div>
-                            <div className="bg-purple-50 rounded-md"><p className="px-2 py-1">#kabaczekgigant</p></div>                    
+                <div className="flex mb-8 flex-col h-fit sm:flex-row my-8">
+                    <div className="my-auto flex-none align-middle rounded-xl bg-purple-900 text-white px-6 mr-0 sm:mr-2 mb-4 sm:mb-0 text-xl text-center py-6 font-rubikbold">25 lis 2023</div>
+                    <div className="flex flex-row flex-wrap justify-evenly sm:justify-start text-purple-900 gap-2 font-rubikbold">
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
+                        <div className="bg-purple-50 rounded-lg h-fit">
+                            <p className="px-2 py-1">#buffmastera</p>
+                        </div>
                     </div>
                 </div>
-                <div className="font-rubik text-md flex flex-col gap-y-10">
+                <div className="text-base text-purple-950 md:text-lg flex flex-col gap-y-10 text-justify my-12 indent-2 md:indent-6 break-keep mr-1">
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque velit purus, posuere
                     bibendum maximus a, sollicitudin sed eros. Donec id iaculis ex. Aliquam ac rutrum
                     magna. Quisque mattis tincidunt interdum. Sed ut elementum libero. Morbi non nisl
@@ -41,7 +55,7 @@ const Article = () => {
                     imperdiet, ligula felis bibendum massa, id eleifend velit nibh ut magna. Donec vel</p>
                 </div>
             </div>
-        </LgContainer>
+        </div>
     );
 }
 
