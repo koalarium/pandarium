@@ -92,7 +92,7 @@ const Us = () => {
                 <div className="w-fit mx-auto lg:hidden absolute z-10 inset-x-0"><div className="text-center w-full "><div className="flex md:mb-1 lg:mb-2">  <h5 className="text-left font-rubikbold text-xl sm:text-3xl md:text-4xl xl:text-5xl uppercase flex-none text-white/[.5]">Nasza pandowa rodzina</h5><div className="h-2 lg:h-3 w-full my-auto ml-2 bg-white/[.5] grow rounded-sm"></div></div><h4 className="uppercase font-rubikbold text-lg sm:text-2xl md:text-3xl xl:text-4xl text-white ">Poznaj nasz zespół</h4></div></div>
                 
                 <div className="w-full h-full flex flex-col justify-end items-center absolute z-10 inset-x-0 lg:right-24 lg:-left-24 top-24 lg:top-36">  
-                    <h5 id="name" className="text-green-500 mt-14 lg:mt-28 lg:ml-auto font-rubikbold text-lg sm:text-xl md:text-2xl xl:text-3xl bg-white/[0.9] w-fit px-5 py-2 rounded-xl ">{currentPerson.name}</h5>
+                    <h5 id="name" className="text-green-500 mt-14 lg:mt-28 lg:ml-auto font-rubikbold text-lg sm:text-xl md:text-2xl xl:text-3xl bg-white/[0.9] w-fit px-5 py-2 rounded-xl ">{ currentPerson.name }</h5>
                     <p className="text-center lg:text-right w-[30ch] lg:w-[40ch] lg:ml-auto text-white text-md md:text-xl xl:text-2xl italic my-5">{`"`+currentPerson.quote+`"`}</p>
                     <div className="mx-auto lg:mr-0 lg:ml-auto text-center lg:text-right mt-3 mb-auto gap-4 w-[30ch] lg:w-[50ch] flex flex-wrap flex-row-reverse justify-center lg:justify-start">
                         { currentPerson.roles.map((cp: any, index) => (
