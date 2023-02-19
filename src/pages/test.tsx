@@ -10,6 +10,7 @@ import Article from 'components/Article/Article'
 import Date from 'components/Article/Date'
 import Hashtag from 'components/Article/Hashtag'
 import ArticleTitle from 'components/Article/ArticleTitle'
+import HeroSmall from 'components/Hero/HeroSmall'
 
 export default function LandingPage() {
   return (	
