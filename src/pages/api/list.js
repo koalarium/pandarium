@@ -4,8 +4,9 @@ export default async (req, res) => {
     try {
         const client = await clientPromise;
         const db = client.db("pandarium");
-        
-        let data = await db.collection("users").find({}).toArray();
+        const roomId = req.body.roomId;
+
+        let data = await db.collection("messages").find({ roomId: roomId }).toArray();
 
         res.json({ status: 200, data: data });
 

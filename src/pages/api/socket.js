@@ -13,14 +13,22 @@ const SocketHandler = (req, res) => {
               
         io.on('connection', socket => {
             
-            socket.on('input-change', msg => {
-                socket.broadcast.emit('update-input', msg )
-            })
+            socket.on('join_to_room', async (roomId, prevRoomId) => {
 
-            socket.on('sended', msg => {
-                socket.broadcast.emit('update-mess', msg )
-                console.log('update-mess', msg)
-            })
+                if(prevRoomId != '') socket.leave(prevRoomId);
+                socket.join(roomId);
+
+                socket.emit('get_data', roomId)
+                console.log("Join to room", roomId);
+                console.log("Left from room", prevRoomId);
+
+            });
+
+            socket.on('sended_message', (roomId) => {
+                io.in(roomId).emit('get_data', roomId)
+                console.log("sended_message", roomId);
+            });
+
         })
 
     }
