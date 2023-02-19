@@ -13,7 +13,7 @@ const SocketHandler = (req, res) => {
               
         io.on('connection', socket => {
             
-            socket.on('join_to_room', async (roomId, prevRoomId) => {
+            socket.on('join_to_room', (roomId, prevRoomId) => {
 
                 if(prevRoomId != '') socket.leave(prevRoomId);
                 socket.join(roomId);
@@ -25,7 +25,7 @@ const SocketHandler = (req, res) => {
             });
 
             socket.on('sended_message', (roomId) => {
-                io.in(roomId).emit('get_data', roomId)
+                socket.to(roomId.toString()).emit('get_data');
                 console.log("sended_message", roomId);
             });
 

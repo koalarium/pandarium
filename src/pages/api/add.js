@@ -5,6 +5,8 @@ export default async (req, res) => {
         const client = await clientPromise;
         const db = client.db("pandarium");
 
+        if (req.body.message != '') {
+
         const data = {
             "message": req.body.message,
             "time": req.body.time,
@@ -14,6 +16,11 @@ export default async (req, res) => {
         
         db.collection("messages").insertOne(data);
         res.json({ status: 200 });
+
+        } else {
+            res.json({status: 400});
+        }
+
 
     } catch (e) {
         console.error(e);
