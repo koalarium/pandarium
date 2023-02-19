@@ -23,6 +23,7 @@ module.exports = {
         900: '#72A11D',
       },
       'purple': {        
+        950: '#22082B',
         900: '#461056',
         500: '#7D3F9E',
         300: '#D861FA',
@@ -32,6 +33,9 @@ module.exports = {
       },
       'orange': '#FAAF6E',
       'blue': '#93E8FA',
+      'facebook': '#3B5998',
+      'instagram': '#E1306C',
+      'discord': '#7289DA'
     },
     extend: {
       fontFamily: {
@@ -60,6 +64,18 @@ module.exports = {
         pandaHero: {
           '0%, 100%': { transform: ' translateY(0) rotate(-20deg) '},
           '50%': { transform: 'translateY(-20px) rotate(-10deg) '}
+        },
+        pandaHeroCow: {
+          '0%, 100%': { transform: ' translateY(0) rotate(150deg) '},
+          '50%': { transform: 'translateY(-12px) rotate(160deg) '}
+        },
+        moveAround: {
+          '0%': { transform: 'rotate(-115deg)'},
+          '100%': { transform: 'rotate(245deg)'},
+        },
+        rotatePictures: {
+          '0%': { transform: 'rotate(115deg)'},
+          '100%': { transform: 'rotate(475deg)'},
         }
       },
       animation: {
@@ -67,7 +83,10 @@ module.exports = {
         moveLeft: 'moveLeft 14s linear infinite',
         slideLeft: 'slideLeft 20s cubic-bezier(.06,.03,.93,.98) infinite',
         slideRight: 'slideRight 20s cubic-bezier(.06,.03,.93,.98) infinite',
-        pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite'
+        pandaHero: 'pandaHero 7s cubic-bezier(0.2, 0, 0.6, 1) infinite',
+        pandaHeroCow: 'pandaHeroCow 8s cubic-bezier(0.2, 0, 0.6, 1) infinite',
+        moveAround: 'moveAround 12s linear 0s infinite',
+        rotatePictures: 'rotatePictures 12s linear 0s infinite reverse',
       },
       dropShadow: {
         'overline':[
@@ -84,6 +103,7 @@ module.exports = {
       backgroundImage: {
         'hearts-pattern': "url('/images/patterns/hearts-pattern.svg')",
         'big-hearts-pattern': "url('/images/patterns/big-hearts-pattern.svg')",
+        'bambo-rain-pattern': "url('/images/patterns/rain-of-bambus-pattern.svg')",
       },
     },
   },

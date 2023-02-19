@@ -6,6 +6,11 @@ import Hero from 'components/Hero/Hero'
 import Us from 'components/Us/Us'
 import Head from 'next/head'
 import Image from 'next/image'
+import Article from 'components/Article/Article'
+import Date from 'components/Article/Date'
+import Hashtag from 'components/Article/Hashtag'
+import ArticleTitle from 'components/Article/ArticleTitle'
+import HeroSmall from 'components/Hero/HeroSmall'
 
 export default function LandingPage() {
   return (	
@@ -16,17 +21,8 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-      <Hero />
-      {/* <GamesCarousel /> */}
-      <LgContainer>
-        <Title position="center" variant="0" color="purple" primary="Poznaj nasze wszystkie gry" secondary='Zobacz ile' />
-      </LgContainer>
-
-      <GamesCarousel />
-
       <SmContainer>
-        <CTA />
-        <Us/>
+        <Us />
       </SmContainer>
 		</>
 	)

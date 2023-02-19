@@ -17,9 +17,9 @@ const CharacterTile = ({variant, panda, selected} : Props) => {
             
             break;
         case "lion":
-            pandahead = "";
-            pandabody = "";
-            pandafull = "";
+            pandahead = "/images/pandas/lion/lion-head.png";
+            pandabody = "/images/pandas/lion/lion-body.png";
+            pandafull = "/images/pandas/lion/lion.png";
                 
             break;
         case "cricket":
@@ -29,9 +29,9 @@ const CharacterTile = ({variant, panda, selected} : Props) => {
                     
             break;
         case "cow":
-            pandahead = "";
-            pandabody = "";
-            pandafull = "";
+            pandahead = "/images/pandas/cow/cow-head.png";
+            pandabody = "/images/pandas/cow/cow-body.png";
+            pandafull = "/images/pandas/cow/cow.png";
                         
             break;
         case "unicorn":
@@ -80,8 +80,12 @@ const CharacterTile = ({variant, panda, selected} : Props) => {
             {/* Wariant cała panda */}
 
                 {variant =="2" ? 
-                    <div className="bg-white aspect-square w-28 rounded-3xl hover:border hover:border-orange">
-                        
+                    <div className="bg-white items-center justify-center flex relative w-60 aspect-square rounded-[40px]">
+                        <div className="absolute w-60 z-30 aspect-square rounded-[40px] hover:border-[6px] hover:border-orange"></div>
+                        <div className="aspect-square relative w-full z-20 ">
+                            <Image src={`${pandabody}`} fill className="absolute" alt="panda"/>
+                        </div>
+                        <div className="w-52 bg-orange/[.50] rounded-3xl object-cover absolute aspect-square z-10"></div>
                     </div>
                 
                 :null}

@@ -5,16 +5,18 @@ export default async (req, res) => {
         const client = await clientPromise;
         const db = client.db("pandarium");
 
-        var data = { 
-            name: "Matthew Krysiak", 
-            address: "Highway to Hell 69",
-            pseudo: "zielonyczarunych69"
+        const data = {
+            "message": req.body.message,
+            "time": req.body.time,
+            "roomId": req.body.roomId,
+            "author": req.body.author,
         };
-
-        db.collection("users").insertOne(data);
-        res.json(data);
+        
+        db.collection("messages").insertOne(data);
+        res.json({ status: 200 });
 
     } catch (e) {
         console.error(e);
+        throw new Error(e).message;
     }
 }
