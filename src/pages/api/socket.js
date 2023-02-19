@@ -18,7 +18,7 @@ const SocketHandler = (req, res) => {
                 if(prevRoomId != '') socket.leave(prevRoomId);
                 socket.join(roomId);
 
-                socket.emit('get_data', roomId)
+                socket.to(roomId.toString()).emit('get_data', roomId)
                 console.log("Join to room", roomId);
                 console.log("Left from room", prevRoomId);
 
