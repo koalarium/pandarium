@@ -104,6 +104,7 @@ export default function LandingPage() {
     const data = await req.json();
     setMessages(data.data);
     setLoading(false);
+    messagesEnd.current.scrollIntoView({behavior: "smooth"});
 
   }
 
@@ -135,7 +136,7 @@ export default function LandingPage() {
                     <input placeholder="Twój nick" type="text" className="px-4 py-2 text-purple-950 rounded-xl flex-grow" onChange={ nickChangeHandler } value={ nick }/>
                   </div>
                   <div className="bg-purple-50 w-full h-[100%] p-4 rounded-3xl relative overflow-y-scroll">
-                      <div id="messages" className="mb-24 w-full flex flex-col mt-4">
+                      <div id="messages" className="mb-24 w-full flex flex-col mt-4 justify-end">
                           { !loading ? messages.map((m: any) => (
                             <>
                               <div key={m.message} className={(m.author == nick ? `ml-auto` : `mr-auto`)+` flex`}>
