@@ -25,3 +25,12 @@ export const LgContainer = ({ className, children }: Props) => {
         </div>
     );
 }
+
+export const XlContainer = ({ className, children }: Props) => {
+    return (
+        <div className={`mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:max-w-[980px] xl:mx-auto ${ className }`}>
+            { children }
+        </div>
+    );
+}
+

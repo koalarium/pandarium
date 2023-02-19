@@ -1,8 +1,8 @@
-import { LgContainer } from "components/Global/Containers"
+import { XlContainer } from "components/Global/Containers"
 
 const Article = () => {
     return (
-        <div className="mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-56 2xl:px-64">
+        <XlContainer>
             <div className="w-full mx-auto mt-12">
 
                 <h2 className="uppercase text-center text-purple-300/[0.6] text-lg sm:text-2xl md:text-3xl xl:text-4xl font-rubikbold ">Co w bambusie piszczy</h2>
@@ -55,7 +55,7 @@ const Article = () => {
                     imperdiet, ligula felis bibendum massa, id eleifend velit nibh ut magna. Donec vel</p>
                 </div>
             </div>
-        </div>
+            </XlContainer>
     );
 }
 
