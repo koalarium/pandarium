@@ -64,6 +64,19 @@
          
         },
         {
+            "name": "fox",
+            "fullName": "Lis Lucjan",
+            "background": "bg-orange-600",
+            "border": "bg-orange-600",
+            "images": {
+                "outline": "/images/pandas/fox/fox-outline.png",
+                "pandaFull": "/images/pandas/fox/fox.png",
+                "pandaBody": "/images/pandas/fox/fox-body.png",
+                "pandaHead": "/images/pandas/fox/fox-head.png"
+            }
+         
+        },
+        {
             "name": "unicorn",
             "fullName": "Jednorożec Janek",
             "background": "bg-pink-300",

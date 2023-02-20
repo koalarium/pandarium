@@ -5,9 +5,16 @@ type Props ={
     variant: string,
     panda?: string,
     selected?: boolean,
+    pandasS?: {
+        name: string,
+        fullName: string,
+        background: string,
+        border: string,
+        images: string[],
+    }
 }
 
-const CharacterTile = ({variant, panda, selected=false} : Props) => {
+const CharacterTile = ({variant, panda, selected=false, pandasS} : Props) => {
 
     let cPanda = pandas.find(p => p.name == panda);
     if (!cPanda) cPanda = pandas.find(p => p.name == "panda");
@@ -16,6 +23,7 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
     let pandaBody = cPanda?.images.pandaBody;
     let pandaFull = cPanda?.images.pandaFull;
     let background = cPanda?.background;
+    console.log(cPanda)
     
     return (
         <>
@@ -68,4 +76,14 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
     );
 }
 
+export const getServerSideProps = async (context:any) => {
+
+    const pandasS = pandas;
+
+    return {
+        props: { pandasS }
+    }
+}
 export default CharacterTile;
+
+
