@@ -1,6 +1,6 @@
-import FooterLink from "components/Footer/FooterLink";
 import { BsInstagram, BsFacebook } from "react-icons/bs"; 
 import { FaDiscord } from "react-icons/fa";
+import FooterLink from "./FooterLink";
 
 type Props = {
     className?: string,

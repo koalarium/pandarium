@@ -20,6 +20,7 @@ module.exports = {
       'green': {
         300: '#C2FA61',
         500: '#83B42A',
+        600: '#4AAE1D',
         900: '#72A11D',
       },
       'purple': {        
@@ -31,13 +32,17 @@ module.exports = {
         50: '#EEE9EF',
         10: '#F2F2F2',
       },
-      'orange': '#FAAF6E',
+      'orange': {
+        300: '#FAAF6E',
+        500: '#F7941E',
+      },
       'blue': {
         500: '#55DDFA',
         300: '#93E8FA',
       },
       'pink': {
         300: '#FF7BEA',
+        100: '#FDCEF5',
       },
       'facebook': '#3B5998',
       'instagram': '#E1306C',

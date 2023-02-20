@@ -1,6 +1,6 @@
-import Button from "components/Global/Button";
-import { SmContainer,MdContainer,LgContainer, XlContainer } from "components/Global/Containers";
 import Image from "next/image";
+import Button from "../Global/Button";
+import { XlContainer } from "../Global/Containers";
 import HeroAnimatedCircles from "./HeroAnimatedDiv";
 
 type HeroSmallProps = {

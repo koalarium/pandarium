@@ -1,4 +1,4 @@
-import { XlContainer } from "components/Global/Containers"
+import { XlContainer } from "../Global/Containers";
 
 const Article = () => {
     return (
