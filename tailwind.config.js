@@ -32,7 +32,13 @@ module.exports = {
         10: '#F2F2F2',
       },
       'orange': '#FAAF6E',
-      'blue': '#93E8FA',
+      'blue': {
+        500: '#55DDFA',
+        300: '#93E8FA',
+      },
+      'pink': {
+        300: '#FF7BEA',
+      },
       'facebook': '#3B5998',
       'instagram': '#E1306C',
       'discord': '#7289DA'
