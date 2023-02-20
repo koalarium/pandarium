@@ -1,21 +1,14 @@
 import Image from "next/image";
 import pandas from "../../jsons/pandas.json";
-
+import {useEffect} from "react";
 type Props ={
     variant: string,
     panda?: string,
     selected?: boolean,
-    pandasS?: {
-        name: string,
-        fullName: string,
-        background: string,
-        border: string,
-        images: string[],
-    }
 }
 
-const CharacterTile = ({variant, panda, selected=false, pandasS} : Props) => {
-
+const CharacterTile = ({variant, panda, selected=false} : Props) => {
+ 
     let cPanda = pandas.find(p => p.name == panda);
     if (!cPanda) cPanda = pandas.find(p => p.name == "panda");
     let border = "hover:"+cPanda?.border;
@@ -24,11 +17,12 @@ const CharacterTile = ({variant, panda, selected=false, pandasS} : Props) => {
     let pandaFull = cPanda?.images.pandaFull;
     let background = cPanda?.background;
     console.log(cPanda)
+
     
     return (
         <>
+                        {/* <div className=bg-black border-black border-orange-500 bg-orange-300 bg-green-500 border-green-600 bg-purple-300/[0.8] border-pink-100 bg-blue-500 border-blue-500  bg-orange-600 border-orange-600 border-pink-300 bg-pink-300"></div> */}
             <div>   
-                
             {/* Wariant głowa */}
 
             {variant =="0" ?
@@ -76,14 +70,6 @@ const CharacterTile = ({variant, panda, selected=false, pandasS} : Props) => {
     );
 }
 
-export const getServerSideProps = async (context:any) => {
-
-    const pandasS = pandas;
-
-    return {
-        props: { pandasS }
-    }
-}
 export default CharacterTile;
 
 
