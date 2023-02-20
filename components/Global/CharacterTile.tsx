@@ -25,8 +25,8 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
             pandaHead = "/images/pandas/lion/lion-head.png";
             pandaBody = "/images/pandas/lion/lion-body.png";
             pandaFull = "/images/pandas/lion/lion.png";
-            background = "bg-orange";
-            border = "hover:bg-orange";
+            background = "bg-orange-300";
+            border = "hover:bg-orange-500";
 
             break;
 
@@ -35,7 +35,7 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
             pandaBody = "/images/pandas/cricket/cricket-body.png";
             pandaFull = "/images/pandas/cricket/cricket.png";
             background = "bg-green-500";
-            border = "hover:bg-green-300";
+            border = "hover:bg-green-600";
 
             break;
 
@@ -44,7 +44,7 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
             pandaBody = "/images/pandas/cow/cow-body.png";
             pandaFull = "/images/pandas/cow/cow.png";
             background = "bg-purple-300/[0.8]";
-            border = "hover:bg-purple-300/[0.8]";
+            border= "hover:bg-pink-100";
 
             break;
 
@@ -90,46 +90,44 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
                 
             {/* Wariant głowa */}
 
-            {variant =="0" ? 
-                    <div className="group bg-white items-center justify-center flex relative w-60 aspect-square rounded-[40px]">
-                        <div className="overflow-hidden absolute w-60 z-30 aspect-square rounded-[40px] border-transparent border-[6px] hover:border-orange duration-300">
-                            <div className="aspect-square relative w-full z-20 ">
-                                <Image src={`${pandaHead}`} fill className="absolute" alt="panda"/>
-                            </div>
+            {variant =="0" ?
+                <div className={`cursor-pointer group w-28 md:w-36 lg:w-44 2xl:w-56 items-center justify-center flex aspect-square rounded-[calc(100%/3.2)] bg-transparent ${border} duration-300`}>
+                    <div className={`bg-white items-center justify-center flex relative w-[90%] aspect-square rounded-[30%]`}>
+                        <div className={`w-[80%] overflow-hidden group-hover:w-full scale-105 duration-300 ${background} bg-opacity-50 hover:bg-opacity-75 rounded-[30%] object-cover absolute aspect-square z-10`}>
+                            <div className="aspect-square relative w-full z-20">
+                                <Image src={`${pandaHead}`} fill className="scale-125 object-cover absolute group-hover:scale-[1.15] duration-300" alt="panda"/>
+                            </div>    
                         </div>
-
-                    <div className="w-48 overflow-hidden bg-orange/[.50] rounded-3xl object-cover absolute aspect-square z-10"></div>
+                    </div>
                 </div>
-
+        
             : null }
 
             {/* Wariant część ciała */}
 
             {variant =="1" ? 
-                <div className={`group w-64 items-center justify-center flex aspect-square rounded-[50px] bg-transparent ${border} duration-300`}>
-                    <div className={`cursor-pointer overflow-hidden bg-white items-center justify-center flex relative w-60 aspect-square rounded-[40px]`}>
-                        <div className="absolute w-60 z-30 aspect-square rounded-[40px]"></div>
-                        <div className="aspect-square relative w-full z-20 ">
+                <div className={`cursor-pointer overflow-hidden group w-28 md:w-36 lg:w-44 2xl:w-56 items-center justify-center flex aspect-square rounded-[calc(100%/3.2)] bg-transparent ${border} duration-300`}>
+                    <div className={`overflow-hidden bg-white items-center justify-center flex relative w-[90%] aspect-square rounded-[calc(100%/3.2)]`}>
+                        <div className="aspect-square relative w-full z-20">
                             <Image src={`${pandaBody}`} fill className="absolute group-hover:scale-[1.15] duration-300" alt="panda"/>
                         </div>
-                        <div className={`w-48 group-hover:w-full duration-300 ${background} opacity-50 group-hover:opacity-75 group-hover:brightness-125 rounded-3xl object-cover absolute aspect-square z-10`}></div>
+                        <div className={`w-[80%] group-hover:w-[105%] duration-300 ${background} opacity-50 group-hover:opacity-75 group-hover:brightness-125 rounded-[calc(100%/3.2)] object-cover absolute aspect-square z-10`}></div>
                     </div>
                 </div>
-                
+
             : null }
 
             {/* Wariant cała panda */}
 
             {variant =="2" ? 
-                <div className={`group w-64 items-center justify-center flex aspect-square rounded-[3.1rem] bg-transparent ${border} duration-300`}>
-                    <div className={`cursor-pointer overflow-hidden bg-white items-center justify-center flex relative w-60 aspect-square rounded-[2.5rem]`}>
-                        <div className="absolute w-60 z-30 aspect-square rounded-[2.5rem]"></div>
+                <div className={`cursor-pointer overflow-hidden group w-28 md:w-36 lg:w-44 2xl:w-56 items-center justify-center flex aspect-square rounded-[calc(100%/3.2)] bg-transparent ${border} duration-300`}>
+                    <div className={`overflow-hidden bg-white items-center justify-center flex relative w-[90%] aspect-square rounded-[calc(100%/3.2)]`}>
                         <div className="aspect-square relative w-full z-20 mb-1">
                             <Image src={`${pandaFull}`} fill className="absolute group-hover:scale-[1.15] duration-300" alt="panda"/>
                         </div>
-                        <div className={`w-48 group-hover:w-full duration-300 ${background} opacity-50 group-hover:opacity-75 group-hover:brightness-125 rounded-3xl object-cover absolute aspect-square z-10`}></div>
-                        </div>
+                        <div className={`w-[80%] group-hover:w-[105%] duration-300 ${background} opacity-50 group-hover:opacity-75 group-hover:brightness-125 rounded-[calc(100%/3.2)] object-cover absolute aspect-square z-10`}></div>
                     </div>
+                </div>
 
                 : null }
             </div>
@@ -138,13 +136,3 @@ const CharacterTile = ({variant, panda, selected=false} : Props) => {
 }
 
 export default CharacterTile;
-
-
-{/* <div id="boxpomarancz bialy aspectratio square ustawic szerokosc">
-        <div id="wfull aspectratio square z10">
-            <Image></Image>
-        </div>
-        <div id="wfull aspectratio square pasteltlo z0">
-
-        </div>
-</div> */}
