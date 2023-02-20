@@ -1,4 +1,3 @@
-import Title from 'components/Global/Title';
 import Image from 'next/image';
 import { useState } from 'react';
 
