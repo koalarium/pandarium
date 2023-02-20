@@ -1,6 +1,6 @@
-import { LgContainer } from "components/Global/Containers";
-import Title from "components/Global/Title";
 import Image from "next/image";
+import { LgContainer } from "../Global/Containers";
+import Title from "../Global/Title";
 
 const Info = () => {
     return (

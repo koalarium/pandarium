@@ -1,6 +1,5 @@
-import Button from "components/Global/Button";
-import Title from "components/Global/Title";
 import Image from "next/image";
+import Button from "../Global/Button";
 
 const CTA = () => {
     return (
