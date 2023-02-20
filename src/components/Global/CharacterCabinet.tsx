@@ -14,11 +14,11 @@ const CharacterCabinet = ({panda}: Props) => {
     return (
         <>
 
-            <div className="w-[85vw] h-[50vw] md:w-[45vw] md:h-[45vw] flex flex-col rounded-3xl bg-black/[.3] p-3">
+            <div className="w-[80vw] h-[60vw] md:w-[40vw] md:h-[40vw] lg:w-[40vw] lg:h-[40vw] flex flex-col rounded-3xl bg-black/[.3] p-3">
                 <div className="object cover relative w-full h-full bg-transparent">
                     <Image src={`${outline}`} fill className="object-contain" alt="panda"/>
                 </div>
-                <div className="font-rubikbold text-white text-center rounded-3xl p-2 w-full bg-green-90">
+                <div className="font-rubikbold text-white text-center md:text-lg md:p-3 2xl:p-4 lg:text-2xl 2xl:text-3xl rounded-3xl p-2 w-full bg-green-90">
                     <h4>{name}</h4>
                 </div>
             </div>

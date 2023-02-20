@@ -1,4 +1,3 @@
-import Button from 'components/Global/Button';
 import Head from 'next/head'
 import { useEffect, useRef, useState } from 'react'
 import { io } from "socket.io-client"
