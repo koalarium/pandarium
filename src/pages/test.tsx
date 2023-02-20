@@ -1,22 +1,6 @@
-<<<<<<< HEAD
-import { SmContainer } from "@/components/Global/Containers";
-import Us from "@/components/Us/Us";
-import Head from "next/head";
-
-=======
-import CTA from '@/components/CTA/CTA'
 import { XlContainer, SmContainer, MdContainer, LgContainer } from '@/components/Global/Containers'
-import GamesCarousel from '@/components/Global/GameCarousel'
-import { title } from 'process'
 import Us from '@/components/Us/Us'
 import Head from 'next/head'
-import Image from 'next/image'
-import Article from 'components/Article/Article'
-import Date from '@/components/Article/Date'
-import Hashtag from '@/components/Article/Hashtag'
-import ArticleTitle from '@/components/Article/ArticleTitle'
-import { Hero, HeroSmall, HeroLogin} from '@/components/Hero/Heroes'
->>>>>>> 862c7cd9b788a17a566254134877353570cb10a0
 
 export default function LandingPage() {
   return (	
