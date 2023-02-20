@@ -13,11 +13,9 @@ export default function LandingPage() {
   const currentRoom = useRef('');
   const messagesEnd: any = useRef();
 
-  let socket = io();
+  let socket = io('http://localhost:9000');
 
   const socketInitializer = async () => {
-
-    await fetch('/api/socket');
 
     socket.on('connect', () => {
       console.log('connected');

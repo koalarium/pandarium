@@ -1,6 +1,15 @@
 version: "3.8"
 
 services:
+
+  ws:
+    image: pandarium-ws
+    build: ./ws-server/.
+    ports:
+      - 9000:9000
+    volumes:
+      - ./ws-server/src:/pandarium-ws/src
+
   app:
     image: pandarium-app
     build: .
@@ -18,6 +27,7 @@ services:
       DB_USER: root
       DB_PASS: toor
       DB_NAME: pandarium
+
   db:
     image: mongo:6.0.4-jammy
     restart: always
@@ -32,3 +42,5 @@ services:
 
 volumes:
   app: 
+  db:
+  ws:
