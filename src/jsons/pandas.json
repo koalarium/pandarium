@@ -1,0 +1,80 @@
+[
+    
+        {
+            "name": "panda",
+            "fullName": "Panda Piotrek",
+            "background": "bg-black",
+            "border": "bg-black",
+            "images": {
+                "outline": "/images/pandas/panda/panda-outline.png",
+                "pandaFull": "/images/pandas/panda/panda.png",
+                "pandaBody": "/images/pandas/panda/panda-body.png",
+                "pandaHead": "/images/pandas/panda/panda-head.png"
+            }
+        },
+        {   
+            "name": "lion",
+            "fullName": "Lew Leon",
+            "background": "bg-orange-300",
+            "border": "bg-orange-500",
+            "images": {
+                "outline": "/images/pandas/lion/lion-outline.png",
+                "pandaFull": "/images/pandas/lion/lion.png",
+                "pandaBody": "/images/pandas/lion/lion-body.png",
+                "pandaHead": "/images/pandas/lion/lion-head.png"
+            }
+        },
+        {
+            "name": "cricket",
+            "fullName": "Świerszcz Michał",
+            "background": "bg-green-500",
+            "border": "bg-green-600",
+            "images": {
+                "outline": "/images/pandas/cricket/cricket-outline.png",
+                "pandaFull": "/images/pandas/cricket/cricket.png",
+                "pandaBody": "/images/pandas/cricket/cricket-body.png",
+                "pandaHead": "/images/pandas/cricket/cricket-head.png"
+            }
+         
+        },
+        {
+            "name": "cow",
+            "fullName": "Krowa Kasia",
+            "background": "bg-purple-300/[0.8]",
+            "border": "bg-pink-100",
+            "images": {
+                "outline": "/images/pandas/cow/cow-outline.png",
+                "pandaFull": "/images/pandas/cow/cow.png",
+                "pandaBody": "/images/pandas/cow/cow-body.png",
+                "pandaHead": "/images/pandas/cow/cow-head.png"
+            }
+         
+        },
+        {
+            "name": "sheep",
+            "fullName": "Owca Olga",
+            "background": "bg-blue-500",
+            "border": "bg-blue-500",
+            "images": {
+                "outline": "/images/pandas/sheep/sheep-outline.png",
+                "pandaFull": "/images/pandas/sheep/sheep.png",
+                "pandaBody": "/images/pandas/sheep/sheep-body.png",
+                "pandaHead": "/images/pandas/sheep/sheep-head.png"
+            }
+         
+        },
+        {
+            "name": "unicorn",
+            "fullName": "Jednorożec Janek",
+            "background": "bg-pink-300",
+            "border": "bg-pink-300",
+            "images": {
+                "outline": "/images/pandas/unicorn/unicorn-outline.png",
+                "pandaFull": "/images/pandas/unicorn/unicorn.png",
+                "pandaBody": "/images/pandas/unicorn/unicorn-body.png",
+                "pandaHead": "/images/pandas/unicorn/unicorn-head.png"
+            }
+         
+        }
+
+]

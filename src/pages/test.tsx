@@ -1,15 +1,7 @@
-import CTA from 'components/CTA/CTA'
-import { LgContainer, MdContainer, SmContainer } from 'components/Global/Containers'
-import GamesCarousel from 'components/Global/GameCarousel'
-import Title from 'components/Global/Title'
-import Us from 'components/Us/Us'
-import Head from 'next/head'
-import Image from 'next/image'
-import Article from 'components/Article/Article'
-import Date from 'components/Article/Date'
-import Hashtag from 'components/Article/Hashtag'
-import ArticleTitle from 'components/Article/ArticleTitle'
-import {Hero, HeroSmall, HeroLogin} from 'components/Hero/Heroes'
+import { SmContainer } from "@/components/Global/Containers";
+import Us from "@/components/Us/Us";
+import Head from "next/head";
+
 
 export default function LandingPage() {
   return (	
