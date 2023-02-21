@@ -97,7 +97,7 @@ const Us = () => {
                             ))}
                         </div>
                     </div>
-                    <Image alt="babmuses" fill className="object-cover z-0" src="/images/patterns/rain-of-bambus-pattern.svg"></Image>
+                    <Image alt="babmuses" fill className="object-left object-cover z-0 opacity-50" src="/images/patterns/big-bambos.svg"></Image>
                 </div>
             </LgContainer>
         </>
