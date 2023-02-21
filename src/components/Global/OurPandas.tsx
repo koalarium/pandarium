@@ -20,8 +20,8 @@ const OurPandas = () => {
                 
                 <Title variant="0" position="center" primary="Graj taką pandą jaką chcesz" secondary="Poznaj nasze pandy" color="white" className="md:h-[20vh] mt-12"/>
                 <div className="flex flex-col-reverse md:flex-row items-center justify-center h-fit 2xl:h-[80vh] mb-12">
-                    <div className="basis-1 md:basis-1/2 flex items-center justify-center">
-                        <div className="grid grid-cols-3 aspect-square">
+                    <div className="basis-1 md:basis-1/2 flex items-center justify-end">
+                        <div className="grid grid-cols-3 aspect-square mr-0 md:mr-5">
                             { pandas.map(p => (
                                 <CharacterTile className="p-2 lg:p-3 xl:p-4 2xl:p-5" key={ p.name } setHoveredPanda={ setHoveredPanda } setSelectedPanda={ setSelectedPanda } selected={ selectedPanda == p.name ? true : false } variant="2" panda={ p.name }/>
                             )) }
