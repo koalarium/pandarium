@@ -4,7 +4,6 @@
             "name": "panda",
             "fullName": "Panda Piotrek",
             "background": "bg-black",
-            "border": "bg-black",
             "images": {
                 "outline": "/images/pandas/panda/panda-outline.png",
                 "pandaFull": "/images/pandas/panda/panda.png",
@@ -15,8 +14,7 @@
         {   
             "name": "lion",
             "fullName": "Lew Leon",
-            "background": "bg-orange-300",
-            "border": "bg-orange-500",
+            "background": "bg-orange-500",
             "images": {
                 "outline": "/images/pandas/lion/lion-outline.png",
                 "pandaFull": "/images/pandas/lion/lion.png",
@@ -27,8 +25,7 @@
         {
             "name": "cricket",
             "fullName": "Świerszcz Michał",
-            "background": "bg-green-500",
-            "border": "bg-green-600",
+            "background": "bg-green-600",
             "images": {
                 "outline": "/images/pandas/cricket/cricket-outline.png",
                 "pandaFull": "/images/pandas/cricket/cricket.png",
@@ -41,7 +38,6 @@
             "name": "cow",
             "fullName": "Krowa Kasia",
             "background": "bg-purple-300",
-            "border": "bg-pink-100",
             "images": {
                 "outline": "/images/pandas/cow/cow-outline.png",
                 "pandaFull": "/images/pandas/cow/cow.png",
@@ -54,7 +50,6 @@
             "name": "sheep",
             "fullName": "Owca Olga",
             "background": "bg-blue-500",
-            "border": "bg-blue-500",
             "images": {
                 "outline": "/images/pandas/sheep/sheep-outline.png",
                 "pandaFull": "/images/pandas/sheep/sheep.png",
@@ -67,7 +62,6 @@
             "name": "fox",
             "fullName": "Lis Lucjan",
             "background": "bg-orange-600",
-            "border": "bg-orange-600",
             "images": {
                 "outline": "/images/pandas/fox/fox-outline.png",
                 "pandaFull": "/images/pandas/fox/fox.png",
@@ -80,7 +74,6 @@
             "name": "unicorn",
             "fullName": "Jednorożec Janek",
             "background": "bg-pink-300",
-            "border": "bg-pink-300",
             "images": {
                 "outline": "/images/pandas/unicorn/unicorn-outline.png",
                 "pandaFull": "/images/pandas/unicorn/unicorn.png",

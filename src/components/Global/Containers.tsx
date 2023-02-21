@@ -42,3 +42,11 @@ export const TitleContainer = ({ className, children }: Props) => {
     );
 }
 
+export const VerticalContainer = ({ className, children }: Props) => {
+    return (
+        <div className={`my-12 md:my-16 lg:my-20 xl:my-24 2xl:my-28 ${ className }`}>
+            { children }
+        </div>
+    );
+}
+

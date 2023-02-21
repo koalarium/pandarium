@@ -3,37 +3,31 @@ import CharacterCabinet from "./CharacterCabinet";
 import CharacterTile from "./CharacterTile";
 import Title from "./Title";
 import pandas from "../../jsons/pandas.json";
+import { SmContainer } from "./Containers";
+import Image from "next/image";
 
 const OurPandas = () => {
+
     const [selectedPanda, setSelectedPanda] = useState("panda");
-    
+    const [hoveredPanda, setHoveredPanda] = useState([false, ""]);
+
     return (
         <>
-            <div className="bg-green-500 pb-20">
-                <Title variant="0" position="center" primary="Graj taką pandą jaką chcesz" secondary="Poznaj nasze pandy" color="white" className="pt-0 pb-4"/>
-                <div className="grid grid-row-2 gap-4 justify-center">
-                    <div className="flex flex-col-reverse md:flex-row items-center">
-                        <div className="grid grid-cols-3 p-4">
-                            {pandas.map(p => (
-                                <CharacterTile key={p.name} setSelectedPanda={setSelectedPanda} selected={selectedPanda == p.name ? true : false} variant="1" panda={p.name}/>
-                            ))}
+            <div className="w-screen bg-green-900 h-fit flex flex-col content-center relative">
 
-
-                            {/* { rooms.map(r => (
-                        <div key={r.id} className={`mx-auto border-[5px] ${r.id == openRoom ? `border-green-500` : `border-purple-900`} from-purple-900 text-xl cursor-pointer to-purple-500 bg-gradient-to-tr w-5/6 aspect-square rounded-full text-white flex`} onClick={ () => changeRoomHandler(r.id) } ><span className="my-auto mx-auto font-rubikbold">{ r.id }</span></div>
-                    ))} */}
-                            
-                            {/* <CharacterTile setSelectedPanda={setSelectedPanda} selected={selectedPanda == "panda" ? true : false} variant="1" panda="sheep"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda="cow"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda="fox"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda="unicorn"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda="cricket"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda="lion"/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda=""/>
-                            <CharacterTile setSelectedPanda={setSelectedPanda} variant="1" panda=""/> */}
+                <Image className="hidden md:block md:object-center object-cover" src="/images/patterns/big-bambos.svg" fill alt="bambusy"/>
+                <Image className="block md:hidden object-cover object-right" src="/images/patterns/small-bambos.svg" fill alt="bambusy"/>
+                
+                <Title variant="0" position="center" primary="Graj taką pandą jaką chcesz" secondary="Poznaj nasze pandy" color="white" className="md:h-[20vh] mt-12"/>
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center h-fit 2xl:h-[80vh] mb-12">
+                    <div className="basis-1 md:basis-1/2 flex items-center justify-center">
+                        <div className="grid grid-cols-3 aspect-square">
+                            { pandas.map(p => (
+                                <CharacterTile className="p-2 lg:p-3 xl:p-4 2xl:p-5" key={ p.name } setHoveredPanda={ setHoveredPanda } setSelectedPanda={ setSelectedPanda } selected={ selectedPanda == p.name ? true : false } variant="2" panda={ p.name }/>
+                            )) }
                         </div>
-                        <CharacterCabinet panda={selectedPanda}/>
                     </div>
+                    <CharacterCabinet className="basis-1 md:basis-1/2 mt-5 md:mt-0" hoveredPanda={ hoveredPanda } panda={ selectedPanda }/>
                 </div>
             </div>
         </>
