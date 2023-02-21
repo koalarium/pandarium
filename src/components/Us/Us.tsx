@@ -36,7 +36,7 @@ const Us = () => {
         },
         {
             name: 'Ignacy Zieliński',
-            quote: 'Od zawsze chciałem stworzyć miejsce w Internecie, które naprawdę będzie jednym z lepszych!',
+            quote: 'Jesteśmy taką historią, jaką sobie opowiadamy.',
             photo: 'ignacy.jpg',
             roles: ['Frontend Developer'],
         },
