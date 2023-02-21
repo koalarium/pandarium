@@ -1,6 +1,7 @@
 import { XlContainer, SmContainer, MdContainer, LgContainer } from '../components/Global/Containers'
 import Us from '../components/Us/Us'
 import Head from 'next/head'
+import Info from '../components/Info/Info'
 
 export default function LandingPage() {
   return (	
@@ -11,9 +12,6 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-      <LgContainer>
-        <Us />
-      </LgContainer>
 		</>
 	)
 }
