@@ -90,7 +90,7 @@ const Us = () => {
                     
                     <div className="w-full h-full flex flex-col justify-end items-center absolute z-10 inset-x-0 lg:right-24 lg:-left-24 top-24 lg:top-36">  
                         <h5 id="name" className="text-green-500 mt-14 lg:mt-28 lg:ml-auto font-rubikbold text-lg sm:text-xl md:text-2xl xl:text-3xl bg-white/[0.9] w-fit px-5 py-2 rounded-xl ">{ currentPerson.name }</h5>
-                        <p className="text-center lg:text-right w-[30ch] lg:w-[40ch] lg:ml-auto text-white text-md md:text-xl xl:text-2xl italic my-5">{ `"`+currentPerson.quote+`"` }</p>
+                        <p className="text-center lg:text-right w-[30ch] lg:w-[40ch] 2xl:w-[45ch] lg:ml-auto text-white text-md md:text-xl xl:text-2xl italic my-5">{ `"`+currentPerson.quote+`"` }</p>
                         <div className="mx-auto lg:mr-0 lg:ml-auto text-center lg:text-right mt-3 mb-auto gap-4 w-[35ch] lg:w-[50ch] flex flex-wrap flex-row-reverse justify-center lg:justify-start">
                             { currentPerson.roles.map((cp: any, index) => (
                                 <span key={index} className="text-sm lg:text-xl text-white bg-white/[.2] rounded-xl px-5 py-2">{ cp }</span>
