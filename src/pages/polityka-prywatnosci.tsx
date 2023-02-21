@@ -1,27 +1,34 @@
 import { XlContainer } from "../components/Global/Containers";
+import { HeroSmall } from "@/components/Hero/Heroes";
+import Footer from "@/components/Footer/Footer";
 
 const PrivacyPolicy = () => {
     return (
-        <XlContainer >
-            <div className="border-purple-900 border-2 rounded-2xl h-fit w-fit mx-auto">
-                <div className="flex flex-col justify px-12">
-                    <div className="w-2/3 h-[12px] bg-purple-500 rounded-md mx-auto mt-4 mb-1 opacity-60 md:mt-4"></div>
-                    <h1 className="text-center font-rubikbold text-purple-900 uppercase mb-2 mt-2 md:text-3xl md:mb-4">Polityka prywatności</h1>  
-                </div>
-                <div className="px-4 mb-1">
-                    <h2 className="font-rubikbold mb-1 ml-2 md:text-xl">Kim jesteśmy?</h2>
-                    <p className="leading-relaxed mx-2 text-sm my-2 indent-4 text-left">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam neque deleniti repellat suscipit minus atque, ab itaque architecto ea dolores ratione quam tenetur inventore! Ipsa, iste minus eaque esse eligendi, quibusdam nam aperiam eos dolore odio similique porro veritatis nihil. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure ipsum id aspernatur illo quasi similique ratione distinctio, facere assumenda fuga eius sed mollitia vitae est?</p>
-                </div>
-                <div className="px-4 mb-1">
-                    <h3 className="font-rubikbold mb-1 ml-2 md:text-xl">Dlaczego zbieramy dane?</h3>
-                    <p className="leading-relaxed mx-2 text-sm my-2 indent-4 text-left">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque quo tempora fuga ad dignissimos quae adipisci incidunt expedita dolore necessitatibus voluptatum illo maiores provident, voluptates quos fugit explicabo, ratione ullam delectus corporis quaerat quia aperiam recusandae hic. Expedita, commodi eius? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus dolores quis adipisci quod ea aliquam maiores voluptate rerum esse assumenda quae rem, officiis accusantium labore?</p>
-                </div>
-                <div className="px-4 mb-1">
-                    <h4 className="font-rubikbold mb-1 ml-2 md:text-xl">Uprawnienia Użytkownika</h4>
-                    <p className="leading-relaxed mx-2 text-sm my-2 indent-4 text-left pb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint explicabo laboriosam veniam. Consequatur ipsa recusandae totam impedit perferendis fuga dolorum amet pariatur. Placeat veniam, nisi sunt magni minus dolorem eos reiciendis nobis quia, aperiam labore voluptatem corporis, sequi ipsa at! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime, aliquid nesciunt aliquam sapiente rem ipsam libero harum quos molestias iure distinctio sunt tenetur. Ullam, dolore.</p>
-                </div>
-            </div>    
-        </XlContainer>              
+        <>
+        <HeroSmall variant="0"/>
+        <XlContainer className="my-4 md:my-8 xl:my-12">
+            <div className="border-purple-300  border-[4px] rounded-3xl p-8 flex flex-col text-justify">
+
+                <h3 className="font-rubikbold text-2xl md:text-3xl xl:text-4xl text-purple-900 mb-10">Polityka prywatności</h3>
+
+                <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Dane osobowe</p>
+                <p className="text-base md:text-lg mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni adipisci ullam amet suscipit placeat! Et magni veritatis rem eveniet aut tempora perferendis debitis molestiae doloribus? Placeat ex perspiciatis sunt doloremque aliquam optio quae, consectetur atque. Voluptate tempore quidem laboriosam itaque deleniti atque eveniet, nostrum veritatis, exercitationem quia qui! Laborum esse quod at commodi ullam doloribus. Dolorem voluptatibus fugiat, asperiores temporibus, at laudantium assumenda vel consequuntur aliquid nam nostrum nemo? Sit eligendi qui ab veniam, blanditiis molestias, omnis quibusdam deserunt nulla ipsum soluta fuga ea laudantium quasi nostrum ullam ducimus! Debitis autem sint recusandae magnam ratione ipsum dignissimos, repellendus itaque ducimus, distinctio magni sit quibusdam laborum sequi provident aliquam iusto dolores ab id odit assumenda eius. Consequuntur, impedit obcaecati. Consectetur quis exercitationem non, expedita quibusdam alias debitis repellendus ad quidem obcaecati quos quod reprehenderit esse. Culpa ut doloribus quasi commodi sit, natus reprehenderit quas cumque doloremque a esse beatae velit corrupti dolorem vero numquam ad impedit similique facere assumenda molestiae quis. Rem quae dolores, exercitationem quo cum dolorem vel quaerat reiciendis qui quisquam velit? Iusto qui veniam incidunt esse in inventore illo, eveniet, labore quod ex obcaecati reprehenderit magni doloremque necessitatibus quas autem rerum, animi unde! Dolores neque atque quae debitis?</p>
+                
+                <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Uprawnienia użytkownika</p>
+                <p className="text-base md:text-lg mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Provident aperiam minus quia deleniti excepturi deserunt nam quod illo voluptates necessitatibus eligendi recusandae doloribus neque expedita consequatur id animi eveniet similique aliquam beatae modi maxime, et perferendis? Laboriosam vero natus, ducimus hic asperiores ex, minus tempore impedit, fuga eos odit. Eius, illum inventore molestias quis nihil veniam itaque voluptates sint vero blanditiis pariatur eveniet est cumque fuga reprehenderit iusto expedita incidunt beatae commodi temporibus explicabo! Facere vitae repellendus recusandae perspiciatis rerum sapiente ad esse aspernatur. Praesentium culpa, dicta eveniet iste animi nulla ipsam ullam deserunt enim officia dolore, veritatis harum a nisi ex consequuntur aspernatur eos rem! Ullam dolorem incidunt reiciendis minus totam! Rem neque cumque, quia consectetur aliquam quaerat possimus. Libero quam dolores consectetur sit nam consequatur deserunt aperiam vel, optio et alias incidunt ea consequuntur quidem, obcaecati magnam error eveniet dicta assumenda quas hic laborum nulla distinctio. Nihil quia at recusandae quis ut magnam animi sequi deleniti minus consequatur voluptatum architecto vitae ipsum odit, adipisci, deserunt fuga officia error ipsa soluta, voluptates unde nisi nam in. Quae qui laudantium eligendi eaque eveniet perferendis sapiente, distinctio harum, sunt autem iure? Iste, ipsum? Beatae tenetur quas facilis tempore veniam quibusdam voluptatem.</p>
+                
+                <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Lorem, ipsum dolor.</p>
+                <p className="text-base md:text-lg mb-8">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur, ad molestias totam id voluptas quam soluta dicta, quasi voluptates voluptatem consectetur inventore cum? Ratione corporis minus impedit alias, voluptas tempore commodi repellat assumenda officiis modi at rerum mollitia beatae nihil non dolor necessitatibus eligendi, accusamus ullam illum esse obcaecati rem architecto? Optio quam eaque repudiandae. Saepe, nobis officiis? Labore illum aspernatur cupiditate voluptas natus accusamus suscipit dolorem repellendus saepe aliquid odio earum tempora quasi, impedit veritatis maiores nobis. Quas cupiditate repellendus, minus numquam dignissimos quaerat perspiciatis nobis iusto quibusdam. Distinctio maxime repudiandae adipisci placeat nesciunt eaque amet? Omnis ad, molestiae repudiandae adipisci perferendis excepturi deleniti eaque sequi voluptates facere expedita doloribus repellat quis, officia officiis accusamus maiores, eveniet enim sit! Cumque modi tempora, magnam, odio ratione repellat soluta, totam iure quidem accusantium quas dolorum iusto! Itaque quae non consectetur illo unde nam, soluta deserunt incidunt quidem quo iure, dicta delectus consequatur sed est saepe repudiandae aliquam fugit repellat possimus. Tempora pariatur, dolor eveniet obcaecati aliquid earum quasi, non libero aut, nihil fuga. Aperiam veritatis numquam repellendus ratione ex sint ea, repudiandae excepturi tempore quidem sequi corporis nemo tempora perferendis obcaecati iure velit placeat expedita, consequuntur officia maxime voluptatibus. Soluta, vel.</p>
+
+                <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Lorem ipsum dolor sit.</p>
+                <p className="text-base md:text-lg mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quia sapiente blanditiis impedit veniam, non voluptatibus, aspernatur a repellendus natus commodi excepturi sint dignissimos expedita nam rem animi velit tempore. Veniam error consectetur itaque saepe doloribus hic dolorum et nihil aliquid rem. Dicta eos doloremque necessitatibus similique voluptatum voluptate nisi, sapiente quos eius, velit quo minus? Iusto magnam sint esse odio eos, alias dignissimos. Nisi ipsum placeat rem qui saepe tempore iste culpa dicta, voluptates perspiciatis distinctio amet ipsa eum cumque accusantium veritatis? Doloremque necessitatibus nihil incidunt, eum quas nemo debitis accusantium quisquam delectus autem ipsam atque est corrupti, quos eos mollitia tenetur? Voluptatum et culpa eaque autem illo recusandae, ducimus, exercitationem adipisci porro nam dignissimos similique enim, fugit ea dolor possimus delectus! Quia, sint! Rerum non quisquam officiis pariatur delectus nihil blanditiis nisi aspernatur! Ipsum beatae omnis voluptas, molestias tempora suscipit vitae eaque architecto impedit? Velit mollitia, quia eaque at perspiciatis laudantium facilis a reiciendis dicta maxime aliquam unde architecto nobis, illum dolore, molestias dolorem nesciunt magni laborum exercitationem! Cupiditate numquam iure voluptatibus reprehenderit, facilis corporis et modi earum perspiciatis, quaerat tempora distinctio! Magnam, soluta assumenda impedit deserunt facere aspernatur voluptatem pariatur magni voluptas in possimus libero, officiis accusantium necessitatibus.</p>
+
+                
+
+            </div>
+        </XlContainer>
+        <Footer />  
+    </>             
     );
 }
 
