@@ -20,7 +20,7 @@ export const MdContainer = ({ className, children }: Props) => {
 }
 export const LgContainer = ({ className, children }: Props) => {
     return (
-        <div className={`mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-28 2xl:mx-32 ${ className }`}>
+        <div className={`mx-6 sm:mx-10 md:mx-16 lg:mx-24 xl:mx-28 2xl:mx-56 ${ className }`}>
             { children }
         </div>
     );

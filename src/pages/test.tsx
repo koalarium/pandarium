@@ -1,5 +1,5 @@
-import { XlContainer, SmContainer, MdContainer, LgContainer } from '@/components/Global/Containers'
-import Us from '@/components/Us/Us'
+import { XlContainer, SmContainer, MdContainer, LgContainer } from '../components/Global/Containers'
+import Us from '../components/Us/Us'
 import Head from 'next/head'
 
 export default function LandingPage() {
@@ -11,9 +11,9 @@ export default function LandingPage() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
 			</Head>
-      <SmContainer>
+      <LgContainer>
         <Us />
-      </SmContainer>
+      </LgContainer>
 		</>
 	)
 }

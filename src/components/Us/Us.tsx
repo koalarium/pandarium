@@ -30,7 +30,7 @@ const Us = () => {
         },
         {
             name: 'Jakub Grabowski',
-            quote: 'Nie bój się śmierci, lękaj się nieprzżytego życia',
+            quote: 'Nie bój się śmierci, lękaj się nieprzeżytego życia',
             photo: 'kuba.jpg',
             roles: ['Frontend Developer'],
         },
@@ -45,10 +45,8 @@ const Us = () => {
     const [currentPerson, setCurrentPerson] = useState(people[0]);
 
     const hoverHandler = (e: any) => {
-
         let person: any = people.find(p => p.name == e.target.alt);
         setCurrentPerson(person);
-
     }
 
     const nullHandler = () => {
@@ -64,7 +62,7 @@ const Us = () => {
             <div className="animate-[rotatePictures_12s_linear_10s_infinite_reverse] animate-[moveAround_12s_linear_10s_infinite] hidden"></div>
 
             <div className="h-[600px] bg-green-900 w-full mb-[50vh] px-6 md:px-20 py-12 relative rounded-[60px] overflow-hidden">
-                <div className="border-green-500 border-[5px] rounded-full w-[40%] sm:w-[29%] aspect-square sm:-translate-x-[15%] -translate-x-[-70%] translate-y-[23%] absolute bottom-0 left-0 z-20">
+                <div className="border-green-500 border-[5px] rounded-full w-[48%] min-[430px]:w-[44%] min-[480px]:w-[38%] min-[530px]:w-[35%] sm:w-[36%] aspect-square min-[430px]:translate-x-[50%] min-[480px]:translate-x-[75%] min-[530px]:translate-x-[90%] sm:-translate-x-[15%] -translate-x-[-50%] translate-y-[23%] absolute bottom-0 left-0 z-20">
                     <div className="w-full h-full overflow-hidden rounded-full z-10 absolute">
                         <Image className="object-cover" fill src={ `/`+currentPerson.photo } alt={ currentPerson.photo }/>
                     </div>
