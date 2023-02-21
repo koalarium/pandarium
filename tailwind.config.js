@@ -7,6 +7,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
+  safelist: [
+    {
+      pattern: /bg-(green|purple|orange|black|white|blue|pink)-(10|50|100|300|400|500|600|900|950)/,
+      variants: ['hover', 'group-hover']
+    }
+  ],
   plugins: [],
   images: {
     formats: ['image/webp'],
