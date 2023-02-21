@@ -6,41 +6,42 @@ const Info = () => {
     return (
         <>
             <LgContainer >
-                <TitleContainer className="mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
-                    <Title primary="Czym jest pandarium?" secondary="Poznaj nas lepiej" position="left" color="purple" />
-                </TitleContainer>
-                <div className="flex w-full h-full gap-4 flex-col">
-                    <div className="md:flex md:flex-row gap-4">
-                        <div className="bg-purple-50 rounded-3xl p-4 flex flex-col justify-evenly">
-                            <p className="leading-relaxed px-4">
-                            Znajdziesz tutaj wszystkie popularne gry
-                            umiejscowione na jednej platformie do
-                            wspólnej gry z Twoimi znajomymi.
-                            </p>
-                            <p className="leading-relaxed px-4">
-                            Wszystko zostało stworzone z myślą o
-                            ludziach, którzy uwielbiają minigierki lub
-                            chcą po prostu zagrać w planszówki online.
-                            </p>
+
+                <Title primary="Czym jest pandarium?" secondary="Poznaj nas lepiej" position="left" color="purple" />
+
+                <div className="flex flex-col gap-4 text-justify">
+
+                    <div className="flex flex-col xl:flex-row gap-4">
+
+                        <div className="basis-1/3 flex-col items-center justify-center bg-purple-50 p-10 rounded-3xl">
+                            <h6 className="text-base md:text-lg xl:text-xl mb-8">Pandarium jest to zbiór najpopularniejszych przeglądarkowych gier zebranych w jednym miejscu, abyś razem ze znajomymi mógł się cieszyć rozgrywką a nie jej poszukiwaniem!</h6>
+                            <h6 className="text-base md:text-lg xl:text-xl">Połącz się z przyjaciółmi na Discordzie i razem odkrywajcie nasz Pandariowy świat. </h6>
                         </div>
-                        <div className="w-full h-60 mt-4 md:mt-0 rounded-3xl relative"><Image fill className="absolute" src="/images/pandas/panda/panda_inzynier.png" alt="panda-inzynier" /></div>                
-                    </div>
-                    <div className="flex-col-reverse flex md:flex md:flex-row gap-4 absolute-cover">
-                        <div className="w-full md:h-60 rounded-3xl relative"><Image fill className="" src="/images/pandas/panda/panda_inzynier.png" alt="panda-inzynier" /></div>
-                        <div className="bg-purple-50 rounded-3xl p-4 flex justify-evenly flex-col">
-                            <p className="leading-relaxed mb-2 px-4">
-                            Znajdziesz tutaj wszystkie popularne gry
-                            umiejscowione na jednej platformie do
-                            wspólnej gry z Twoimi znajomymi.
-                            </p>
-                            <p className="leading-relaxed px-4">
-                            Wszystko zostało stworzone z myślą o
-                            ludziach, którzy uwielbiają minigierki lub
-                            chcą po prostu zagrać w planszówki online.
-                            </p>
+                        <div className="basis-2/3 hidden xl:block">
+                            <div className="w-full h-full md:mt-0 rounded-3xl relative overflow-hidden bg-purple-500">
+                                <Image fill className="absolute object-cover opacity-40" src="/images/photos/gaming-chair.jpg" alt="panda-inzynier" />
+                            </div>    
                         </div>
+
                     </div>
+
+                    <div className="flex flex-col xl:flex-row gap-4">
+
+                        <div className="basis-3/5">
+                            <div className="w-full h-64 xl:h-full md:mt-0 rounded-3xl relative overflow-hidden bg-purple-500">
+                                <Image fill className="absolute object-cover opacity-40" src="/images/photos/friends.jpg" alt="panda-inzynier" />
+                            </div>    
+                        </div>
+                        <div className="basis-2/5 flex-col items-center justify-center bg-purple-50 p-10 rounded-3xl">
+                            <h6 className="text-base md:text-lg xl:text-xl mb-8">Gry zostały stworzone z myślą o ludziach, którzy chcą spędzić czas z ich ulubioną osobą nawet oddaloną o setki kilometrów!</h6>
+                            <h6 className="text-base md:text-lg xl:text-xl">Cały czas sukcesywnie ulepszamy naszą stronę, abyś mógł doświadczyć najlepszych wrażeń ;)</h6>
+                        </div>
+
+                    </div>
+
                 </div>
+
+                
             </LgContainer>
         </>
     );
