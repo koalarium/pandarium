@@ -20,7 +20,7 @@ export const Hero = () => {
     return (
          <>
             <div className='h-[100vh] text-white bg-purple-900 m-0 p-0 overflow-hidden relative select-none'>
-                <div className="text-center w-screen flex flex-col md:flex-row top-0 h-4/5 justify-center items-center relative 2xl:px-48">
+                <div className="text-center w-screen flex flex-col md:flex-row top-0 h-screen justify-center items-center relative 2xl:px-48">
                     <div className="z-20 w-full flex flex-col justify-center items-center md:text-left md:w-1/2">
                         <div>
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-rubikbold">Pandarium</h1>
@@ -44,7 +44,6 @@ export const Hero = () => {
                     </div>
                     <HeroAnimatedCircles />
                 </div>
-                <div className="bottom-0 z-50 w-full h-1/6 bg-white absolute rounded-t-3xl md:rounded-t-[60px] lg:rounded-t-[70px]"></div>
             </div>
         </>
     );

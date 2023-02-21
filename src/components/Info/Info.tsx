@@ -1,12 +1,14 @@
 import Image from "next/image";
-import { LgContainer } from "../Global/Containers";
+import { LgContainer, TitleContainer } from "../Global/Containers";
 import Title from "../Global/Title";
 
 const Info = () => {
     return (
         <>
             <LgContainer >
-                <Title primary="Czym jest pandarium?" secondary="Poznaj nas lepiej" position="left" color="purple" />
+                <TitleContainer className="mt-0 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
+                    <Title primary="Czym jest pandarium?" secondary="Poznaj nas lepiej" position="left" color="purple" />
+                </TitleContainer>
                 <div className="flex w-full h-full gap-4 flex-col">
                     <div className="md:flex md:flex-row gap-4">
                         <div className="bg-purple-50 rounded-3xl p-4 flex flex-col justify-evenly">
