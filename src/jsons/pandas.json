@@ -40,7 +40,7 @@
         {
             "name": "cow",
             "fullName": "Krowa Kasia",
-            "background": "bg-purple-300/[0.8]",
+            "background": "bg-purple-300",
             "border": "bg-pink-100",
             "images": {
                 "outline": "/images/pandas/cow/cow-outline.png",

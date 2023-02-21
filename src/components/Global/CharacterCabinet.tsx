@@ -1,6 +1,7 @@
 import Image from "next/image";
 import pandas from "../../jsons/pandas.json";
 
+
 type Props = {
     panda?: string;
 }
@@ -13,7 +14,6 @@ const CharacterCabinet = ({panda}: Props) => {
 
     return (
         <>
-
             <div className="w-[80vw] h-[60vw] md:w-[40vw] md:h-[40vw] lg:w-[40vw] lg:h-[40vw] flex flex-col rounded-3xl bg-black/[.3] p-3">
                 <div className="object cover relative w-full h-full bg-transparent">
                     <Image src={`${outline}`} fill className="object-contain" alt="panda"/>
