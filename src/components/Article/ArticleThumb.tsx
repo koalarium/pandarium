@@ -4,9 +4,9 @@ type Props={
     date:string,    
 }
 
-const ArticleThump = ({primary, secondary, date}: Props) => {
+const ArticleThumb = ({primary, secondary, date}: Props) => {
     return (
-        <div className="bg-purple-10 aspect-[4/3] w-full rounded-3xl flex flex-col">
+        <div className="bg-purple-10 aspect-[4/3] w-[100%] sm:w-[70%] md:w-[50%] lg:w-[35%] 2xl:w-[30%] rounded-3xl flex flex-col grow-0 shrink-0">
             <div className="px-6 py-7">
                 <div className="bg-purple-50 w-full aspect-[3/2] mx-auto rounded-[30px] relative overflow-hidden">
                     <p className="absolute bg-purple-900 w-1/3 bottom-0 right-0 font-rubikbold text-white text-xs py-2 text-center rounded-md">{date}</p>
@@ -20,4 +20,4 @@ const ArticleThump = ({primary, secondary, date}: Props) => {
     );
 }
 
-export default ArticleThump;
+export default ArticleThumb;

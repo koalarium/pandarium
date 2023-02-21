@@ -5,9 +5,10 @@ import Footer from '../components/Footer/Footer';
 import Us from '../components/Us/Us';
 import GamesCarousel from '../components/Global/GameCarousel';
 import Title from '../components/Global/Title';
-import { TitleContainer } from '../components/Global/Containers';
+import { LgContainer, TitleContainer } from '../components/Global/Containers';
 import OurPandas from '../components/Global/OurPandas';
 import { VerticalContainer } from '../components/Global/Containers';
+import ArticleThumb from '../components/Article/ArticleThumb';
 
 export default function LandingPage() {
 
@@ -35,6 +36,24 @@ export default function LandingPage() {
             <GamesCarousel />
 
             <Us />
+
+
+
+            <LgContainer>
+
+                <TitleContainer>
+                    <Title primary="Poznaj nasze wszystkie gry" secondary="Zobacz jak wiele" color="purple" position="left"/>
+                </TitleContainer>
+
+                <div className="flex flex-row gap-4 overflow-x-scroll scrollbar-hidden">
+                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                </div>
+
+            </LgContainer>
+            
 
             <Footer />
 

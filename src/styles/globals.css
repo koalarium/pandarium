@@ -41,6 +41,15 @@ body::-webkit-scrollbar-thumb {
     }
 }
 
+.scrollbar-hidden::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar-hidden {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
 @font-face {
     font-family: "Rubik";
     src: url("../../public/fonts/Rubik/Rubik-Regular.ttf");
