@@ -1,4 +1,4 @@
-import { XlContainer } from "@/components/Global/Containers";
+import { XlContainer } from "../components/Global/Containers";
 
 const PrivacyPolicy = () => {
     return (

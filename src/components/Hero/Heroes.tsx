@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Button from "../Global/Button";
-import { XlContainer } from "../Global/Containers";
+import { LgContainer, XlContainer } from "../Global/Containers";
 import HeroAnimatedCircles from "./HeroAnimatedDiv";
 
 type HeroSmallProps = {
@@ -50,6 +50,7 @@ export const Hero = () => {
 }
 
 export const HeroSmall = ({ className, primary, secondary, variant }: HeroSmallProps) => {
+    
     let pandaRotate = ''
     let pandaHeroAnimation = ''
     if(variant==='0'){
@@ -63,11 +64,12 @@ export const HeroSmall = ({ className, primary, secondary, variant }: HeroSmallP
     return (
         <>
         <div className={`bg-purple-900 w-full h-32 lg:h-48 relative overflow-hidden select-none text-white ${className}`}>
-            <XlContainer className="flex justify-between sm:justify-around items-center h-4/5">
+
+            <LgContainer className="flex justify-between items-center h-3/4">
                 { (!primary && !secondary) ? <></> :
                 <>
                     <div className="z-50">
-                        <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-rubikbold">{primary}</h2>
+                        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-rubikbold">{primary}</h2>
                         <p className="opacity-60 text-sm sm:text-base md:text-lg lg:text-xl">{secondary}</p>
                     </div>
                     <div className="z-10 h-28 min-[430px]:h-48 min-[430px]:w-48 sm:h-56 md:h-62 lg:h-80 w-28 sm:w-56 md:w-62 lg:w-80 absolute max-[429px]:-right-8 max-[429px]:-top-8 min-[430px]:relative">
@@ -77,10 +79,11 @@ export const HeroSmall = ({ className, primary, secondary, variant }: HeroSmallP
                     </div>
                 </>
                 }
-            </XlContainer>
-            
-            <div className="bg-white w-full h-1/5 absolute bottom-0 rounded-t-3xl lg:rounded-t-[500px] z-50"></div>
+            </LgContainer>
+
+            <div className="bg-white w-full h-1/4 absolute bottom-0 rounded-t-3xl lg:rounded-t-[500px] z-50"></div>
             <HeroAnimatedCircles />
+
         </div>
         </>
     );
