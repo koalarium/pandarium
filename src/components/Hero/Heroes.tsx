@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Button from "../Global/Button";
 import { LgContainer, XlContainer } from "../Global/Containers";
 import HeroAnimatedCircles from "./HeroAnimatedDiv";
@@ -49,7 +50,7 @@ export const Hero = () => {
     );
 }
 
-export const HeroSmall = ({ className, primary, secondary, variant }: HeroSmallProps) => {
+export const HeroSmall = ({ className, primary="Pandarium", secondary, variant }: HeroSmallProps) => {
     
     let pandaRotate = ''
     let pandaHeroAnimation = ''

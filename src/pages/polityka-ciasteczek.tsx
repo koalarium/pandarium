@@ -2,10 +2,10 @@ import { HeroSmall } from "../components/Hero/Heroes";
 import { XlContainer } from "../components/Global/Containers";
 import Footer from "../components/Footer/Footer";
 
-const cookies = () => {
+const Cookie = () => {
     return (
         <>
-            <HeroSmall primary="Pandarium" secondary="" variant="0" />
+            <HeroSmall variant="0"/>
             <XlContainer className="my-4 md:my-8 xl:my-12">
                 <div className="border-purple-300  border-[4px] rounded-3xl p-8 flex flex-col text-justify">
 
@@ -103,4 +103,4 @@ const cookies = () => {
         </>            
     );
 }
-export default cookies;  
+export default Cookie;  
