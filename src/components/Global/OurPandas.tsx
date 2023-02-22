@@ -3,7 +3,7 @@ import CharacterCabinet from "./CharacterCabinet";
 import CharacterTile from "./CharacterTile";
 import Title from "./Title";
 import pandas from "../../jsons/pandas.json";
-import { SmContainer } from "./Containers";
+import { LgContainer, SmContainer } from "./Containers";
 import Image from "next/image";
 
 const OurPandas = () => {
@@ -13,13 +13,13 @@ const OurPandas = () => {
 
     return (
         <>
-            <div className="w-full bg-green-900 h-fit flex flex-col content-center relative">
+            <div className="w-full bg-green-900/[.95] h-fit flex flex-col content-center relative overflow-hidden">
 
                 <Image className="hidden md:block md:object-center object-cover" src="/images/patterns/big-bambos.svg" fill alt="bambusy"/>
                 <Image className="block md:hidden object-cover object-right" src="/images/patterns/small-bambos.svg" fill alt="bambusy"/>
                 
-                <Title variant="0" position="center" primary="Graj taką pandą jaką chcesz" secondary="Poznaj nasze pandy" color="white" className="md:h-[20vh] mt-12"/>
-                <div className="flex flex-col-reverse md:flex-row items-center justify-center h-fit 2xl:h-[80vh] mb-12">
+                <Title variant="0" position="center" primary="Graj taką pandą jaką chcesz" secondary="Poznaj nasze pandy" color="white" className="md:h-[15vh] mt-12 mb-4"/>
+                <div className="flex flex-col-reverse md:flex-row items-center justify-center h-fit 2xl:h-[70vh] mb-12">
                     <div className="basis-1 md:basis-1/2 flex items-center justify-end">
                         <div className="grid grid-cols-3 aspect-square mr-0 md:mr-5">
                             { pandas.map(p => (

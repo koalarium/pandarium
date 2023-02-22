@@ -5,10 +5,10 @@ import Footer from '../components/Footer/Footer';
 import Us from '../components/Us/Us';
 import GamesCarousel from '../components/Global/GameCarousel';
 import Title from '../components/Global/Title';
-import { LgContainer, TitleContainer } from '../components/Global/Containers';
+import { LgContainer, TitleContainer, XlContainer } from '../components/Global/Containers';
 import OurPandas from '../components/Global/OurPandas';
-import { VerticalContainer } from '../components/Global/Containers';
 import ArticleThumb from '../components/Article/ArticleThumb';
+import Section from '@/components/Global/Section';
 
 export default function LandingPage() {
 
@@ -22,38 +22,41 @@ export default function LandingPage() {
             </Head>
 
             <Hero />
+            
+            <Section className='pt-14 sm:pt-20 md:pt-20 lg:pt-36 2xl:pt-40'>
+                <Info />
+            </Section>
 
-            <Info />
-
-            <VerticalContainer>
-                <OurPandas />
-            </VerticalContainer>
-
-            <TitleContainer>
-                <Title primary="Poznaj nasze wszystkie gry" secondary="Zobacz jak wiele" color="purple" position="center" variant="1"/>
-            </TitleContainer>
-
-            <GamesCarousel />
-
-            <Us />
-
-            <LgContainer>
-
+            <Section>
                 <TitleContainer>
-                    <Title primary="Poznaj nasze wszystkie gry" secondary="Zobacz jak wiele" color="purple" position="left"/>
+                    <Title primary="Poznaj nasze wszystkie gry" secondary="Zobacz jak wiele" color="purple" position="center" variant="1"/>
                 </TitleContainer>
+                <GamesCarousel />
+            </Section>
 
-                <div className="overflow-x-scroll scrollbar-hidden">
-                    <div className="flex flex-row gap-4 animate-slideLeft">
-                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+            <Section>
+                <OurPandas />
+            </Section>
+    
+            <Section>
+                <Us />
+            </Section>
+            
+            <Section>
+                <LgContainer>
+                    <TitleContainer>
+                        <Title primary="Co w bambusie piszczy?" secondary="Badź zawsze na bieżąco" color="purple" position="left"/>
+                    </TitleContainer>
+                    <div className="overflow-x-scroll scrollbar-hidden">
+                        <div className="flex flex-row gap-4">
+                            <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                            <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                            <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                            <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                        </div>
                     </div>
-                </div>
-                
-
-            </LgContainer>
+                </LgContainer>
+            </Section>
             
             <Footer />
 

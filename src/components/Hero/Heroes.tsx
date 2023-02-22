@@ -49,7 +49,7 @@ export const Hero = () => {
     );
 }
 
-export const HeroSmall = ({ className, primary="Pandarium", secondary, variant }: HeroSmallProps) => {
+export const HeroSmall = ({ className, primary="Pandarium", secondary, variant="0" }: HeroSmallProps) => {
     
     let pandaRotate = ''
     let pandaHeroAnimation = ''
