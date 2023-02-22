@@ -26,6 +26,10 @@ export default function LandingPage() {
             <Section className='pt-14 sm:pt-20 md:pt-20 lg:pt-36 2xl:pt-40'>
                 <Info />
             </Section>
+                
+            <Section>
+                <Us />
+            </Section>
 
             <Section>
                 <TitleContainer>
@@ -36,10 +40,6 @@ export default function LandingPage() {
 
             <Section>
                 <OurPandas />
-            </Section>
-    
-            <Section>
-                <Us />
             </Section>
             
             <Section>
