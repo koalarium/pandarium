@@ -13,7 +13,7 @@ const OurPandas = () => {
 
     return (
         <>
-            <div className="w-screen bg-green-900 h-fit flex flex-col content-center relative">
+            <div className="w-full bg-green-900 h-fit flex flex-col content-center relative">
 
                 <Image className="hidden md:block md:object-center object-cover" src="/images/patterns/big-bambos.svg" fill alt="bambusy"/>
                 <Image className="block md:hidden object-cover object-right" src="/images/patterns/small-bambos.svg" fill alt="bambusy"/>
