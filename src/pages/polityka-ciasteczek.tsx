@@ -8,7 +8,7 @@ const Cookie = () => {
         <>
             <HeroSmall variant="0"/>
             <XlContainer className="my-4 md:my-8 xl:my-12">
-                <div className="border-purple-300  border-[4px] rounded-3xl p-8 flex flex-col text-justify">
+                <div className="border-purple-300  border-[4px] rounded-3xl p-8 flex flex-col">
 
                     <h3 className="font-rubikbold text-2xl md:text-3xl xl:text-4xl text-purple-900 mb-10">Polityka ciasteczek</h3>
 
