@@ -3,7 +3,7 @@
         {
             "name": "panda",
             "fullName": "Panda Piotrek",
-            "background": "bg-black",
+            "background": "bg-black-100",
             "images": {
                 "outline": "/images/pandas/panda/panda-outline.png",
                 "pandaFull": "/images/pandas/panda/panda.png",
