@@ -1,6 +1,7 @@
 import { HeroSmall } from "../components/Hero/Heroes";
 import { XlContainer } from "../components/Global/Containers";
 import Footer from "../components/Footer/Footer";
+import Link from "next/link";
 
 const Cookie = () => {
     return (
@@ -18,7 +19,7 @@ const Cookie = () => {
                     <p className="text-base md:text-lg mb-8">Używamy plików cookie z różnych powodów wyszczególnionych poniżej. Niestety w większości przypadków nie ma standardowych branżowych opcji wyłączania plików cookie bez całkowitego wyłączania funkcjonalności i funkcji dodawanych do tej witryny. Zaleca się pozostawienie wszystkich plików cookie, jeśli nie jesteś pewien, czy ich potrzebujesz, czy nie w przypadku, gdy są one wykorzystywane do świadczenia usługi, z której korzystasz.</p>
                    
                     <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Wyłączenie ciasteczek</p>
-                    <p className="text-base md:text-lg mb-8">Możesz zapobiec ustawianiu plików cookie, dostosowując ustawienia w swojej przeglądarce (zobacz Pomoc przeglądarki, aby dowiedzieć się, jak to zrobić). Pamiętaj, że wyłączenie plików cookie wpłynie na funkcjonalność tej i wielu innych witryn, które odwiedzasz. Wyłączenie plików cookie zwykle skutkuje również wyłączeniem niektórych funkcji i funkcji tej witryny. Dlatego zaleca się, aby nie wyłączać plików cookie. Niniejsza Polityka plików cookie została stworzona przy pomocy firmy <a className="text-purple-300" href="https://www.cookiepolicygenerator.com/cookie-policy-generator/">Cookies Policy Generator</a>.</p>
+                    <p className="text-base md:text-lg mb-8">Możesz zapobiec ustawianiu plików cookie, dostosowując ustawienia w swojej przeglądarce (zobacz Pomoc przeglądarki, aby dowiedzieć się, jak to zrobić). Pamiętaj, że wyłączenie plików cookie wpłynie na funkcjonalność tej i wielu innych witryn, które odwiedzasz. Wyłączenie plików cookie zwykle skutkuje również wyłączeniem niektórych funkcji i funkcji tej witryny. Dlatego zaleca się, aby nie wyłączać plików cookie. Niniejsza Polityka plików cookie została stworzona przy pomocy firmy <Link className="text-purple-300" href="https://www.cookiepolicygenerator.com/cookie-policy-generator/" target='_blank' >Cookies Policy Generator</Link>.</p>
                     
                     <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Ciasteczka, z których korzystamy</p>
 
@@ -90,7 +91,7 @@ const Cookie = () => {
 
                     <p className="text-xl md:text-2xl  font-rubikbold text-purple-500 mb-4">Więcej informacji</p>
                     <p className="text-base md:text-lg mb-8">Mamy nadzieję, że to wyjaśniło Ci sprawę i jak wspomniano wcześniej, jeśli jest coś, czego nie jesteś pewien, czy potrzebujesz, czy nie, zwykle bezpieczniej jest pozostawić włączoną obsługę plików cookie na wypadek, gdyby wchodziła w interakcję z jedną z funkcji używanych w naszej witrynie.</p>
-                    <p className="text-base md:text-lg mb-8">Aby uzyskać więcej ogólnych informacji na temat plików cookie, przeczytaj <a className="text-purple-300" href="https://www.cookiepolicygenerator.com/sample-cookies-policy/">artykuł o polityce plików Cookie</a>.</p>
+                    <p className="text-base md:text-lg mb-8">Aby uzyskać więcej ogólnych informacji na temat plików cookie, przeczytaj <Link className="text-purple-300" href="https://www.cookiepolicygenerator.com/sample-cookies-policy/" target='_blank'>artykuł o polityce plików Cookie</Link>.</p>
                     <p className="text-base md:text-lg mb-8">Jeśli jednak nadal szukasz więcej informacji, możesz skontaktować się z nami za pomocą jednej z naszych preferowanych metod kontaktu:</p>
 
                     <ul>

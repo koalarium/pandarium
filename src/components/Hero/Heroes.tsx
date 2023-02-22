@@ -31,13 +31,13 @@ export const Hero = () => {
                         </div>
                     </div>
                     
-                    <div className="absolute -bottom-20 md:bottom-0 z-10 -right-16 md:right-0 min-[600px]:h-64 h-52 w-80 md:relative md:flex md:flex-col md:w-1/2 md:h-full md:justify-center md:items-center md:my-auto">
+                    <div className="absolute -bottom-20 md:bottom-0 z-10 -right-16 md:right-0 min-[600px]:h-64 h-48 w-64 min-[350px]:h-52 min-[350px]:h-w-80 md:relative md:flex md:flex-col md:w-1/2 md:h-full md:justify-center md:items-center md:my-auto">
                         <div className="h-full w-full md:w-[300px] lg:w-[450px] xl:w-[550px] relative">
                             <Image fill className="object-contain z-10 md:-rotate-[20deg] -translate-y-5 animate-pandaHero absolute" src="/images/pandas/lion/lion-outline.png" alt="Cute panda dressed in lion costume"/>
                         </div>
                     </div>
 
-                    <div className="absolute -top-8 z-10 -left-24 min-[600px]:h-64 min-[600px]: h-52 w-80 md:hidden">
+                    <div className="absolute -top-8 z-10 -left-24 min-[600px]:h-64 min-[600px]: h-48 w-64 min-[350px]:h-52 min-[350px]:h-w-80 md:hidden">
                         <div className="h-full w-full relative">
                             <Image fill className="object-contain z-10 rotate-[150deg] animate-pandaHeroCow absolute" src="/images/pandas/cow/cow-outline.png" alt="Cute panda dressed in cow costume"/>
                         </div>
@@ -69,7 +69,7 @@ export const HeroSmall = ({ className, primary="Pandarium", secondary, variant }
                 { (!primary && !secondary) ? <></> :
                 <>
                     <div className="z-50">
-                        <h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-rubikbold">{primary}</h2>
+                        <Link href='/'><h2 className="text-2xl sm:text-3xl md:text-4xl xl:text-5xl font-rubikbold">{primary}</h2></Link>
                         <p className="opacity-60 text-sm sm:text-base md:text-lg lg:text-xl">{secondary}</p>
                     </div>
                     <div className="z-10 h-28 min-[430px]:h-48 min-[430px]:w-48 sm:h-56 md:h-62 lg:h-80 w-28 sm:w-56 md:w-62 lg:w-80 absolute max-[429px]:-right-8 max-[429px]:-top-8 min-[430px]:relative">
@@ -95,7 +95,7 @@ export const HeroLogin = ({ className, userName }: HeroLoginProps) => {
         <>
         <div className={`bg-purple-900 w-full h-20 lg:h-24 relative overflow-hidden text-white ${className}`}>
             <XlContainer className="flex justify-between items-center h-4/5">
-                <h2 className="text-lg sm:text-xl md:text-2xl font-rubikbold z-50 cursor-pointer">Pandarium</h2>
+                <Link href='/'><h2 className="text-lg sm:text-xl md:text-2xl font-rubikbold z-50 cursor-pointer">Pandarium</h2></Link>
                 
                 <div className="h-full flex justify-between items-center gap-3 z-50">
                     <p className="opacity-80 text-sm sm:text-base">{name}</p>
