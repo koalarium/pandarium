@@ -55,7 +55,7 @@ const Article = () => {
                     imperdiet, ligula felis bibendum massa, id eleifend velit nibh ut magna. Donec vel</p>
                 </div>
             </div>
-            </XlContainer>
+        </XlContainer>
     );
 }
 

@@ -37,24 +37,24 @@ export default function LandingPage() {
 
             <Us />
 
-
-
             <LgContainer>
 
                 <TitleContainer>
                     <Title primary="Poznaj nasze wszystkie gry" secondary="Zobacz jak wiele" color="purple" position="left"/>
                 </TitleContainer>
 
-                <div className="flex flex-row gap-4 overflow-x-scroll scrollbar-hidden">
-                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
-                    <ArticleThumb primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                <div className="overflow-x-scroll scrollbar-hidden">
+                    <div className="flex flex-row gap-4 animate-slideLeft">
+                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                        <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
+                    </div>
                 </div>
+                
 
             </LgContainer>
             
-
             <Footer />
 
         </>
