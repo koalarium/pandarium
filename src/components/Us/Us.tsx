@@ -19,7 +19,7 @@ const Us = () => {
         },
         {
             name: 'Michał Świercz',
-            quote: 'Od zawsze chciałem stworzyć miejsce w Internecie, które naprawdę będzie jednym z lepszych!',
+            quote: 'Mamy tu trzy sposoby działania: właściwy sposób, zły sposób i sposób, w jaki ja to robię',
             photo: 'michal.jpg',
             roles: ['Frontend Developer', 'Graphic Designer'],
         },
