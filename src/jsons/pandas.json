@@ -71,6 +71,42 @@
          
         },
         {
+            "name": "bear",
+            "fullName": "Niedźwiedź Natan",
+            "background": "bg-brown-500",
+            "images": {
+                "outline": "/images/pandas/bear/bear-outline.png",
+                "pandaFull": "/images/pandas/bear/bear.png",
+                "pandaBody": "/images/pandas/bear/bear-body.png",
+                "pandaHead": "/images/pandas/bear/bear-head.png"
+            }
+         
+        },
+        {
+            "name": "frog",
+            "fullName": "Żaba Żaneta",
+            "background": "bg-green-50",
+            "images": {
+                "outline": "/images/pandas/frog/frog-outline.png",
+                "pandaFull": "/images/pandas/frog/frog.png",
+                "pandaBody": "/images/pandas/frog/frog-body.png",
+                "pandaHead": "/images/pandas/frog/frog-head.png"
+            }
+         
+        },
+        {
+            "name": "elephant",
+            "fullName": "Słoń Staś",
+            "background": "bg-gray-100",
+            "images": {
+                "outline": "/images/pandas/elephant/elephant-outline.png",
+                "pandaFull": "/images/pandas/elephant/elephant.png",
+                "pandaBody": "/images/pandas/elephant/elephant-body.png",
+                "pandaHead": "/images/pandas/elephant/elephant-head.png"
+            }
+         
+        },
+        {
             "name": "unicorn",
             "fullName": "Jednorożec Janek",
             "background": "bg-pink-300",

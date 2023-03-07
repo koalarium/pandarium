@@ -25,12 +25,16 @@ module.exports = {
       'black': {
         100: '#000000',
       },
+      'gray': {
+        100: '#A6A6A6',
+      },
       'green': {
         300: '#C2FA61',
         500: '#83B42A',
         600: '#4AAE1D',
         900: '#72A11D',
         90:  '#446607',
+        50:  '#A5CA45',
       },
       'purple': {        
         950: '#22082B',
@@ -53,6 +57,9 @@ module.exports = {
       'pink': {
         300: '#FF7BEA',
         100: '#FDCEF5',
+      },
+      'brown': {
+        500: '#9B6730',
       },
       'facebook': '#3B5998',
       'instagram': '#E1306C',
