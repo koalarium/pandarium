@@ -8,10 +8,13 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import CirclesLayout from "./layouts/CirclesLayout";
 
-const Logowanie = () => {
+const Rejestracja = () => {
 
         const [login, setLogin] = useState("");
         const [password, setPassword] = useState("");
+        const [repeatPassword, setRepeatPassword] = useState("");
+        const [age, setAge] = useState("");
+        const [acceptTerms, setAcceptTerms] = useState(false);
 
         useEffect(() => {
             
@@ -31,21 +34,21 @@ const Logowanie = () => {
                 <div className="gap-2 md:gap-4">
                     <div className="mb-6 md:mb-12">
                         <h1 className="font-rubikbold uppercase text-base sm:text-xl md:text-2xl xl:text-3xl text-center text-white/[0.7]">Pandarium</h1>
-                        <h2 className="font-rubikbold uppercase text-xl sm:text-3xl md:text-4xl xl:text-5xl text-center">Logowanie</h2>
+                        <h2 className="font-rubikbold uppercase text-xl sm:text-3xl md:text-4xl xl:text-5xl text-center">Rejestacja</h2>
                     </div>
                     <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-3">
-                        <Input onChange={ (e: any) => { setLogin(e.target.value) } } value={ login } placeholder="E-mail" type="text"/> 
+                        <Input onChange={ (e: any) => { setLogin(e.target.value) } } value={ login } placeholder="E-mail" type="email"/>
+                        <Input onChange={ (e: any) => { setAge(e.target.value) } } value={ age } placeholder="Wiek" type="number"/>
                         <Input onChange={ (e: any) => { setPassword(e.target.value) } } value={ password } placeholder="Hasło" type="password"/>
-                        <Button className="mx-auto mt-6 md:mt-12">Zaloguj się</Button>
+                        <Input onChange={ (e: any) => { setRepeatPassword(e.target.value) } } value={ repeatPassword } placeholder="Potwierdź hasło" type="password"/>
+                        <Input onChange={ (e: any) => { setAcceptTerms(e.target.value) } } value={ acceptTerms } label="[WARUNKI]" type="checkbox" className="mr-auto"/>
+                        <Button className="mx-auto mt-6 md:mt-12">Zarejestruj się</Button>
                     </div>
                 </div>
                 
-                <p className="mt-20 text-base md:text-lg mr-0 md:mr-5 text-center md:text-right">Nie masz konta? <Link href="#" legacyBehavior><a className="font-rubikmedium text-purple-300/[0.8] hover:text-purple-100 duration-300 ml-1">Zarejestruj się.</a></Link></p>
-                <p className="mt-1 text-base md:text-lg mr-0 md:mr-5 text-center md:text-right">Zapomniałeś hasła? <Link href="#" legacyBehavior><a className="font-rubikmedium text-purple-300/[0.8] hover:text-purple-100 duration-300 ml-1">Przypomnij hasło.</a></Link></p>
-
             </CirclesLayout>
         </>
     );
 }
 
-export default Logowanie;
+export default Rejestracja;
