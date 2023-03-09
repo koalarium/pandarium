@@ -117,6 +117,66 @@
                 "pandaHead": "/images/pandas/unicorn/unicorn-head.png"
             }
          
+        },
+        {
+            "name": "monkey",
+            "fullName": "Małpa Maciek",
+            "background": "bg-brown-600",
+            "images": {
+                "outline": "/images/pandas/monkey/monkey-outline.png",
+                "pandaFull": "/images/pandas/monkey/monkey.png",
+                "pandaBody": "/images/pandas/monkey/monkey-body.png",
+                "pandaHead": "/images/pandas/monkey/monkey-head.png"
+            }
+         
+        },
+        {
+            "name": "engineer",
+            "fullName": "Inżynier Ignacy",
+            "background": "bg-black-100",
+            "images": {
+                "outline": "/images/pandas/engineer/engineer-outline.png",
+                "pandaFull": "/images/pandas/engineer/engineer.png",
+                "pandaBody": "/images/pandas/engineer/engineer-body.png",
+                "pandaHead": "/images/pandas/engineer/engineer-head.png"
+            }
+         
+        },
+        {
+            "name": "duck",
+            "fullName": "Kaczka Klaudia",
+            "background": "bg-yellow-500",
+            "images": {
+                "outline": "/images/pandas/duck/duck-outline.png",
+                "pandaFull": "/images/pandas/duck/duck.png",
+                "pandaBody": "/images/pandas/duck/duck-body.png",
+                "pandaHead": "/images/pandas/duck/duck-head.png"
+            }
+         
+        },
+        {
+            "name": "penguin",
+            "fullName": "Pingwin Paweł",
+            "background": "bg-gray-900",
+            "images": {
+                "outline": "/images/pandas/penguin/penguin-outline.png",
+                "pandaFull": "/images/pandas/penguin/penguin.png",
+                "pandaBody": "/images/pandas/penguin/penguin-body.png",
+                "pandaHead": "/images/pandas/penguin/penguin-head.png"
+            }
+         
+        },
+        {
+            "name": "giraffe",
+            "fullName": "Żyrafa Gosia",
+            "background": "bg-yellow-600",
+            "images": {
+                "outline": "/images/pandas/giraffe/giraffe-outline.png",
+                "pandaFull": "/images/pandas/giraffe/giraffe.png",
+                "pandaBody": "/images/pandas/giraffe/giraffe-body.png",
+                "pandaHead": "/images/pandas/giraffe/giraffe-head.png"
+            }
+         
         }
 
 ]

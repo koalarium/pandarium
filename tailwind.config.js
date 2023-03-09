@@ -9,7 +9,7 @@ module.exports = {
   ],
   safelist: [
     {
-      pattern: /bg-(green|purple|orange|black|white|blue|pink)-(10|50|100|300|400|500|600|900|950)/,
+      pattern: /bg-(green|purple|orange|black|white|blue|pink|yellow|brown|gray)-(10|50|100|300|400|500|600|900|950)/,
       variants: ['hover', 'group-hover']
     }
   ],
@@ -27,6 +27,7 @@ module.exports = {
       },
       'gray': {
         100: '#A6A6A6',
+        900: '#1F1F1F',
       },
       'green': {
         300: '#C2FA61',
@@ -51,15 +52,21 @@ module.exports = {
         600: '#F76E19',
       },
       'blue': {
-        500: '#55DDFA',
         300: '#93E8FA',
+        500: '#55DDFA',
       },
       'pink': {
-        300: '#FF7BEA',
         100: '#FDCEF5',
+        300: '#FF7BEA',
+      },
+      'yellow': {
+        100: '#FDF55F',
+        500: '#FFD914',
+        600: '#EDA92A',
       },
       'brown': {
         500: '#9B6730',
+        600: '#B25D16',
       },
       'facebook': '#3B5998',
       'instagram': '#E1306C',
