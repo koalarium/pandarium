@@ -90,10 +90,10 @@ module.exports = {
         },
         slideLeft: {
           '0%, 100%': { transform: 'translateX(0%)'},
-          '50%': { transform: 'translateX(-25%)'},
+          '50%': { transform: 'translateX(-20%)'},
         },
         slideRight: {
-          '0%, 100%': { transform: 'translateX(-25%)'},
+          '0%, 100%': { transform: 'translateX(-20%)'},
           '50%': { transform: 'translateX(0%)'},
         },
         pandaHero: {
