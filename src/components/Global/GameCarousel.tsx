@@ -6,44 +6,32 @@ const GamesCarousel = () => {
     return (
         <>
             <div className="w-full overflow-x-hidden">
-                <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5">
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideLeft">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
+                <div className="flex flex-row mb-3 md:mb-4 xl:mb-5">
+                    <div className="flex flex-row animate-slideLeft">
+                        <GameTile className="shrink-0 mx-2" name="Pandarium" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Music Panda" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Chińczyk" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Kółko i krzyżyk" background="/images/song.JPG"/>
                     </div>
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideLeft">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                    </div>
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideLeft">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
+                    <div className="flex flex-row animate-slideLeft">
+                        <GameTile className="shrink-0 mx-2" name="Pandarium" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Music Panda" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Chińczyk" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Kółko i krzyżyk" background="/images/song.JPG"/>
                     </div>
                 </div>
-                <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5">
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideRight">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
+                <div className="flex flex-row mb-3 md:mb-4 xl:mb-5">
+                    <div className="flex flex-row animate-slideRight">
+                        <GameTile className="shrink-0 mx-2" name="Pandarium" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Music Panda" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Chińczyk" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Kółko i krzyżyk" background="/images/song.JPG"/>
                     </div>
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideRight">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                    </div>
-                    <div className="flex flex-row gap-3 md:gap-4 xl:gap-5 mb-3 md:mb-4 xl:mb-5 animate-slideRight">
-                        <GameTile className="shrink-0" name="Pandarium" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Music Panda" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Chińczyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
-                        <GameTile className="shrink-0" name="Kółko i krzyżyk" image="\images\pandas\lion\lion-1000px.png" background="/images/song.JPG"/>
+                    <div className="flex flex-row animate-slideRight">
+                        <GameTile className="shrink-0 mx-2" name="Pandarium" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Music Panda" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Chińczyk" background="/images/song.JPG"/>
+                        <GameTile className="shrink-0 mx-2" name="Kółko i krzyżyk" background="/images/song.JPG"/>
                     </div>
                 </div>
             </div>
