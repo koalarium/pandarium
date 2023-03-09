@@ -21,6 +21,7 @@ services:
       - ./public:/pandarium-app/public
       - ./models:/pandarium-app/models
       - ./lib:/pandarium-app/lib
+      - ./tailwind.config.js:/pandarium-app/tailwind.config.js
     environment:
       DB_URL: mongodb://db/pandarium
       MONGODB_URI: mongodb://db:27017

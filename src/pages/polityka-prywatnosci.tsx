@@ -1,6 +1,6 @@
 import { XlContainer } from "../components/Global/Containers";
-import { HeroSmall } from "@/components/Hero/Heroes";
-import Footer from "@/components/Footer/Footer";
+import { HeroSmall } from "../components/Hero/Heroes";
+import Footer from "../components/Footer/Footer";
 
 const PrivacyPolicy = () => {
     return (

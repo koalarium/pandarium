@@ -1,7 +1,7 @@
 import { XlContainer } from "../../components/Global/Containers";
 import { GetStaticPaths, GetStaticProps } from "next";
 import articles from "../../jsons/articles.json";
-import { HeroSmall } from "../../components/Hero/Heroes";
+import { HeroLogin, HeroSmall } from "../../components/Hero/Heroes";
 import Footer from "../../components/Footer/Footer";
 import Image from "next/image";
 import Head from "next/head";
