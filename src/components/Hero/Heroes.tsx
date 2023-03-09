@@ -64,14 +64,14 @@ export const HeroSmall = ({ className, primary="Pandarium", secondary, variant="
 
     return (
         <>
-        <div className={`bg-purple-900 w-full h-32 lg:h-48 relative overflow-hidden select-none text-white ${className}`}>
+        <div className={`bg-purple-900 w-full h-32 md:h-40 lg:h-52 relative overflow-hidden select-none text-white ${className}`}>
 
-            <LgContainer className="flex justify-between items-center h-3/4">
+            <LgContainer className="flex justify-between items-center h-3/5">
                 { (!primary && !secondary) ? <></> :
                 <>
                     <div className="z-50">
-                        <Link href='/'><h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-rubikbold uppercase">{primary}</h2></Link>
-                        <p className="opacity-60 text-sm sm:text-base md:text-lg lg:text-xl">{secondary}</p>
+                        <Link href='/'><h2 className="text-xl sm:text-2xl md:text-3xl xl:text-4xl font-rubikbold uppercase">{ primary }</h2></Link>
+                        <p className="opacity-60 text-sm sm:text-base md:text-lg lg:text-xl">{ secondary }</p>
                     </div>
                     <div className="z-10 h-28 min-[430px]:h-48 min-[430px]:w-48 sm:h-56 md:h-62 lg:h-80 w-28 sm:w-56 md:w-62 lg:w-80 absolute max-[429px]:-right-8 max-[429px]:-top-8 min-[430px]:relative">
                         <div className="h-full w-full relative">
@@ -82,7 +82,7 @@ export const HeroSmall = ({ className, primary="Pandarium", secondary, variant="
                 }
             </LgContainer>
 
-            <div className="bg-white w-full h-1/4 absolute bottom-0 rounded-t-3xl lg:rounded-t-[500px] z-50"></div>
+            <div className="bg-white w-full h-2/5 absolute bottom-0 rounded-t-3xl lg:rounded-t-[150px] z-50"></div>
             <HeroAnimatedCircles />
 
         </div>
