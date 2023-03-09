@@ -8,12 +8,12 @@ import Title from '../components/Global/Title';
 import { LgContainer, TitleContainer, XlContainer } from '../components/Global/Containers';
 import OurPandas from '../components/Global/OurPandas';
 import ArticleThumb from '../components/Article/ArticleThumb';
-import Section from '@/components/Global/Section';
+import Section from '../components/Global/Section';
 
 export default function LandingPage() {
 
     return (	
-        <>
+        <div className="w-full h-full snap-y">
             <Head>
                 <title>Pandarium - minigierki od graczy dla graczy</title>
                 <meta name="description" content="Poznaj nasze wszystkie minigierki oraz najbardziej urocze pandy w przebraniach!" />
@@ -23,11 +23,11 @@ export default function LandingPage() {
 
             <Hero />
             
-            <Section className='pt-14 sm:pt-20 md:pt-20 lg:pt-36 2xl:pt-40'>
+            <Section className='pt-14 sm:pt-20 md:pt-20 lg:pt-36 2xl:pt-40 snap-center'>
                 <Info />
             </Section>
                 
-            <Section>
+            <Section className="snap">
                 <Us />
             </Section>
 
@@ -60,6 +60,6 @@ export default function LandingPage() {
             
             <Footer />
 
-        </>
+        </div>
     )
 }
