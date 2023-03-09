@@ -11,7 +11,6 @@ import ArticleThumb from '../components/Article/ArticleThumb';
 import Section from '@/components/Global/Section';
 
 export default function LandingPage() {
-
     return (	
         <>
             <Head>
@@ -28,7 +27,7 @@ export default function LandingPage() {
             </Section>
                 
             <Section>
-                <Us />
+                <OurPandas />
             </Section>
 
             <Section>
@@ -39,7 +38,7 @@ export default function LandingPage() {
             </Section>
 
             <Section>
-                <OurPandas />
+                <Us />
             </Section>
             
             <Section>
@@ -47,7 +46,7 @@ export default function LandingPage() {
                     <TitleContainer>
                         <Title primary="Co w bambusie piszczy?" secondary="Badź zawsze na bieżąco" color="purple" position="left"/>
                     </TitleContainer>
-                    <div className="overflow-x-scroll scrollbar-hidden">
+                    <div className="overflow-x-scroll overscroll-contain scrollbar-hidden" onMouseEnter={ scrollXEnter } onMouseLeave={ scrollXLeave }>
                         <div className="flex flex-row gap-4">
                             <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
                             <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
