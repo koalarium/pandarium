@@ -25,7 +25,7 @@ const Rejestracja = () => {
             <CirclesLayout className="xl:w-[60vw] 2xl:w-[40vw] h-fit rounded-3xl px-6 sm:px-12 py-20 backdrop-blur-3xl flex flex-col">
                     
                 <Head>
-                    <title>Pandarium - minigierki od graczy dla graczy</title>
+                    <title>Pandarium - zarejestruj się</title>
                     <meta name="description" content="Poznaj nasze wszystkie minigierki oraz najbardziej urocze pandy w przebraniach!" />
                     <meta name="viewport" content="width=device-width, initial-scale=1" />
                     <link rel="icon" href="/favicon.ico" />
