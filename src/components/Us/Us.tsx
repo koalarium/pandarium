@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { useState } from 'react';
-import { LgContainer, SmContainer } from '../Global/Containers';
+import { LgContainer, MdContainer, SmContainer, XlContainer } from '../Global/Containers';
 
 const Us = () => {
 
@@ -54,7 +54,7 @@ const Us = () => {
     
     return (
         <>  
-            <SmContainer>
+            <LgContainer>
                 <div className="animate-[rotatePictures_12s_linear_2s_infinite_reverse] animate-[moveAround_12s_linear_2s_infinite] hidden"></div>
                 <div className="animate-[rotatePictures_12s_linear_4s_infinite_reverse] animate-[moveAround_12s_linear_4s_infinite] hidden"></div>
                 <div className="animate-[rotatePictures_12s_linear_6s_infinite_reverse] animate-[moveAround_12s_linear_6s_infinite] hidden"></div>
@@ -99,7 +99,7 @@ const Us = () => {
                     </div>
                     <Image alt="babmuses" fill className="object-left object-cover z-0 opacity-50" src="/images/patterns/big-bambos.svg"></Image>
                 </div>
-            </SmContainer>
+            </LgContainer>
         </>
     
     );
