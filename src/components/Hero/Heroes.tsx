@@ -27,7 +27,7 @@ export const Hero = () => {
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-rubikbold uppercase">Pandarium</h1>
                             <p className="mt-2 font-rubik text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-[22ch]">Minigierki od graczy stworzone dla graczy</p>
                             <div className="">
-                                <Button className="md:mr-auto mt-8" variant="0" content="zobacz gry" />
+                                <Button className="md:mr-auto mt-8 " variant="0" content="zobacz gry" hero="1" />
                             </div>
                         </div>
                     </div>

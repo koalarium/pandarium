@@ -1,26 +1,16 @@
 type Props ={
     content: string,
     variant: string,
-    className?: string
+    className?: string,
+    onClick?: any,
+    hero: string,
 }
 
-let btnBoxShadow = ''
-let btnActiveShadow = ''
-let btnActiveTransform = ''
-
-const Button = ({className, content,variant}: Props) => {
-    if(variant==='0'){
-        btnBoxShadow = 'shadow-[0_7px_0_0_#7e22ce]'
-        btnActiveShadow = 'hover:shadow-[0_0_0_0_#7e22ce]'
-        btnActiveTransform ='hover:translate-y-[2px]'
-    } else if(variant==='1'){
-        btnBoxShadow = 'shadow-[7px_0_0_0_#7e22ce]'
-        btnActiveShadow = 'hover:shadow-[0_0_0_0_#7e22ce]'
-        btnActiveTransform = 'hover:translate-x-[2px]'
-    }
-
+const Button = ({className, content, variant, onClick, hero}: Props) => {
     return (
-        <button className={`bg-purple-300 text-white text-sm md:text-xl z-50 lg:text-xl px-12 py-2 lg:py-3 xl:py-4 lg:px-16 xl:px-20 uppercase font-rubikbold rounded-xl lg:rounded-2xl hover:bg-[#c153e0] transition-all duration-300 ${btnBoxShadow}  ${btnActiveShadow} ${btnActiveTransform} ${className}`}>{content}</button>
+        <>
+            <button onClick={ onClick ? onClick : () => {} } className={`${ className ? className : "" } ${ variant == "0"? "shadow-[0_6px_0_0_#7e22ce] hover:shadow-[0_0_0_0_#7e22ce] hover:translate-y-[2px]" : variant == "1"? "shadow-[6px_0_0_0_#7e22ce] hover:shadow-[0_0_0_0_#7e22ce] hover:translate-x-[2px]": variant == "2"? "shadow-[3px_-3px_0_0_#72A11D] hover:shadow-[0_0_0_0_#72A11D] hover:translate-x-[2px] hover:translate-y-[-2px] hover:bg-green-500 hover:text-white bg-white text-green-600": ""} ${hero=="0"? 'text-xs md:text-sm px-6 py-2 lg:py-3 lg:px-8 xl:px-10' : 'text-sm md:text-lg xl:text-xl px-12 py-2 lg:py-3 xl:py-4 lg:px-16 shadow-[0_6px_0_0_#7e22ce] ' } bg-purple-300 text-white uppercase font-rubikbold z-50 hover:bg-[#c153e0] rounded-xl lg:rounded-2xl transition-all duration-300` }>{ content }</button> 
+        </>
     );
 }
 
