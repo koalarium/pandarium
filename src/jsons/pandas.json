@@ -177,6 +177,18 @@
                 "pandaHead": "/images/pandas/giraffe/giraffe-head.png"
             }
          
+        },
+        {
+            "name": "bunny",
+            "fullName": "Królik Kamila",
+            "background": "bg-blue-400",
+            "images": {
+                "outline": "/images/pandas/bunny/bunny-outline.png",
+                "pandaFull": "/images/pandas/bunny/bunny.png",
+                "pandaBody": "/images/pandas/bunny/bunny-body.png",
+                "pandaHead": "/images/pandas/bunny/bunny-head.png"
+            }
+         
         }
 
 ]
