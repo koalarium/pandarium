@@ -17,18 +17,27 @@ export default async (req, res) => {
                 return;
             }
 
-            if (password != repeatPassword){
+            else if (password != repeatPassword){
                 res.status(422).json({ message: "Hasła nie zgadzają się!" });
                 return;
             }
 
-            if (acceptTerms){
+            else if (!acceptTerms){
                 res.status(422).json({ message: "Nie zaakceptowano warunków korzystania z serwisu!" });
                 return;
             }
 
-            if (password.length < 8) {
+            else if (password.length < 8) {
                 res.status(422).json({ message: "Hasło zawiera mniej niż 8 znaków." });
+                return;
+            }
+
+            const today = new Date();
+            const brhd = birthday.split("-");
+            const birthdayTimestamp = new Date( brhd[0], brhd[1]-1, brhd[2] );
+
+            if (parseInt(today - birthdayTimestamp) < 504921600000) {
+                res.status(422).json({ message: "Osoby poniżej 16 roku życia nie moga korzystać z tej strony."})
                 return;
             }
 
@@ -40,20 +49,10 @@ export default async (req, res) => {
                 return;
 
             } else {
-
-                
-                const today = new Date();
-                const brhd = birthday.split("-");
-                const birthdayTimestamp = new Date( brhd[0], brhd[1]-1, brhd[2] );
-    
-                if (parseInt(today - birthdayTimestamp) < 504921600000) {
-                    res.status(422).json({ message: "Osoby poniżej 16 roku życia nie moga korzystać z tej strony."})
-                    return;
-                }
     
                 const status = await db.collection("users").insertOne({
                     nick: login,
-                    email: email,
+                    email: email.toLowerCase(),
                     password: await hash(password, 12),
                     email_verified_at: null,
                     birthday: birthday,
