@@ -7,6 +7,7 @@ import Button from "../components/Forms/Button";
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import CirclesLayout from "./layouts/CirclesLayout";
+import { Fa } from "react-icons/fa";
 
 const Logowanie = () => {
 
@@ -30,8 +31,8 @@ const Logowanie = () => {
 
                 <div className="gap-2 md:gap-4">
                     <div className="mb-6 md:mb-12">
-                        <h1 className="font-rubikbold uppercase text-base sm:text-xl md:text-2xl xl:text-3xl text-center text-white/[0.7]">Pandarium</h1>
-                        <h2 className="font-rubikbold uppercase text-xl sm:text-3xl md:text-4xl xl:text-5xl text-center">Logowanie</h2>
+                        <h1 className="font-rubikbold uppercase text-base sm:text-xl md:text-2xl text-center text-white/[0.7]">Pandarium</h1>
+                        <h2 className="font-rubikbold uppercase text-xl sm:text-3xl md:text-4xl text-center">Logowanie</h2>
                     </div>
                     <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-3">
                         <Input onChange={ (e: any) => { setLogin(e.target.value) } } value={ login } placeholder="E-mail" type="text"/> 
