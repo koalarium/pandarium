@@ -26,8 +26,8 @@ export default function LandingPage() {
                 <Info />
             </Section>
                 
-            <Section className="snap">
-                <Us />
+            <Section>
+                <OurPandas />
             </Section>
 
             <Section>
@@ -46,7 +46,7 @@ export default function LandingPage() {
                     <TitleContainer>
                         <Title primary="Co w bambusie piszczy?" secondary="Badź zawsze na bieżąco" color="purple" position="left"/>
                     </TitleContainer>
-                    <div className="overflow-x-scroll overscroll-contain scrollbar-hidden" onMouseEnter={ scrollXEnter } onMouseLeave={ scrollXLeave }>
+                    <div className="overflow-x-scroll overscroll-contain scrollbar-hidden">
                         <div className="flex flex-row gap-4">
                             <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
                             <ArticleThumb link="/aktualnosci/1" primary="Pandy podbijają polskę!" secondary="Zobacz ile nas już jest, to jest po prostu neisamowite!" date="21 sty 2023" />
