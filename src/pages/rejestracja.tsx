@@ -2,9 +2,9 @@ import Head from 'next/head';
 import { Input } from "../components/Forms/Input";
 import Button from "../components/Forms/Button";
 import { useEffect, useRef, useState } from "react";
-import CirclesLayout from "./layouts/CirclesLayout";
 import Error from '../components/Auth/Error';
 import Router, { useRouter } from 'next/router'
+import LoginLayout from './layouts/LoginLayout';
 
 const Rejestracja = () => {
 
@@ -51,7 +51,7 @@ const Rejestracja = () => {
 
     return (
         <>
-            <CirclesLayout className="xl:w-[60vw] 2xl:w-[40vw] h-fit rounded-3xl px-6 sm:px-12 py-20 backdrop-blur-3xl flex flex-col">
+            <LoginLayout className="xl:w-[60vw] 2xl:w-[40vw] h-fit rounded-3xl px-6 sm:px-12 py-20 backdrop-blur-3xl flex flex-col">
                     
                 <Head>
                     <title>Pandarium - zarejestruj się</title>
@@ -66,7 +66,7 @@ const Rejestracja = () => {
                         <h2 className="font-rubikbold uppercase text-xl sm:text-3xl md:text-4xl text-center">Rejestacja</h2>
                     </div>
                     <div className="w-[100%] xl:w-[80%] mx-auto flex flex-col gap-3">
-                        { result && result.message ?
+                        { result && result.message != "Użytkownik został stworzony!" ?
                             <Error message={ result.message } />
                         : <></>}
                         <Input onChange={ (e: any) => { setLogin(e.target.value) } } value={ login } placeholder="Nick" type="text" required/>
@@ -79,7 +79,7 @@ const Rejestracja = () => {
                     </div>
                 </div>
 
-            </CirclesLayout>
+            </LoginLayout>
         </>
     );
 }

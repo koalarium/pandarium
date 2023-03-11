@@ -1,21 +1,31 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
+import clientPromise from "../../../../lib/dbConnect";
+import { compare, hash, hashSync } from "bcryptjs";
 
 export const authOptions = {
-  // Configure one or more authentication providers
+
   providers: [
     CredentialsProvider({
         async authorize(credentials, req) {
 
-          const res = fetch('/api/login')
+          const client = await clientPromise;
+          const db = await client.db("pandarium");
 
-          const user = await checkUser();
+          const user = await db.collection('users').findOne({ email: credentials.login });
+          console.log(credentials);
 
           if (user) {
-            return user
+            if (compare(credentials.password, user.password)) {
+              return user;
+            } else {
+              throw new Error("Niepoprawny login lub hasło!");
+            }
+          } else {
+            throw new Error("Email nie pasuje, do żadnego z rekordów!")
           }
           
-          return null
+          return null;
 
         }
 

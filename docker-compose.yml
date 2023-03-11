@@ -28,6 +28,7 @@ services:
       DB_USER: root
       DB_PASS: toor
       DB_NAME: pandarium
+      NEXTAUTH_SECRET: whateversecretcode
 
   db:
     image: mongo:6.0.4-jammy

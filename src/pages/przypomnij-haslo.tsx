@@ -6,7 +6,7 @@ import { Input } from "../components/Forms/Input";
 import Button from "../components/Forms/Button";
 import { useEffect, useState } from "react";
 import Link from "next/link";
-import CirclesLayout from "./layouts/CirclesLayout";
+import CirclesLayout from "./layouts/LoginLayout";
 
 const Logowanie = () => {
 

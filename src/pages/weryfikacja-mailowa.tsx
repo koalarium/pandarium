@@ -1,4 +1,4 @@
-import CirclesLayout from "./layouts/CirclesLayout"
+import CirclesLayout from "./layouts/LoginLayout"
 import Head from 'next/head';
 import Error from "../components/Auth/Error";
 

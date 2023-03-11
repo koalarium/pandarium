@@ -1,12 +1,22 @@
 import HeroAnimatedCircles from "../../components/Hero/HeroAnimatedDiv";
-import { Head } from "next/document";
+import { useSession } from "next-auth/react"
+import { useRouter } from "next/router";
+
 
 type Props = {
     children?: JSX.Element | JSX.Element[],
     className?: string,
 }
 
-const CirclesLayout = ({ children, className }: Props) => {
+const LoginLayout = ({ children, className }: Props) => {
+
+    const router = useRouter();
+    const { data: session} = useSession()
+
+    if (session) {
+      router.push('/')
+    }
+
     return (
         <>
             <div className='h-[100vh] w-full text-white bg-purple-900 m-0 p-0 overflow-hidden relative'>
@@ -22,4 +32,4 @@ const CirclesLayout = ({ children, className }: Props) => {
     );
 }
 
-export default CirclesLayout;
+export default LoginLayout;
