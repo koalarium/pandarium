@@ -53,6 +53,7 @@ module.exports = {
       },
       'blue': {
         300: '#93E8FA',
+        400: '#74D0CB',
         500: '#55DDFA',
       },
       'pink': {
