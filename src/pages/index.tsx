@@ -9,6 +9,7 @@ import { LgContainer, TitleContainer, XlContainer } from '../components/Global/C
 import OurPandas from '../components/Global/OurPandas';
 import ArticleThumb from '../components/Article/ArticleThumb';
 import Section from '../components/Global/Section';
+import GoLogin from '../components/Global/GoLogin';
 
 export default function LandingPage() {
     return (	
@@ -19,6 +20,8 @@ export default function LandingPage() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
+
+            <GoLogin />
 
             <Hero />
             
