@@ -1,15 +1,16 @@
 import games from "../../jsons/games.json";
 import GameTitle from "../../components/Global/GameTitle";
 import { GetStaticPaths, GetStaticProps } from "next";
-import { HeroLogin } from "@/components/Hero/Heroes";
-import Footer from "@/components/Footer/Footer";
-import Section from "@/components/Global/Section";
+import { HeroLogin } from "../../components/Hero/Heroes";
+import Footer from "../../components/Footer/Footer";
+import Section from "../../components/Global/Section";
 import { LgContainer, MdContainer, TitleContainer } from "@/components/Global/Containers";
 import Image from "next/image";
 import {BsGearFill} from "react-icons/bs";
 import CharacterTile from "../../components/Global/CharacterTile";
-import UserOverview from "@/components/Global/UserOverview";
-
+import UserOverview from "../../components/Global/UserOverview";
+import Button from "../../components/Global/Button";
+import PurpleBox from "../../components/Global/PurpleBox";
 
 type Params = {
     lobby: {
@@ -25,56 +26,61 @@ const Lobby = ({ lobby }: Params) => {
         <>
             <HeroLogin userName="Hosqu" />
             <MdContainer>
-                    <div className="flex mb-12">
-                        <GameTitle name={ lobby.name } />
-                        <div className="border-purple-500 border-4 cursor-pointer group justify-self-end self-center ml-auto p-3 rounded-3xl  hover:bg-purple-300/[0.4] duration-300">
-                            <BsGearFill className="fill-purple-500 h-8 w-8 group-hover:rotate-90 group-hover:scale-125 duration-300"/>
+                <div className="flex mb-12">
+                    <GameTitle name={ lobby.name } />
+                        <div className="group border-purple-500 border-4 cursor-pointer justify-self-end self-center ml-auto p-2 md:p-3 rounded-xl xl:rounded-3xl  hover:bg-purple-500 duration-300">
+                            <BsGearFill className="fill-purple-500 group-hover:fill-white h-4 w-4 md:h-8 md:w-8 group-hover:rotate-90 group-hover:scale-125 duration-300"/>
+                    </div>
+                </div>
+
+                <div className="flex flex-wrap xl:flex-nowrap xl:flex-row w-full h-fit xl:h-[500px] gap-8 justify-center">
+                    <div id="ss" className="w-[100%] h-[500px] xl:basis-1/2 bg-green-90 rounded-3xl relative overflow-hidden">
+                        <Image src={ lobby.gif ? lobby.gif : "/images/song.JPG" } alt="zdjeciegry" fill className="object-cover" />
+                        <div className="absolute bg-purple-950/[0.7] bottom-0 right-0 p-4 m-4 rounded-xl flex gap-4">
+                            <Button content="Skopiuj link zaproszeniem" variant="0"/>
+                            <Button content="Rozpocznij grę" variant="0"/>
                         </div>
                     </div>
-                
-                    <div className="flex w-full h-[500px] gap-8">
-                        <div id="ss" className="basis-1/2 bg-green-90 rounded-3xl relative overflow-hidden">
-                            <Image src={ lobby.gif ? lobby.gif : "/images/song.JPG" } alt="zdjeciegry" fill className="object-cover" />
+                    <PurpleBox title="Zasady gry">
+                        { lobby.rules.map((r, index) => ( 
+                            <>
+                                <div id="pojemnik" className="flex rounded-xl hover:bg-purple-500/[0.3] mx-4 mb-4">
+                                    <span className="text-white font-rubikbold text-2xl p-2 pl-4">
+                                        {index +1 + ". "}
+                                    </span>
+                                    <p id="zasada" className="text-white font-rubik lg:text-md xl:text-lg m-2 mr-6 mt-3 max-w-[40ch]" >{ r }</p>
+                                </div>
+                            </>
+                        )) }
+                    </PurpleBox>
+                    <PurpleBox title="Gracze w lobby">
+                        <div className="mb-2 mx-4">
+                            <UserOverview/>
                         </div>
-                        <div id="zasady" className="basis-1/4 bg-purple-900 rounded-3xl flex-col flex">
-                            <div className="w-fit p-2 m-4 uppercase rounded-xl text-white font-rubikbold bg-purple-950/[0.8]">
-                                <h5 className="mx-4 text-lg">Zasady Gry:</h5>
-                            </div>
-                            <p className="text-white font-rubik mx-4">{ lobby.rules }</p>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
                         </div>
-                        <div id="gracze" className="basis-1/4 bg-purple-900 rounded-3xl flex flex-col">
-                            <div className="h-fit w-fit p-2 mx-4 mt-4 mb-2 uppercase rounded-xl text-white font-rubikbold bg-purple-950/[0.8]">
-                                <h5 className="mx-4 text-lg">Gracze w lobby:</h5>
-                            </div>
-                            <div className="overflow-y-scroll overscroll-contain scrollbar-hidden ">
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                                <div className="my-2 mx-4">
-                                    <UserOverview/>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div> 
-                </MdContainer>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                        <div className="my-2 mx-4">
+                            <UserOverview/>
+                        </div>
+                    </PurpleBox>
+                </div> 
+            </MdContainer>
             <Footer small/>
         </>
     );
