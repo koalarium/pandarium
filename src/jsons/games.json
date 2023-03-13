@@ -2,14 +2,14 @@
     {
         "url": "kolko-i-krzyzyk",
         "name": "Kółko i Krzyżyk",
-        "rules": ["oko za oko","zab za zab"],
+        "rules": ["Oko za oko","zab za zab","koks za koks","kosa za kose","skrzynka za 5zl","mnich arab"],
         "gif": "/images/screens/tic-tac-tao-game.png",
         "maxUsers": "2"
     },
     {
         "url": "pandle",
         "name": "Pandle",
-        "rules": ["oko za oko","zab za zab"],
+        "rules": ["Oko za Scripts that load with the before Interactive strategy are injected into oko","zab za zab  the initial HTML from the server, downloaded before any Next.js module, and executed i","koks za koks n the order they are placed before any hydration occurs on the page.","kosa za kose","skrzynka za 5zl","mnich arab","oko za Scripts that load with the beforeInteractive strategy are injected into oko","oko za Scripts that load with the beforeInteractive strategy are injected into oko","oko za Scripts that load with the beforeInteractive strategy are injected into oko"],
         "gif": "/images/screens/tic-tac-tao-game.png",
         "maxUsers": "8" 
     }

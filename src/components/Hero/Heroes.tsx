@@ -27,7 +27,7 @@ export const Hero = () => {
                             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-rubikbold uppercase">Pandarium</h1>
                             <p className="mt-2 font-rubik text-base sm:text-lg lg:text-xl xl:text-xl 2xl:text-2xl px-2 opacity-60 md:px-0 max-w-[20ch] md:max-w-[22ch]">Minigierki od graczy stworzone dla graczy</p>
                             <div className="">
-                                <Button className="md:mr-auto mt-8 " variant="0" content="zobacz gry" hero="1" />
+                                <Button className="md:mr-auto mt-8 " variant="0" content="zobacz gry" hero={true} />
                             </div>
                         </div>
                     </div>
@@ -99,13 +99,13 @@ export const HeroLogin = ({ className, userName }: HeroLoginProps) => {
                         <Link href="/">
                             <h1 className="uppercase text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-rubikbold">Pandarium</h1>
                         </Link>
-                        <div className="flex h-fit items-center gap-4 md:gap-8 ml-auto">
+                        <div className="flex h-full items-center gap-4 md:gap-8 ml-auto">
                             <p className="text-sm md:text-lg uppercase">Mefereczek</p>
                             <CharacterTile variant="1" panda="lion" className="w-[50px!important] md:w-[70px!important]"/>
                         </div>
                     </LgContainer>
                 </div>
-                <div className="bg-white h-2/5 bottom-0 absolute w-full z-10 rounded-t-[60px] md:rounded-t-[100px]"></div>
+                <div className="bg-white h-2/5 -bottom-[1px] absolute w-full z-50 rounded-t-[60px] md:rounded-t-[100px]"></div>
                 <HeroAnimatedCircles className="-z-[99]"/>
             </div>
         </>
