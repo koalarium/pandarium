@@ -12,8 +12,11 @@ type Props = {
 const PNavLink = ({icon, text, selected=false, link}: Props) => {
     return (
         <Link href={ link }>
-            <div className="group w-[70%] aspect-square mx-auto flex rounded-[20px] hover:bg-purple-300/[.2] cursor-pointer duration-300">
+            <div className="group w-[70%] aspect-square mx-auto flex rounded-[20px] hover:bg-purple-300/[.2] cursor-pointer duration-300 relative">
                 { icon }
+                <div className="bg-purple-950/[.7] max-w-[0px] md:group-hover:max-w-[200px] duration-300 rounded-2xl whitespace-nowrap flex translate-x-[100%] top-[50%] -translate-y-[50%] -right-[20px] absolute overflow-hidden">
+                    <p className="text-white font-rubikbold px-5 py-3 uppercase mx-auto my-auto"> { text } </p>
+                </div>
             </div>
         </Link>
         
