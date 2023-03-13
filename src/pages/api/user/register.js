@@ -59,6 +59,7 @@ export default async (req, res) => {
                     panda: "panda",
                     playedGames: 0,
                     wonGames: 0,
+                    experience: 0,
                 });
                 
                 await res.status(201).json({ message: "Użytkownik został stworzony!"});

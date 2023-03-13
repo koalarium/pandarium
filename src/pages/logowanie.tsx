@@ -28,7 +28,7 @@ const Logowanie = () => {
                     setResult(result.error);
                 }
                 else {
-                    router.push('/');
+                    router.push('/panel');
                 }
 
             }

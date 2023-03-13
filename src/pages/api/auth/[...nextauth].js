@@ -1,7 +1,7 @@
 import NextAuth from "next-auth"
 import CredentialsProvider from "next-auth/providers/credentials"
 import clientPromise from "../../../../lib/dbConnect";
-import { compare, hash, hashSync } from "bcryptjs";
+import { compare } from "bcryptjs";
 
 export const authOptions = {
 
@@ -13,16 +13,30 @@ export const authOptions = {
           const db = await client.db("pandarium");
 
           const user = await db.collection('users').findOne({ email: credentials.login });
-          console.log(credentials);
+          console.log(user);
 
           if (user) {
             if (compare(credentials.password, user.password)) {
-              return user;
+
+              const currentUser = {
+                "id": user._id,
+                "nick": user.nick,
+                "email": user.email,
+                "panda": user.panda,
+              }
+
+              console.log(currentUser);
+              return Promise.resolve(currentUser);
+
             } else {
+
               throw new Error("Niepoprawny login lub hasło!");
+
             }
           } else {
-            throw new Error("Email nie pasuje, do żadnego z rekordów!")
+
+            throw new Error("Email nie pasuje, do żadnego z rekordów!");
+
           }
           
           return null;
@@ -31,6 +45,14 @@ export const authOptions = {
 
       })
   ],
+
+  pages: {
+    signIn: '/rejestracja',
+    signOut: '/panel',
+    error: '/auth/error', // Error code passed in query string as ?error=
+    verifyRequest: '/weryfikacja-mailowa', // (used for check email message)
+    newUser: '/panel' // New users will be directed here on first sign in (leave the property out if not of interest)
+  },
 
   session: {
 
@@ -44,18 +66,21 @@ export const authOptions = {
 
   },
 
-  // callbacks: {
-  //   async session({ session, token }) {
-  //     session.user = token.user;
-  //     return session;
-  //   },
-  //   async jwt({ token, user }) {
-  //     if (user) {
-  //       token.user = user;
-  //     }
-  //     return token;
-  //   },
-  // },
+  callbacks: {
+
+    async session({ session, token }) {
+      session.user = token.user;
+      return session;
+    },
+
+    async jwt({ token, user }) {
+      if (user) {
+        token.user = user;
+      }
+      return token;
+    },
+    
+  },
 
 }
 
