@@ -13,14 +13,13 @@ export default async (req, res) => {
 
             if (session) {
 
-                const { panda, id } = req.body; 
+                const { name, id } = req.body; 
                 const client = await clientPromise;
 
                 const db = await client.db("pandarium");
-                const qr = await db.collection("users").updateOne({ _id: new ObjectId(id) }, { $set: { panda: panda} });
+                const qr = await db.collection("users").updateOne({ _id: new ObjectId(id) }, { $set: { panda: name} });
 
                 res.status(202).json({ message: "Pomyślnie zmieniono pande!"});
-
                 return;
 
             } else {
@@ -39,8 +38,14 @@ export default async (req, res) => {
 
                 const db = await client.db("pandarium");
                 const user = await db.collection("users").findOne({ _id: new ObjectId(id) });
+                const sendUser = {
+                    id: user._id,
+                    nick: user.nick,
+                    email: user.email,
+                    panda: user.panda,
+                }
                 
-                res.status(200).json({ user });
+                res.status(200).json({ sendUser });
 
                 return;
 

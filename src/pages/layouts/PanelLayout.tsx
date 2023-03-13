@@ -6,6 +6,10 @@ import { signOut, useSession } from "next-auth/react";
 import PDropDown from "../../components/Panel/PDropDown";
 import { IoMdLogIn } from "react-icons/io";
 import { useEffect } from "react";
+import { GetServerSideProps, GetStaticProps } from "next";
+import { getServerSession } from "next-auth";
+import { authOptions } from '../api/auth/[...nextauth]'
+
 
 type Props = {
     children?: JSX.Element | JSX.Element[] | string | string[],
@@ -15,11 +19,29 @@ const PanelLayout = ({children}: Props) => {
 
     const session = useSession();
     const user = session!.data?.user;
+    
+    const getUser = async () => {
+
+        if (user) {
+            const id = user.id;
+            const data = { id }
+            const res = await fetch('/api/user/user', {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data)
+            });
+            console.log(await res.json());
+        }
+    }
+
+    getUser();
 
     const PNavLinkClasess = "group-hover:scale-[.8] duration-300 w-[30px] h-[30px] mx-auto my-auto fill-white/[.9] group-hover:fill-purple-300";
 
     useEffect(() => {
-
+        
 
     }, [])
 
@@ -67,3 +89,26 @@ const PanelLayout = ({children}: Props) => {
 }
 
 export default PanelLayout;
+
+export const getServerSideProps: GetServerSideProps = async (context) => {
+
+    const session = await getServerSession(context.req, context.res, authOptions);
+  
+    if (session) {
+        const id = session!.data?.user.id;
+        const data = { id }
+        const res = await fetch('/api/user/user', {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data)
+        });
+        console.log(await res.json());
+    }
+  
+    return {
+      props: { session },
+    }
+
+  }

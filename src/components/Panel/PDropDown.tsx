@@ -13,15 +13,14 @@ const PDropDown = ({ user }: Props) => {
 
     const [open, setOpen] = useState(false);
     const [selectedPanda, setSelectedPanda] = useState("panda");
-    
+
     const changePanda = async (name: string) => {
 
         setSelectedPanda(name);
 
         if (user) {
-            
             const id = user.id;
-            const data = { selectedPanda, id }
+            const data = { name, id }
             const res = await fetch('/api/user/user', {
                 method: "PUT",
                 headers: {
@@ -29,8 +28,6 @@ const PDropDown = ({ user }: Props) => {
                 },
                 body: JSON.stringify(data)
             });
-            setSelectedPanda(name);
-            console.log(user);
     
         } else {
             
@@ -51,9 +48,7 @@ const PDropDown = ({ user }: Props) => {
                 setSelectedPanda(panda)
             }
         } else {
-            const event = new Event("visibilitychange");
-            document.dispatchEvent(event);
-            setSelectedPanda(user.panda);
+   
         }
 
     }, [])
@@ -63,7 +58,7 @@ const PDropDown = ({ user }: Props) => {
         <div onClick={ () => setOpen(!open) } className="ml-auto mt-5 mr-5 flex hover:bg-purple-950/[.9] bg-purple-950/[.7] cursor-pointer rounded-2xl pl-8 pr-2 backdrop-blur-3xl py-2 duration-300">
             <p className="text-white font-rubikbold min-w-[110px] my-auto mr-10 text-lg">{ user ? user.nick : "Gość" }</p>
             <div className="w-full aspect-square relative bg-white rounded-2xl overflow-hidden">
-                <Image fill className="object-cover" src={ pandas.find(p => p.name == selectedPanda)!.images.pandaBody } alt=""/>
+                <Image fill className="object-cover" src={ pandas.find(p => p.name == selectedPanda)!.images.pandaBody ? pandas.find(p => p.name == selectedPanda)!.images.pandaBody : "panda"  } alt=""/>
             </div>
             <div className={`bg-purple-950/[.7] backdrop-blur-3xl w-full duration-200 ${open ? "max-h-[350px]" : "max-h-0" } absolute left-0 translate-y-[100%] -bottom-[10px] rounded-2xl overflow-hidden`}>
                 <div className="flex flex-wrap gap-4 justify-center px-3 py-3">
