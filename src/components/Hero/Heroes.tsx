@@ -99,13 +99,13 @@ export const HeroLogin = ({ className, userName }: HeroLoginProps) => {
                         <Link href="/">
                             <h1 className="uppercase text-xl md:text-2xl xl:text-3xl 2xl:text-4xl font-rubikbold">Pandarium</h1>
                         </Link>
-                        <div className="flex h-fit items-center gap-4 md:gap-8 ml-auto">
+                        <div className="flex h-full items-center gap-4 md:gap-8 ml-auto">
                             <p className="text-sm md:text-lg uppercase">Mefereczek</p>
                             <CharacterTile variant="1" panda="lion" className="w-[50px!important] md:w-[70px!important]"/>
                         </div>
                     </LgContainer>
                 </div>
-                <div className="bg-white h-2/5 bottom-0 absolute w-full z-10 rounded-t-[60px] md:rounded-t-[100px]"></div>
+                <div className="bg-white h-2/5 -bottom-[1px] absolute w-full z-50 rounded-t-[60px] md:rounded-t-[100px]"></div>
                 <HeroAnimatedCircles className="-z-[99]"/>
             </div>
         </>
