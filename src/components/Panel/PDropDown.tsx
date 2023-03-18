@@ -3,7 +3,6 @@ import { useEffect, useState } from "react";
 import CharacterTile from "../Global/CharacterTile";
 import pandas from "../../jsons/pandas.json";
 import { hasCookie, getCookie, setCookie, deleteCookie } from "cookies-next";
-import { getSession } from "next-auth/react";
 
 type Props = {
     user?: any,
@@ -31,11 +30,16 @@ const PDropDown = ({ user }: Props) => {
     
         } else {
             
-            console.log("selectedPanda: "+name);
             deleteCookie('panda');
             setCookie("panda", name);
 
         }
+
+        const reloadSession = () => {
+            const event = new Event('visibilitychange');
+            document.dispatchEvent(event)
+        }
+        reloadSession();
 
     }
 
@@ -48,7 +52,10 @@ const PDropDown = ({ user }: Props) => {
                 setSelectedPanda(panda)
             }
         } else {
-   
+            if(hasCookie("authPanda")) {
+                const panda: string = getCookie("authPanda")!.toString();
+                setSelectedPanda(panda);
+            }
         }
 
     }, [])
@@ -58,7 +65,7 @@ const PDropDown = ({ user }: Props) => {
         <div onClick={ () => setOpen(!open) } className="ml-auto mt-5 mr-5 flex hover:bg-purple-950/[.9] bg-purple-950/[.7] cursor-pointer rounded-2xl pl-8 pr-2 backdrop-blur-3xl py-2 duration-300">
             <p className="text-white font-rubikbold min-w-[110px] my-auto mr-10 text-lg">{ user ? user.nick : "Gość" }</p>
             <div className="w-full aspect-square relative bg-white rounded-2xl overflow-hidden">
-                <Image fill className="object-cover" src={ pandas.find(p => p.name == selectedPanda)!.images.pandaBody ? pandas.find(p => p.name == selectedPanda)!.images.pandaBody : "panda"  } alt=""/>
+                <Image quality={ 100 } fill className="object-cover" src={ pandas.find(p => p.name == selectedPanda)!.images.pandaBody ? pandas.find(p => p.name == selectedPanda)!.images.pandaBody : "panda"  } alt=""/>
             </div>
             <div className={`bg-purple-950/[.7] backdrop-blur-3xl w-full duration-200 ${open ? "max-h-[350px]" : "max-h-0" } absolute left-0 translate-y-[100%] -bottom-[10px] rounded-2xl overflow-hidden`}>
                 <div className="flex flex-wrap gap-4 justify-center px-3 py-3">

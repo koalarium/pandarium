@@ -1,6 +1,6 @@
 import HeroAnimatedCircles from "../../components/Hero/HeroAnimatedDiv";
 import Head from "next/head";
-import { BsFillBarChartFill, BsFillBookmarkHeartFill, BsFillExclamationOctagonFill, BsHouseDoorFill, BsLockFill, BsPeopleFill, BsPersonXFill, BsPlayFill, BsPower, BsReplyFill, BsUnlockFill, BsXDiamondFill } from "react-icons/bs";
+import { BsFillBarChartFill, BsFillBookmarkHeartFill, BsHouseDoorFill, BsLockFill, BsPeopleFill, BsPlayFill, BsReplyFill, BsUnlockFill, BsXDiamondFill } from "react-icons/bs";
 import PNavLink from "../../components/Panel/PNavLink";
 import { signOut, useSession } from "next-auth/react";
 import PDropDown from "../../components/Panel/PDropDown";
@@ -19,26 +19,8 @@ const PanelLayout = ({children}: Props) => {
 
     const session = useSession();
     const user = session!.data?.user;
-    
-    const getUser = async () => {
-
-        if (user) {
-            const id = user.id;
-            const data = { id }
-            const res = await fetch('/api/user/user', {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                },
-                body: JSON.stringify(data)
-            });
-            console.log(await res.json());
-        }
-    }
-
-    getUser();
-
     const PNavLinkClasess = "group-hover:scale-[.8] duration-300 w-[30px] h-[30px] mx-auto my-auto fill-white/[.9] group-hover:fill-purple-300";
+    console.log(user);
 
     useEffect(() => {
         
@@ -48,7 +30,7 @@ const PanelLayout = ({children}: Props) => {
     return (
         <>
             <Head>
-
+                <title>PANDARIUM - panel</title>
             </Head>
 
             <div className="w-full h-[100vh] bg-purple-900 overflow-hidden relative flex">
@@ -89,26 +71,3 @@ const PanelLayout = ({children}: Props) => {
 }
 
 export default PanelLayout;
-
-export const getServerSideProps: GetServerSideProps = async (context) => {
-
-    const session = await getServerSession(context.req, context.res, authOptions);
-  
-    if (session) {
-        const id = session!.data?.user.id;
-        const data = { id }
-        const res = await fetch('/api/user/user', {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(data)
-        });
-        console.log(await res.json());
-    }
-  
-    return {
-      props: { session },
-    }
-
-  }
