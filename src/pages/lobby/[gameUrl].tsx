@@ -4,7 +4,7 @@ import { GetStaticPaths, GetStaticProps } from "next";
 import { HeroLogin } from "../../components/Hero/Heroes";
 import Footer from "../../components/Footer/Footer";
 import Section from "../../components/Global/Section";
-import { LgContainer, MdContainer, TitleContainer } from "@/components/Global/Containers";
+import { LgContainer, MdContainer, TitleContainer } from "../../components/Global/Containers";
 import Image from "next/image";
 import {BsGearFill} from "react-icons/bs";
 import CharacterTile from "../../components/Global/CharacterTile";
