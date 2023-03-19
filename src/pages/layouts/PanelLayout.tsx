@@ -11,9 +11,11 @@ import PPopUp from "../../components/Panel/PPopUp";
 
 type Props = {
     children?: JSX.Element | JSX.Element[] | string | string[],
+    PopUpOpen?: any, 
+    setPopUpOpen?: any,
 }
 
-const PanelLayout = ({children}: Props) => {
+const PanelLayout = ({children, PopUpOpen, setPopUpOpen}: Props) => {
 
     const session = useSession();
     const user = session!.data?.user;
@@ -30,7 +32,7 @@ const PanelLayout = ({children}: Props) => {
                 <title>PANDARIUM - panel</title>
             </Head>
 
-            <PPopUp open={ false } /> 
+            <PPopUp open={ PopUpOpen } setOpen={ setPopUpOpen } user={ user }/>
 
             <div className="w-full h-[100vh] bg-purple-900 overflow-hidden relative flex">
 

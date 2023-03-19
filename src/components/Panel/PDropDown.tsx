@@ -15,7 +15,6 @@ const PDropDown = ({ user }: Props) => {
     if ( hasCookie("authPanda") ) {
         panda = getCookie("authPanda")!.toString();
     }
-    console.log(panda);
 
     const [open, setOpen] = useState(false);
     const [selectedPanda, setSelectedPanda] = useState(panda);
