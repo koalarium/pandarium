@@ -17,8 +17,9 @@ const CharacterTile = ({variant, panda, selected, setSelectedPanda, setHoveredPa
     let background = cPanda?.background;
     
     let pandaPhoto: String | any = cPanda?.images.pandaHead;
-    if (variant == "1" ) pandaPhoto = cPanda?.images.pandaFull;
-    if (variant == "2" ) pandaPhoto = cPanda?.images.pandaBody;
+    if ( variant == "1" ) pandaPhoto = cPanda?.images.pandaFull;
+    if ( variant == "2" ) pandaPhoto = cPanda?.images.pandaBody;
+    if ( variant == "3" ) pandaPhoto = cPanda?.images.pandaSVG;
 
     return (
         <>

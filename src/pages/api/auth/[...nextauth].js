@@ -13,7 +13,6 @@ export const authOptions = {
           const db = await client.db("pandarium");
 
           const user = await db.collection('users').findOne({ email: credentials.login });
-          console.log(user);
 
           if (user) {
             if (compare(credentials.password, user.password)) {
@@ -71,14 +70,23 @@ export const authOptions = {
     async session({ session, token }) {
 
       session.user = token.user;
+      session.panda = token.panda;
       return session;
 
     },
 
     async jwt({ token, user }) {
 
+      const client = await clientPromise;
+      const db = await client.db("pandarium");
+
       if (user) {
+
         token.user = user;
+        const dbU = await db.collection('users').findOne({ email: user.email });
+        if (dbU.panda) token.panda = await dbU.panda;
+        else token.panda = "panda";
+
       }
 
       return token;

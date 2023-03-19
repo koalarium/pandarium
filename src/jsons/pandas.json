@@ -1,194 +1,208 @@
 [
-    
-        {
-            "name": "panda",
-            "fullName": "Panda Piotrek",
-            "background": "bg-black-100",
-            "images": {
-                "outline": "/images/pandas/panda/panda-outline.png",
-                "pandaFull": "/images/pandas/panda/panda.png",
-                "pandaBody": "/images/pandas/panda/panda-body.png",
-                "pandaHead": "/images/pandas/panda/panda-head.png"
-            }
-        },
-        {   
-            "name": "lion",
-            "fullName": "Lew Leon",
-            "background": "bg-orange-500",
-            "images": {
-                "outline": "/images/pandas/lion/lion-outline.png",
-                "pandaFull": "/images/pandas/lion/lion.png",
-                "pandaBody": "/images/pandas/lion/lion-body.png",
-                "pandaHead": "/images/pandas/lion/lion-head.png"
-            }
-        },
-        {
-            "name": "cricket",
-            "fullName": "Świerszcz Michał",
-            "background": "bg-green-600",
-            "images": {
-                "outline": "/images/pandas/cricket/cricket-outline.png",
-                "pandaFull": "/images/pandas/cricket/cricket.png",
-                "pandaBody": "/images/pandas/cricket/cricket-body.png",
-                "pandaHead": "/images/pandas/cricket/cricket-head.png"
-            }
-         
-        },
-        {
-            "name": "cow",
-            "fullName": "Krowa Kasia",
-            "background": "bg-purple-300",
-            "images": {
-                "outline": "/images/pandas/cow/cow-outline.png",
-                "pandaFull": "/images/pandas/cow/cow.png",
-                "pandaBody": "/images/pandas/cow/cow-body.png",
-                "pandaHead": "/images/pandas/cow/cow-head.png"
-            }
-         
-        },
-        {
-            "name": "sheep",
-            "fullName": "Owca Olga",
-            "background": "bg-blue-500",
-            "images": {
-                "outline": "/images/pandas/sheep/sheep-outline.png",
-                "pandaFull": "/images/pandas/sheep/sheep.png",
-                "pandaBody": "/images/pandas/sheep/sheep-body.png",
-                "pandaHead": "/images/pandas/sheep/sheep-head.png"
-            }
-         
-        },
-        {
-            "name": "fox",
-            "fullName": "Lis Lucjan",
-            "background": "bg-orange-600",
-            "images": {
-                "outline": "/images/pandas/fox/fox-outline.png",
-                "pandaFull": "/images/pandas/fox/fox.png",
-                "pandaBody": "/images/pandas/fox/fox-body.png",
-                "pandaHead": "/images/pandas/fox/fox-head.png"
-            }
-         
-        },
-        {
-            "name": "bear",
-            "fullName": "Niedźwiedź Natan",
-            "background": "bg-brown-500",
-            "images": {
-                "outline": "/images/pandas/bear/bear-outline.png",
-                "pandaFull": "/images/pandas/bear/bear.png",
-                "pandaBody": "/images/pandas/bear/bear-body.png",
-                "pandaHead": "/images/pandas/bear/bear-head.png"
-            }
-         
-        },
-        {
-            "name": "frog",
-            "fullName": "Żaba Żaneta",
-            "background": "bg-green-50",
-            "images": {
-                "outline": "/images/pandas/frog/frog-outline.png",
-                "pandaFull": "/images/pandas/frog/frog.png",
-                "pandaBody": "/images/pandas/frog/frog-body.png",
-                "pandaHead": "/images/pandas/frog/frog-head.png"
-            }
-         
-        },
-        {
-            "name": "elephant",
-            "fullName": "Słoń Staś",
-            "background": "bg-gray-100",
-            "images": {
-                "outline": "/images/pandas/elephant/elephant-outline.png",
-                "pandaFull": "/images/pandas/elephant/elephant.png",
-                "pandaBody": "/images/pandas/elephant/elephant-body.png",
-                "pandaHead": "/images/pandas/elephant/elephant-head.png"
-            }
-         
-        },
-        {
-            "name": "unicorn",
-            "fullName": "Jednorożec Janek",
-            "background": "bg-pink-300",
-            "images": {
-                "outline": "/images/pandas/unicorn/unicorn-outline.png",
-                "pandaFull": "/images/pandas/unicorn/unicorn.png",
-                "pandaBody": "/images/pandas/unicorn/unicorn-body.png",
-                "pandaHead": "/images/pandas/unicorn/unicorn-head.png"
-            }
-         
-        },
-        {
-            "name": "monkey",
-            "fullName": "Małpa Maciek",
-            "background": "bg-brown-600",
-            "images": {
-                "outline": "/images/pandas/monkey/monkey-outline.png",
-                "pandaFull": "/images/pandas/monkey/monkey.png",
-                "pandaBody": "/images/pandas/monkey/monkey-body.png",
-                "pandaHead": "/images/pandas/monkey/monkey-head.png"
-            }
-         
-        },
-        {
-            "name": "engineer",
-            "fullName": "Inżynier Ignacy",
-            "background": "bg-black-100",
-            "images": {
-                "outline": "/images/pandas/engineer/engineer-outline.png",
-                "pandaFull": "/images/pandas/engineer/engineer.png",
-                "pandaBody": "/images/pandas/engineer/engineer-body.png",
-                "pandaHead": "/images/pandas/engineer/engineer-head.png"
-            }
-         
-        },
-        {
-            "name": "duck",
-            "fullName": "Kaczka Klaudia",
-            "background": "bg-yellow-500",
-            "images": {
-                "outline": "/images/pandas/duck/duck-outline.png",
-                "pandaFull": "/images/pandas/duck/duck.png",
-                "pandaBody": "/images/pandas/duck/duck-body.png",
-                "pandaHead": "/images/pandas/duck/duck-head.png"
-            }
-         
-        },
-        {
-            "name": "penguin",
-            "fullName": "Pingwin Paweł",
-            "background": "bg-gray-900",
-            "images": {
-                "outline": "/images/pandas/penguin/penguin-outline.png",
-                "pandaFull": "/images/pandas/penguin/penguin.png",
-                "pandaBody": "/images/pandas/penguin/penguin-body.png",
-                "pandaHead": "/images/pandas/penguin/penguin-head.png"
-            }
-         
-        },
-        {
-            "name": "giraffe",
-            "fullName": "Żyrafa Gosia",
-            "background": "bg-yellow-600",
-            "images": {
-                "outline": "/images/pandas/giraffe/giraffe-outline.png",
-                "pandaFull": "/images/pandas/giraffe/giraffe.png",
-                "pandaBody": "/images/pandas/giraffe/giraffe-body.png",
-                "pandaHead": "/images/pandas/giraffe/giraffe-head.png"
-            }
-         
-        },
-        {
-            "name": "bunny",
-            "fullName": "Królik Kamila",
-            "background": "bg-blue-400",
-            "images": {
-                "outline": "/images/pandas/bunny/bunny-outline.png",
-                "pandaFull": "/images/pandas/bunny/bunny.png",
-                "pandaBody": "/images/pandas/bunny/bunny-body.png",
-                "pandaHead": "/images/pandas/bunny/bunny-head.png"
-            }
-         
+    {
+        "name": "panda",
+        "fullName": "Panda Piotrek",
+        "background": "bg-black-100",
+        "images": {
+            "outline": "/images/pandas/panda/panda-outline.png",
+            "pandaFull": "/images/pandas/panda/panda.png",
+            "pandaBody": "/images/pandas/panda/panda-body.png",
+            "pandaHead": "/images/pandas/panda/panda-head.png",
+            "pandaSVG": "/images/pandas/panda/panda.svg"
         }
-
+    },
+    {   
+        "name": "lion",
+        "fullName": "Lew Leon",
+        "background": "bg-orange-500",
+        "images": {
+            "outline": "/images/pandas/lion/lion-outline.png",
+            "pandaFull": "/images/pandas/lion/lion.png",
+            "pandaBody": "/images/pandas/lion/lion-body.png",
+            "pandaHead": "/images/pandas/lion/lion-head.png",
+            "pandaSVG": "/images/pandas/lion/lion.svg"
+        }
+    },
+    {
+        "name": "cricket",
+        "fullName": "Świerszcz Michał",
+        "background": "bg-green-600",
+        "images": {
+            "outline": "/images/pandas/cricket/cricket-outline.png",
+            "pandaFull": "/images/pandas/cricket/cricket.png",
+            "pandaBody": "/images/pandas/cricket/cricket-body.png",
+            "pandaHead": "/images/pandas/cricket/cricket-head.png",
+            "pandaSVG": "/images/pandas/cricket/cricket.svg"
+        }
+        
+    },
+    {
+        "name": "cow",
+        "fullName": "Krowa Kasia",
+        "background": "bg-purple-300",
+        "images": {
+            "outline": "/images/pandas/cow/cow-outline.png",
+            "pandaFull": "/images/pandas/cow/cow.png",
+            "pandaBody": "/images/pandas/cow/cow-body.png",
+            "pandaHead": "/images/pandas/cow/cow-head.png",
+            "pandaSVG": "/images/pandas/cow/cow.svg"
+        }
+        
+    },
+    {
+        "name": "sheep",
+        "fullName": "Owca Olga",
+        "background": "bg-blue-500",
+        "images": {
+            "outline": "/images/pandas/sheep/sheep-outline.png",
+            "pandaFull": "/images/pandas/sheep/sheep.png",
+            "pandaBody": "/images/pandas/sheep/sheep-body.png",
+            "pandaHead": "/images/pandas/sheep/sheep-head.png",
+            "pandaSVG": "/images/pandas/sheep/sheep.svg"
+        }
+        
+    },
+    {
+        "name": "fox",
+        "fullName": "Lis Lucjan",
+        "background": "bg-orange-600",
+        "images": {
+            "outline": "/images/pandas/fox/fox-outline.png",
+            "pandaFull": "/images/pandas/fox/fox.png",
+            "pandaBody": "/images/pandas/fox/fox-body.png",
+            "pandaHead": "/images/pandas/fox/fox-head.png",
+            "pandaSVG": "/images/pandas/fox/fox.svg"
+        }
+        
+    },
+    {
+        "name": "bear",
+        "fullName": "Niedźwiedź Natan",
+        "background": "bg-brown-500",
+        "images": {
+            "outline": "/images/pandas/bear/bear-outline.png",
+            "pandaFull": "/images/pandas/bear/bear.png",
+            "pandaBody": "/images/pandas/bear/bear-body.png",
+            "pandaHead": "/images/pandas/bear/bear-head.png",
+            "pandaSVG": "/images/pandas/bear/bear.svg"
+        }
+        
+    },
+    {
+        "name": "frog",
+        "fullName": "Żaba Żaneta",
+        "background": "bg-green-50",
+        "images": {
+            "outline": "/images/pandas/frog/frog-outline.png",
+            "pandaFull": "/images/pandas/frog/frog.png",
+            "pandaBody": "/images/pandas/frog/frog-body.png",
+            "pandaHead": "/images/pandas/frog/frog-head.png",
+            "pandaSVG": "/images/pandas/frog/frog.svg"
+        }
+        
+    },
+    {
+        "name": "elephant",
+        "fullName": "Słoń Staś",
+        "background": "bg-gray-100",
+        "images": {
+            "outline": "/images/pandas/elephant/elephant-outline.png",
+            "pandaFull": "/images/pandas/elephant/elephant.png",
+            "pandaBody": "/images/pandas/elephant/elephant-body.png",
+            "pandaHead": "/images/pandas/elephant/elephant-head.png",
+            "pandaSVG": "/images/pandas/elephant/elephant.svg"
+        }
+        
+    },
+    {
+        "name": "unicorn",
+        "fullName": "Jednorożec Janek",
+        "background": "bg-pink-300",
+        "images": {
+            "outline": "/images/pandas/unicorn/unicorn-outline.png",
+            "pandaFull": "/images/pandas/unicorn/unicorn.png",
+            "pandaBody": "/images/pandas/unicorn/unicorn-body.png",
+            "pandaHead": "/images/pandas/unicorn/unicorn-head.png",
+            "pandaSVG": "/images/pandas/unicorn/unicorn.svg"
+        }
+        
+    },
+    {
+        "name": "monkey",
+        "fullName": "Małpa Maciek",
+        "background": "bg-brown-600",
+        "images": {
+            "outline": "/images/pandas/monkey/monkey-outline.png",
+            "pandaFull": "/images/pandas/monkey/monkey.png",
+            "pandaBody": "/images/pandas/monkey/monkey-body.png",
+            "pandaHead": "/images/pandas/monkey/monkey-head.png",
+            "pandaSVG": "/images/pandas/monkey/monkey.svg"
+        }
+        
+    },
+    {
+        "name": "engineer",
+        "fullName": "Inżynier Ignacy",
+        "background": "bg-black-100",
+        "images": {
+            "outline": "/images/pandas/engineer/engineer-outline.png",
+            "pandaFull": "/images/pandas/engineer/engineer.png",
+            "pandaBody": "/images/pandas/engineer/engineer-body.png",
+            "pandaHead": "/images/pandas/engineer/engineer-head.png",
+            "pandaSVG": "/images/pandas/engineer/engineer.svg"
+        }
+        
+    },
+    {
+        "name": "duck",
+        "fullName": "Kaczka Klaudia",
+        "background": "bg-yellow-500",
+        "images": {
+            "outline": "/images/pandas/duck/duck-outline.png",
+            "pandaFull": "/images/pandas/duck/duck.png",
+            "pandaBody": "/images/pandas/duck/duck-body.png",
+            "pandaHead": "/images/pandas/duck/duck-head.png",
+            "pandaSVG": "/images/pandas/duck/duck.svg"
+        }
+        
+    },
+    {
+        "name": "penguin",
+        "fullName": "Pingwin Paweł",
+        "background": "bg-gray-900",
+        "images": {
+            "outline": "/images/pandas/penguin/penguin-outline.png",
+            "pandaFull": "/images/pandas/penguin/penguin.png",
+            "pandaBody": "/images/pandas/penguin/penguin-body.png",
+            "pandaHead": "/images/pandas/penguin/penguin-head.png",
+            "pandaSVG": "/images/pandas/penguin/penguin.svg"
+        }
+        
+    },
+    {
+        "name": "giraffe",
+        "fullName": "Żyrafa Gosia",
+        "background": "bg-yellow-600",
+        "images": {
+            "outline": "/images/pandas/giraffe/giraffe-outline.png",
+            "pandaFull": "/images/pandas/giraffe/giraffe.png",
+            "pandaBody": "/images/pandas/giraffe/giraffe-body.png",
+            "pandaHead": "/images/pandas/giraffe/giraffe-head.png",
+            "pandaSVG": "/images/pandas/giraffe/giraffe.svg"
+        }
+        
+    },
+    {
+        "name": "bunny",
+        "fullName": "Królik Kamila",
+        "background": "bg-blue-400",
+        "images": {
+            "outline": "/images/pandas/bunny/bunny-outline.png",
+            "pandaFull": "/images/pandas/bunny/bunny.png",
+            "pandaBody": "/images/pandas/bunny/bunny-body.png",
+            "pandaHead": "/images/pandas/bunny/bunny-head.png",
+            "pandaSVG": "/images/pandas/bunny/bunny.svg"
+        }
+        
+    }
 ]
