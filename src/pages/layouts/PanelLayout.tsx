@@ -6,6 +6,7 @@ import { signOut, useSession } from "next-auth/react";
 import PDropDown from "../../components/Panel/PDropDown";
 import { useEffect } from "react";
 import { DoorOpenFill, DpadFill, DoorClosedFill } from "react-bootstrap-icons";
+import PPopUp from "../../components/Panel/PPopUp";
 
 
 type Props = {
@@ -29,6 +30,8 @@ const PanelLayout = ({children}: Props) => {
                 <title>PANDARIUM - panel</title>
             </Head>
 
+            <PPopUp open={ false } /> 
+
             <div className="w-full h-[100vh] bg-purple-900 overflow-hidden relative flex">
 
                 <div className="h-full w-[80px] bg-purple-950/[.5] rounded-r-[50px] z-[200] backdrop-blur-3xl flex flex-col pb-12 gap-4 absolute justify-center">
@@ -36,9 +39,9 @@ const PanelLayout = ({children}: Props) => {
                     <PNavLink text="Zagraj" icon={<DpadFill  className={PNavLinkClasess} />} link="/panel/gry"/> 
                     { user ?
                         <>
-                            <PNavLink text="Ulubione gry" icon={<BsFillBookmarkHeartFill className={PNavLinkClasess} />} link="/panel/gry"/> 
-                            <PNavLink text="Twoje statystyki" icon={<BsFillBarChartFill className={PNavLinkClasess} />} link="/panel/gry"/> 
-                            <PNavLink text="Znajomi" icon={<BsPeopleFill className={PNavLinkClasess} />} link="/panel/gry"/> 
+                            {/* <PNavLink text="Ulubione gry" icon={<BsFillBookmarkHeartFill className={PNavLinkClasess} />} link="/panel/gry"/>  */}
+                            {/* <PNavLink text="Twoje statystyki" icon={<BsFillBarChartFill className={PNavLinkClasess} />} link="/panel/gry"/>  */}
+                            {/* <PNavLink text="Znajomi" icon={<BsPeopleFill className={PNavLinkClasess} />} link="/panel/gry"/>  */}
                             <PNavLink onClick={ signOut } text="Wyloguj się" icon={<DoorOpenFill className={PNavLinkClasess} />} link="/"/> 
                         </>
                     : 
