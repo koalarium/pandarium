@@ -66,12 +66,12 @@ const PDropDown = ({ user }: Props) => {
     
     
     return (
-        <div onClick={ () => setOpen(!open) } className="ml-auto mt-5 mr-5 flex hover:bg-purple-950/[.9] bg-purple-950/[.5] cursor-pointer rounded-2xl pl-8 pr-2 backdrop-blur-3xl py-2 duration-300">
+        <div onClick={ () => setOpen(!open) } className="ml-auto mt-5 mr-5 flex hover:bg-purple-950/[.9] bg-purple-950/[.5] cursor-pointer rounded-2xl pl-8 pr-2 py-2 duration-300 relative">
             <p className="text-white font-rubikbold min-w-[110px] my-auto mr-10 text-lg">{ user ? user.nick : "Gość" }</p>
             <div className="w-full aspect-square relative bg-white rounded-2xl overflow-hidden">
                 <Image fill className="object-cover" src={ pandas.find(p => p.name == selectedPanda)!.images.pandaSVG ? pandas.find(p => p.name == selectedPanda)!.images.pandaSVG : "panda"  } alt=""/>
             </div>
-            <div className={`bg-purple-950/[.5] backdrop-blur-3xl w-full duration-300 ${open ? "max-h-[350px]" : "max-h-0" } absolute left-0 translate-y-[100%] -bottom-[10px] rounded-2xl overflow-hidden`}>
+            <div className={`bg-purple-950/[.5] w-full duration-300 ${open ? "max-h-[350px]" : "max-h-0" } absolute left-0 translate-y-[100%] -bottom-[10px] rounded-2xl overflow-hidden`}>
                 <div className="flex flex-wrap gap-4 justify-center px-3 py-3">
                     { pandas.slice(0,9).map((p, index) => (
                         <div key={ p.name+index } >
