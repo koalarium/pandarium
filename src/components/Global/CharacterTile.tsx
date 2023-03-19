@@ -33,7 +33,7 @@ const CharacterTile = ({variant, panda, selected, setSelectedPanda, setHoveredPa
                         <div className={`${ background } ${ !selected ? "group-hover:w-[100%] w-[75%] opacity-40 group-hover:opacity-0" : "w-[100%] opacity-0" } duration-300 aspect-square rounded-[calc(100%/3.2)] absolute`}></div>
                         
                         <div className={`relative mt-auto ${ variant == "0" ? "w-[85%]" : "w-[100%]"} my-auto aspect-square select-none group-hover:scale-[1.15] delay-50 duration-300`}>
-                            <Image unoptimized src={ pandaPhoto } alt="panda" fill className="object-cover" />
+                            <Image loading="lazy" src={ pandaPhoto } alt="panda" fill className="object-cover" />
                         </div>
 
                     </div>
