@@ -1,6 +1,7 @@
 import games from "../../jsons/games.json";
 import GameTitle from "../../components/Global/GameTitle";
 import { GetStaticPaths, GetStaticProps } from "next";
+import { useState } from "react";
 import { HeroLogin } from "../../components/Hero/Heroes";
 import Footer from "../../components/Footer/Footer";
 import Section from "../../components/Global/Section";
@@ -11,6 +12,7 @@ import CharacterTile from "../../components/Global/CharacterTile";
 import UserOverview from "../../components/Global/UserOverview";
 import Button from "../../components/Global/Button";
 import PurpleBox from "../../components/Global/PurpleBox";
+import PopUp from "../../components/Global/PopUp";
 
 type Params = {
     lobby: {
@@ -22,13 +24,15 @@ type Params = {
     }
 }
 const Lobby = ({ lobby }: Params) => { 
+    let [ popUp, setPopUp ] = useState(false);
     return (
         <>
+            <PopUp open={ popUp }/>
             <HeroLogin userName="Hosqu" />
             <MdContainer>
                 <div className="flex mb-12">
                     <GameTitle name={ lobby.name } />
-                        <div className="group border-purple-500 border-4 cursor-pointer justify-self-end self-center ml-auto p-2 md:p-3 rounded-xl xl:rounded-3xl  hover:bg-purple-500 duration-300">
+                        <div onClick={ () => setPopUp(true) } className="group border-purple-500 border-4 cursor-pointer justify-self-end self-center ml-auto p-2 md:p-3 rounded-xl xl:rounded-3xl  hover:bg-purple-500 duration-300">
                             <BsGearFill className="fill-purple-500 group-hover:fill-white h-4 w-4 md:h-8 md:w-8 group-hover:rotate-90 group-hover:scale-125 duration-300"/>
                     </div>
                 </div>

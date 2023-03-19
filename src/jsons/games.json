@@ -3,6 +3,34 @@
         "url": "kolko-i-krzyzyk",
         "name": "Kółko i Krzyżyk",
         "rules": ["Oko za oko","zab za zab","koks za koks","kosa za kose","skrzynka za 5zl","mnich arab"],
+        "settings": [
+            {
+                "name": "Czas na ruch",
+                "type": "number",
+                "min": "5",
+                "max": "120",
+                "default": "20"
+            },
+            {
+                "name": "TEKST2",
+                "type": "text",
+                "min": [1],
+                "max": [5],
+                "deafult": "5"
+            },
+            {
+                "name": "TEKST3",
+                "type": "checkbox",
+                "default": true
+            },
+            {
+                "name": "TEKST4",
+                "type": "number",
+                "min": "1",
+                "max": "20",
+                "default": "6"
+            }        
+        ],
         "gif": "/images/screens/tic-tac-tao-game.png",
         "maxUsers": "2"
     },
@@ -10,6 +38,7 @@
         "url": "pandle",
         "name": "Pandle",
         "rules": ["Oko za Scripts that load with the before Interactive strategy are injected into oko","zab za zab  the initial HTML from the server, downloaded before any Next.js module, and executed i","koks za koks n the order they are placed before any hydration occurs on the page.","kosa za kose","skrzynka za 5zl","mnich arab","oko za Scripts that load with the beforeInteractive strategy are injected into oko","oko za Scripts that load with the beforeInteractive strategy are injected into oko","oko za Scripts that load with the beforeInteractive strategy are injected into oko"],
+        "settings": ["Maksymalna liczba graczy",""],
         "gif": "/images/screens/tic-tac-tao-game.png",
         "maxUsers": "8" 
     }
