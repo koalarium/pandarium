@@ -28,8 +28,8 @@ const PPopUp = ({ user, open, setOpen }: Props) => {
             <div onClick={ (e: any) => { e.stopPropagation(); } } className={`${ open ? "scale-[1.0!important]" : "" } scale-[0] delay-200 duration-300 flex bg-purple-300 h-[60vh] mx-auto my-auto w-[50%] p-3 rounded-[35px] shadow-xl`}>
                 <div className="bg-purple-900 rounded-3xl flex flex-col h-full w-full justify-center align-middle">
                     <h2 className="font-rubikbold text-white text-3xl uppercase mx-auto">Dołącz do pokoju:</h2>
-                    <Input type="text" onChange={(e: any) => setNick(e.target.value) } className="w-[49%] mx-auto mt-5" placeholder="Nick" value={ user ? user.nick : nick } required disabled={ user ? true : false } readonly={ user ? true : false }/>
-                    <Input type="text" onChange={ (e: any) => setGameCode(e.target.value) } className="w-[49%] mx-auto mt-2" value={ gameCode } placeholder="np. 5SD4TXT1Z"/>
+                    <Input type="text" onChange={(e: any) => setNick(e.target.value) } className="w-[30rem] mx-auto mt-5" placeholder="Nick" value={ user ? user.nick : nick } required disabled={ user ? true : false } readonly={ user ? true : false }/>
+                    <Input type="text" onChange={ (e: any) => setGameCode(e.target.value) } className="w-[30rem] mx-auto mt-2" value={ gameCode } placeholder="np. 5SD4TXT1Z"/>
                     <Button className="mx-auto mt-5">DOŁĄCZ</Button>
                 </div>
             </div>

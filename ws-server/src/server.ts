@@ -10,6 +10,10 @@ const io = new Server(httpServer, {
 });
 
 io.on('connection', socket => {
+
+  //////////////////////////////////////////
+  // KÓŁKO I KRZYŻYK
+  //////////////////////////////////////////
             
   socket.on('join_to_room', (roomId, prevRoomId) => {
 
