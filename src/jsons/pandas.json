@@ -8,7 +8,8 @@
             "pandaFull": "/images/pandas/panda/panda.png",
             "pandaBody": "/images/pandas/panda/panda-body.png",
             "pandaHead": "/images/pandas/panda/panda-head.png",
-            "pandaSVG": "/images/pandas/panda/panda.svg"
+            "pandaSVG": "/images/pandas/panda/panda.svg",
+            "pandaBodySVG": "/images/pandas/panda/panda-body.svg"
         }
     },
     {   
@@ -20,7 +21,8 @@
             "pandaFull": "/images/pandas/lion/lion.png",
             "pandaBody": "/images/pandas/lion/lion-body.png",
             "pandaHead": "/images/pandas/lion/lion-head.png",
-            "pandaSVG": "/images/pandas/lion/lion.svg"
+            "pandaSVG": "/images/pandas/lion/lion.svg",
+            "pandaBodySVG": "/images/pandas/lion/lion-body.svg"
         }
     },
     {
@@ -32,7 +34,8 @@
             "pandaFull": "/images/pandas/cricket/cricket.png",
             "pandaBody": "/images/pandas/cricket/cricket-body.png",
             "pandaHead": "/images/pandas/cricket/cricket-head.png",
-            "pandaSVG": "/images/pandas/cricket/cricket.svg"
+            "pandaSVG": "/images/pandas/cricket/cricket.svg",
+            "pandaBodySVG": "/images/pandas/cricket/cricket-body.svg"
         }
         
     },
@@ -45,7 +48,8 @@
             "pandaFull": "/images/pandas/cow/cow.png",
             "pandaBody": "/images/pandas/cow/cow-body.png",
             "pandaHead": "/images/pandas/cow/cow-head.png",
-            "pandaSVG": "/images/pandas/cow/cow.svg"
+            "pandaSVG": "/images/pandas/cow/cow.svg",
+            "pandaBodySVG": "/images/pandas/cow/cow-body.svg"
         }
         
     },
@@ -58,7 +62,8 @@
             "pandaFull": "/images/pandas/sheep/sheep.png",
             "pandaBody": "/images/pandas/sheep/sheep-body.png",
             "pandaHead": "/images/pandas/sheep/sheep-head.png",
-            "pandaSVG": "/images/pandas/sheep/sheep.svg"
+            "pandaSVG": "/images/pandas/sheep/sheep.svg",
+            "pandaBodySVG": "/images/pandas/sheep/sheep-body.svg"
         }
         
     },
@@ -71,7 +76,8 @@
             "pandaFull": "/images/pandas/fox/fox.png",
             "pandaBody": "/images/pandas/fox/fox-body.png",
             "pandaHead": "/images/pandas/fox/fox-head.png",
-            "pandaSVG": "/images/pandas/fox/fox.svg"
+            "pandaSVG": "/images/pandas/fox/fox.svg",
+            "pandaBodySVG": "/images/pandas/fox/fox-body.svg"
         }
         
     },
@@ -84,7 +90,8 @@
             "pandaFull": "/images/pandas/bear/bear.png",
             "pandaBody": "/images/pandas/bear/bear-body.png",
             "pandaHead": "/images/pandas/bear/bear-head.png",
-            "pandaSVG": "/images/pandas/bear/bear.svg"
+            "pandaSVG": "/images/pandas/bear/bear.svg",
+            "pandaBodySVG": "/images/pandas/bear/bear-body.svg"
         }
         
     },
@@ -97,7 +104,8 @@
             "pandaFull": "/images/pandas/frog/frog.png",
             "pandaBody": "/images/pandas/frog/frog-body.png",
             "pandaHead": "/images/pandas/frog/frog-head.png",
-            "pandaSVG": "/images/pandas/frog/frog.svg"
+            "pandaSVG": "/images/pandas/frog/frog.svg",
+            "pandaBodySVG": "/images/pandas/frog/frog-body.svg"
         }
         
     },
@@ -110,7 +118,8 @@
             "pandaFull": "/images/pandas/elephant/elephant.png",
             "pandaBody": "/images/pandas/elephant/elephant-body.png",
             "pandaHead": "/images/pandas/elephant/elephant-head.png",
-            "pandaSVG": "/images/pandas/elephant/elephant.svg"
+            "pandaSVG": "/images/pandas/elephant/elephant.svg",
+            "pandaBodySVG": "/images/pandas/elephant/elephant-body.svg"
         }
         
     },
@@ -123,7 +132,8 @@
             "pandaFull": "/images/pandas/unicorn/unicorn.png",
             "pandaBody": "/images/pandas/unicorn/unicorn-body.png",
             "pandaHead": "/images/pandas/unicorn/unicorn-head.png",
-            "pandaSVG": "/images/pandas/unicorn/unicorn.svg"
+            "pandaSVG": "/images/pandas/unicorn/unicorn.svg",
+            "pandaBodySVG": "/images/pandas/unicorn/unicorn-body.svg"
         }
         
     },
@@ -136,7 +146,8 @@
             "pandaFull": "/images/pandas/monkey/monkey.png",
             "pandaBody": "/images/pandas/monkey/monkey-body.png",
             "pandaHead": "/images/pandas/monkey/monkey-head.png",
-            "pandaSVG": "/images/pandas/monkey/monkey.svg"
+            "pandaSVG": "/images/pandas/monkey/monkey.svg",
+            "pandaBodySVG": "/images/pandas/monkey/monkey-body.svg"
         }
         
     },
@@ -149,7 +160,8 @@
             "pandaFull": "/images/pandas/engineer/engineer.png",
             "pandaBody": "/images/pandas/engineer/engineer-body.png",
             "pandaHead": "/images/pandas/engineer/engineer-head.png",
-            "pandaSVG": "/images/pandas/engineer/engineer.svg"
+            "pandaSVG": "/images/pandas/engineer/engineer.svg",
+            "pandaBodySVG": "/images/pandas/engineer/engineer-body.svg"
         }
         
     },
@@ -162,7 +174,8 @@
             "pandaFull": "/images/pandas/duck/duck.png",
             "pandaBody": "/images/pandas/duck/duck-body.png",
             "pandaHead": "/images/pandas/duck/duck-head.png",
-            "pandaSVG": "/images/pandas/duck/duck.svg"
+            "pandaSVG": "/images/pandas/duck/duck.svg",
+            "pandaBodySVG": "/images/pandas/duck/duck-body.svg"
         }
         
     },
@@ -175,7 +188,8 @@
             "pandaFull": "/images/pandas/penguin/penguin.png",
             "pandaBody": "/images/pandas/penguin/penguin-body.png",
             "pandaHead": "/images/pandas/penguin/penguin-head.png",
-            "pandaSVG": "/images/pandas/penguin/penguin.svg"
+            "pandaSVG": "/images/pandas/penguin/penguin.svg",
+            "pandaBodySVG": "/images/pandas/penguin/penguin-body.svg"
         }
         
     },
@@ -188,7 +202,8 @@
             "pandaFull": "/images/pandas/giraffe/giraffe.png",
             "pandaBody": "/images/pandas/giraffe/giraffe-body.png",
             "pandaHead": "/images/pandas/giraffe/giraffe-head.png",
-            "pandaSVG": "/images/pandas/giraffe/giraffe.svg"
+            "pandaSVG": "/images/pandas/giraffe/giraffe.svg",
+            "pandaBodySVG": "/images/pandas/giraffe/giraffe-body.svg"
         }
         
     },
@@ -201,7 +216,22 @@
             "pandaFull": "/images/pandas/bunny/bunny.png",
             "pandaBody": "/images/pandas/bunny/bunny-body.png",
             "pandaHead": "/images/pandas/bunny/bunny-head.png",
-            "pandaSVG": "/images/pandas/bunny/bunny.svg"
+            "pandaSVG": "/images/pandas/bunny/bunny.svg",
+            "pandaBodySVG": "/images/pandas/bunny/bunny-body.svg"
+        }
+        
+    },
+    {
+        "name": "cat",
+        "fullName": "Kot Karolina",
+        "background": "bg-yellow-300",
+        "images": {
+            "outline": "/images/pandas/cat/cat-outline.png",
+            "pandaFull": "/images/pandas/cat/cat.png",
+            "pandaBody": "/images/pandas/cat/cat-body.png",
+            "pandaHead": "/images/pandas/cat/cat-head.png",
+            "pandaSVG": "/images/pandas/cat/cat.svg",
+            "pandaBodySVG": "/images/pandas/cat/cat-body.svg"
         }
         
     }

@@ -63,6 +63,7 @@ module.exports = {
       },
       'yellow': {
         100: '#FDF55F',
+        300: '#F3D47A',
         500: '#FFD914',
         600: '#EDA92A',
       },
